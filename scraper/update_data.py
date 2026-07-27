@@ -98,6 +98,7 @@ def parse_table(html):
 
 def build_acoes(rows):
     out = {}
+    skipped = 0
     for row in rows:
         tk = row.get("papel", "").strip().upper()
         if not tk:
@@ -108,6 +109,16 @@ def build_acoes(rows):
         dy = parse_br_number(row.get("div.yield"))
         cresc5a = parse_br_number(row.get("cresc. rec.5a"))
         roe = parse_br_number(row.get("roe"))
+        liq2m = parse_br_number(row.get("liq.2meses"))
+
+        # Sem cotação, ou sem nenhuma negociação nos últimos 2 meses: provavelmente
+        # deslistado, suspenso, ou irrelevante pra qualquer análise. Descarta.
+        if not preco or preco <= 0:
+            skipped += 1
+            continue
+        if liq2m is not None and liq2m <= 0:
+            skipped += 1
+            continue
 
         # Fundamentus não publica LPA/VPA direto nessa tabela, mas dá pra
         # derivar a partir de Cotação/P-L e Cotação/P-VP.
@@ -126,12 +137,15 @@ def build_acoes(rows):
             # Ajuste/troque de fonte se quiser algo mais preciso pro Lynch.
             "g": cresc5a,
             "roe": roe,
+            "liq_2m": liq2m,
         }
+    print(f"  {skipped} ações descartadas (sem cotação/liquidez recente).")
     return out
 
 
 def build_fiis(rows):
     out = {}
+    skipped = 0
     for row in rows:
         tk = row.get("papel", "").strip().upper()
         if not tk:
@@ -139,6 +153,15 @@ def build_fiis(rows):
         preco = parse_br_number(row.get("cotacao"))
         pvp = parse_br_number(row.get("p/vp"))
         dy = parse_br_number(row.get("dividend yield"))
+        liquidez = parse_br_number(row.get("liquidez"))
+
+        if not preco or preco <= 0:
+            skipped += 1
+            continue
+        if liquidez is not None and liquidez <= 0:
+            skipped += 1
+            continue
+
         vpa = (preco / pvp) if (preco and pvp and pvp > 0) else None
 
         out[tk] = {
@@ -149,7 +172,9 @@ def build_fiis(rows):
             "vpa": vpa,
             "g": None,
             "segmento": row.get("segmento"),
+            "liq_2m": liquidez,
         }
+    print(f"  {skipped} FIIs descartados (sem cotação/liquidez recente).")
     return out
 
 
