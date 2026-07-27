@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-07-27T04:15:22+00:00",
+  "atualizado_em": "2026-07-27T17:59:39+00:00",
   "acoes": {
     "AGRO3": {
       "preco": 19.0,
@@ -71,7 +71,7 @@
       "g": 0.013500000000000002,
       "roe": -0.0226,
       "liq_2m": 1473390.0,
-      "nome": "NEOGRID PARTICIPACOES S.A."
+      "nome": null
     },
     "MAPT4": {
       "preco": 3.0,
@@ -767,7 +767,7 @@
       "g": -0.0676,
       "roe": 4.227799999999999,
       "liq_2m": 231.46,
-      "nome": null
+      "nome": "WETZEL S.A."
     },
     "FHER3": {
       "preco": 3.6,
@@ -3887,7 +3887,7 @@
       "g": -0.0718,
       "roe": 0.0643,
       "liq_2m": 1349.23,
-      "nome": "PANATLANTICA S.A."
+      "nome": null
     },
     "TFCO4": {
       "preco": 13.91,
@@ -5045,7 +5045,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 1684.0,
-      "nome": null
+      "nome": "ATSA11"
     },
     "AURB11": {
       "preco": 81.2,
@@ -5221,7 +5221,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 32.0,
-      "nome": "BLOG11"
+      "nome": null
     },
     "BMLC11": {
       "preco": 99.01,
@@ -5694,7 +5694,7 @@
       "g": null,
       "segmento": "Logística",
       "liq_2m": 6210.0,
-      "nome": "CXTL11"
+      "nome": null
     },
     "CYLD11": {
       "preco": 81.0,
@@ -5727,7 +5727,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 444.0,
-      "nome": "DAMT11"
+      "nome": null
     },
     "DAYM11": {
       "preco": 3.95,
@@ -5771,7 +5771,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 1441.0,
-      "nome": "DPRO11"
+      "nome": null
     },
     "DVFF11": {
       "preco": 5.12,
@@ -5793,7 +5793,7 @@
       "g": null,
       "segmento": "Residencial",
       "liq_2m": 7442.0,
-      "nome": "EDFO11"
+      "nome": null
     },
     "EDGA11": {
       "preco": 13.72,
@@ -5837,7 +5837,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 1348.0,
-      "nome": null
+      "nome": "EIRA11"
     },
     "EMET11": {
       "preco": 8.96,
@@ -6057,7 +6057,7 @@
       "g": null,
       "segmento": "Escritórios",
       "liq_2m": 2619.0,
-      "nome": null
+      "nome": "FMOF11"
     },
     "FPAB11": {
       "preco": 193.0,
@@ -6332,7 +6332,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 8817010.0,
-      "nome": "HBCR11"
+      "nome": null
     },
     "HCHG11": {
       "preco": 61.98,
@@ -6442,7 +6442,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 2595.0,
-      "nome": null
+      "nome": "HGIC11"
     },
     "HGLG11": {
       "preco": 147.76,
@@ -6552,7 +6552,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 6743.0,
-      "nome": null
+      "nome": "HPDP11"
     },
     "HRDF11": {
       "preco": 4.0,
@@ -6794,7 +6794,7 @@
       "g": null,
       "segmento": "Varejo",
       "liq_2m": 5740.0,
-      "nome": null
+      "nome": "JASC11"
     },
     "JCCJ11": {
       "preco": 139.75,
@@ -7146,7 +7146,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 197.0,
-      "nome": null
+      "nome": "LRDI11"
     },
     "LSAG11": {
       "preco": 76.93,
@@ -7234,7 +7234,7 @@
       "g": null,
       "segmento": "Logística",
       "liq_2m": 1898740.0,
-      "nome": "MCLO11"
+      "nome": null
     },
     "MCRE11": {
       "preco": 8.48,
@@ -7399,7 +7399,7 @@
       "g": null,
       "segmento": "Hospital",
       "liq_2m": 1872.0,
-      "nome": "NVHO11"
+      "nome": null
     },
     "OCRE11": {
       "preco": 67.0,
@@ -7476,7 +7476,7 @@
       "g": null,
       "segmento": "Outros",
       "liq_2m": 8282.0,
-      "nome": "PATA11"
+      "nome": null
     },
     "PATC11": {
       "preco": 39.33,
@@ -7641,7 +7641,7 @@
       "g": null,
       "segmento": "Logística",
       "liq_2m": 1626.0,
-      "nome": "PQAG11"
+      "nome": null
     },
     "PQDP11": {
       "preco": 2513.18,
@@ -7828,7 +7828,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 153.0,
-      "nome": null
+      "nome": "RBRI11"
     },
     "RBRL11": {
       "preco": 71.1,
@@ -7872,7 +7872,7 @@
       "g": null,
       "segmento": "Residencial",
       "liq_2m": 3365.0,
-      "nome": "RBRS11"
+      "nome": null
     },
     "RBRX11": {
       "preco": 7.72,
@@ -8301,7 +8301,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 113773.0,
-      "nome": null
+      "nome": "SHPH11"
     },
     "SHPP11": {
       "preco": 12.0,
@@ -8818,7 +8818,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 2996.0,
-      "nome": null
+      "nome": "VOTS11"
     },
     "VRTA11": {
       "preco": 73.82,
@@ -8906,7 +8906,7 @@
       "g": null,
       "segmento": "Outros",
       "liq_2m": 12665900.0,
-      "nome": "VXXV11"
+      "nome": null
     },
     "WHGR11": {
       "preco": 8.96,
@@ -8928,7 +8928,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 5625.0,
-      "nome": "WPLZ11"
+      "nome": null
     },
     "WTSP11": {
       "preco": 60.0,
