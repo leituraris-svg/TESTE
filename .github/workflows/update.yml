@@ -1,0 +1,35 @@
+name: Atualizar cotações
+
+on:
+  schedule:
+    - cron: '0 12 * * 1-5'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependências
+        run: pip install -r scraper/requirements.txt
+
+      - name: Rodar scraper
+        run: python scraper/update_data.py
+
+      - name: Commitar e enviar alterações (só se algo mudou)
+        run: |
+          git config user.name "Carteira Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/cotacoes.json
+          git diff --staged --quiet || git commit -m "Atualiza cotações $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
