@@ -27,8 +27,32 @@ HEADERS = {
 
 URL_ACOES = "https://www.fundamentus.com.br/resultado.php"
 URL_FIIS = "https://www.fundamentus.com.br/fii_resultado.php"
+NAMES_URL = "https://brapi.dev/api/quote/list"  # nome das empresas (best-effort)
 
 OUT_PATH = "data/cotacoes.json"
+
+
+def fetch_names():
+    """Busca o nome de cada empresa/fundo via brapi.dev. Isso é 'melhor esforço':
+    se o endpoint mudar, exigir chave, ou cair, simplesmente seguimos sem nomes
+    (o app usa só o ticker nesse caso) — não deve travar o robô."""
+    try:
+        r = requests.get(NAMES_URL, headers=HEADERS, timeout=20)
+        r.raise_for_status()
+        data = r.json()
+        items = data.get("stocks") or data.get("results") or []
+        names = {}
+        for item in items:
+            tk = (item.get("stock") or item.get("symbol") or "").strip().upper()
+            nome = item.get("name")
+            if tk and nome:
+                names[tk] = nome
+        if not names:
+            print("  aviso: brapi retornou 0 nomes (formato inesperado). Seguindo sem nomes.", file=sys.stderr)
+        return names
+    except Exception as e:  # noqa: BLE001
+        print(f"  aviso: não foi possível obter nomes via brapi ({e}). Seguindo sem nomes.", file=sys.stderr)
+        return {}
 
 
 def parse_br_number(raw):
@@ -96,7 +120,8 @@ def parse_table(html):
     return rows
 
 
-def build_acoes(rows):
+def build_acoes(rows, names=None):
+    names = names or {}
     out = {}
     skipped = 0
     for row in rows:
@@ -138,12 +163,14 @@ def build_acoes(rows):
             "g": cresc5a,
             "roe": roe,
             "liq_2m": liq2m,
+            "nome": names.get(tk),
         }
     print(f"  {skipped} ações descartadas (sem cotação/liquidez recente).")
     return out
 
 
-def build_fiis(rows):
+def build_fiis(rows, names=None):
+    names = names or {}
     out = {}
     skipped = 0
     for row in rows:
@@ -173,20 +200,25 @@ def build_fiis(rows):
             "g": None,
             "segmento": row.get("segmento"),
             "liq_2m": liquidez,
+            "nome": names.get(tk),
         }
     print(f"  {skipped} FIIs descartados (sem cotação/liquidez recente).")
     return out
 
 
 def main():
+    print("Buscando nomes das empresas/fundos (best-effort)...")
+    names = fetch_names()
+    print(f"  {len(names)} nomes obtidos.")
+
     print("Baixando tabela de ações...")
     rows_acoes = parse_table(fetch_html(URL_ACOES))
-    acoes = build_acoes(rows_acoes)
+    acoes = build_acoes(rows_acoes, names)
     print(f"  {len(acoes)} ações processadas.")
 
     print("Baixando tabela de FIIs...")
     rows_fiis = parse_table(fetch_html(URL_FIIS))
-    fiis = build_fiis(rows_fiis)
+    fiis = build_fiis(rows_fiis, names)
     print(f"  {len(fiis)} FIIs processados.")
 
     if len(acoes) < 50 or len(fiis) < 50:
