@@ -23,11 +23,10 @@ entregou o DFP do ano anterior).
 
 IMPORTANTE — antes do primeiro uso real:
 Os nomes de arquivo/coluna dos datasets da CVM foram confirmados via
-documentação oficial e exemplos públicos, EXCETO o arquivo de
-"Composição do Capital" dentro do DFP, cujo nome exato eu não consegui
-confirmar sem baixar o zip de verdade. Se `fetch_total_acoes_por_cnpj()`
-não achar o arquivo, ele imprime a lista de arquivos do zip no console —
-copie essa lista e me mande que eu ajusto o padrão de busca.
+documentação oficial, exemplos públicos e por uma execução real do
+script. O nº total de ações e as ações em tesouraria vêm juntos do
+arquivo 'capital_social' dentro do próprio DFP (a antiga fonte prevista
+no FRE foi descontinuada pela CVM em 2016).
 """
 
 import io
@@ -49,7 +48,6 @@ HEADERS = {
 }
 
 CVM_DFP_BASE = "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/DFP/DADOS"
-CVM_FRE_BASE = "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/FRE/DADOS"
 CVM_FCA_BASE = "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/FCA/DADOS"
 
 OUT_PATH = "data/anuais.json"
@@ -188,47 +186,13 @@ def fetch_lucro_liquido_por_cnpj(anos_zip):
 
 
 # --------------------------------------------------------------------------
-# 3) Ações em tesouraria
+# 3) Número total de ações e ações em tesouraria — mesmo arquivo
 # --------------------------------------------------------------------------
-def fetch_tesouraria_por_cnpj():
-    print(f"Baixando FRE {ANO_ATUAL} (ações em tesouraria)...")
-    zf = _download_zip(f"{CVM_FRE_BASE}/fre_cia_aberta_{ANO_ATUAL}.zip")
-    if zf is None:
-        zf = _download_zip(f"{CVM_FRE_BASE}/fre_cia_aberta_{ANO_ATUAL - 1}.zip")
-    if zf is None:
-        print("  aviso: não consegui baixar o FRE. Tesouraria ficará vazia.", file=sys.stderr)
-        return {}
-
-    df = _read_csv_from_zip(zf, "valor_mobiliario_tesouraria_ultimo_exercicio")
-    if df is None:
-        print(f"  aviso: arquivo de tesouraria não encontrado no FRE. "
-              f"Conteúdo: {zf.namelist()}", file=sys.stderr)
-        return {}
-
-    df.columns = [_norm(c) for c in df.columns]
-    col_cnpj = next((c for c in df.columns if "cnpj" in c), None)
-    col_qtd = next((c for c in df.columns if "quantidade" in c), None)
-    if not col_cnpj or not col_qtd:
-        print(f"  aviso: colunas de tesouraria não reconhecidas. "
-              f"Colunas: {list(df.columns)}", file=sys.stderr)
-        return {}
-
-    resultado = {}
-    for _, row in df.iterrows():
-        cnpj = str(row.get(col_cnpj) or "").strip()
-        qtd = pd.to_numeric(row.get(col_qtd), errors="coerce")
-        if not cnpj or pd.isna(qtd):
-            continue
-        # soma ON + PN + outras classes, se houver mais de uma linha por empresa
-        resultado[cnpj] = resultado.get(cnpj, 0.0) + float(qtd)
-    print(f"  {len(resultado)} empresas com dado de tesouraria.")
-    return resultado
-
-
-# --------------------------------------------------------------------------
-# 4) Número total de ações (Composição do Capital)
-# --------------------------------------------------------------------------
-def fetch_total_acoes_por_cnpj():
+def fetch_capital_por_cnpj():
+    """O arquivo 'capital_social' do DFP já traz total de ações E ações em
+    tesouraria juntos (colunas qt_acao_total_cap_integr / qt_acao_total_tesouro).
+    Não existe mais um arquivo de tesouraria separado no FRE — esse item foi
+    descontinuado pela CVM em 2016."""
     print(f"Baixando DFP {ANO_ATUAL} (composição do capital)...")
     zf = _download_zip(f"{CVM_DFP_BASE}/dfp_cia_aberta_{ANO_ATUAL}.zip")
     if zf is None:
@@ -237,48 +201,52 @@ def fetch_total_acoes_por_cnpj():
         print("  aviso: não consegui baixar o DFP para composição do capital.", file=sys.stderr)
         return {}
 
-    # Nome exato não confirmado — tenta os padrões mais prováveis.
-    df = None
-    for pattern in ("composicao_capital", "capital_social"):
-        df = _read_csv_from_zip(zf, pattern)
-        if df is not None:
-            break
+    df = _read_csv_from_zip(zf, "capital_social")
     if df is None:
         print(
             "  AVISO: não achei o arquivo de composição do capital dentro do zip. "
-            "Me manda essa lista que eu ajusto o padrão de busca:\n  "
-            f"{zf.namelist()}",
+            f"Conteúdo do zip: {zf.namelist()}",
             file=sys.stderr,
         )
         return {}
 
     df.columns = [_norm(c) for c in df.columns]
     col_cnpj = next((c for c in df.columns if "cnpj" in c), None)
-    col_on = next((c for c in df.columns if "ordinaria" in c and ("qtd" in c or "quant" in c)), None)
-    col_pn = next((c for c in df.columns if "preferencial" in c and ("qtd" in c or "quant" in c)), None)
-    col_total = next(
-        (c for c in df.columns if "total" in c and ("qtd" in c or "quant" in c or "acoes" in c)), None
-    )
-    if not col_cnpj or not (col_total or col_on or col_pn):
+    col_versao = next((c for c in df.columns if c == "versao"), None)
+    col_total = next((c for c in df.columns if "acao" in c and "total" in c and "tesour" not in c), None)
+    col_tesouro = next((c for c in df.columns if "acao" in c and "total" in c and "tesour" in c), None)
+    col_ordin = next((c for c in df.columns if "acao" in c and "ordin" in c and "tesour" not in c), None)
+    col_pref = next((c for c in df.columns if "acao" in c and "pref" in c and "tesour" not in c), None)
+
+    if not col_cnpj or not (col_total or (col_ordin and col_pref)):
         print(f"  aviso: colunas de composição do capital não reconhecidas. "
               f"Colunas: {list(df.columns)}", file=sys.stderr)
         return {}
+
+    for c in (col_total, col_tesouro, col_ordin, col_pref):
+        if c:
+            df[c] = pd.to_numeric(df[c], errors="coerce")
+
+    # Uma empresa pode ter mais de uma versão do documento entregue
+    # (reapresentações); fica só com a versão mais recente de cada CNPJ.
+    if col_versao:
+        df["_versao_num"] = pd.to_numeric(df[col_versao], errors="coerce").fillna(0)
+        df = df.sort_values("_versao_num").drop_duplicates(subset=[col_cnpj], keep="last")
 
     resultado = {}
     for _, row in df.iterrows():
         cnpj = str(row.get(col_cnpj) or "").strip()
         if not cnpj:
             continue
-        if col_total:
-            total = pd.to_numeric(row.get(col_total), errors="coerce")
-        else:
-            on = pd.to_numeric(row.get(col_on), errors="coerce") if col_on else 0
-            pn = pd.to_numeric(row.get(col_pn), errors="coerce") if col_pn else 0
-            total = (on or 0) + (pn or 0)
-        if pd.isna(total) or total <= 0:
+        total = row.get(col_total) if col_total else (
+            (row.get(col_ordin) or 0) + (row.get(col_pref) or 0)
+        )
+        if pd.isna(total) or not total or total <= 0:
             continue
-        resultado[cnpj] = float(total)
-    print(f"  {len(resultado)} empresas com nº total de ações.")
+        tesouraria = row.get(col_tesouro) if col_tesouro else 0
+        tesouraria = 0.0 if pd.isna(tesouraria) else float(tesouraria)
+        resultado[cnpj] = {"total": float(total), "tesouraria": tesouraria}
+    print(f"  {len(resultado)} empresas com composição do capital.")
     return resultado
 
 
@@ -289,8 +257,7 @@ def main():
 
     ticker_cnpj = build_ticker_cnpj_map()
     lucro_por_cnpj = fetch_lucro_liquido_por_cnpj(anos_zip)
-    tesouraria_por_cnpj = fetch_tesouraria_por_cnpj()
-    total_por_cnpj = fetch_total_acoes_por_cnpj()
+    capital_por_cnpj = fetch_capital_por_cnpj()
 
     try:
         with open(COTACOES_PATH, "r", encoding="utf-8") as f:
@@ -304,16 +271,17 @@ def main():
         if not cnpj:
             continue
         lucro_anos = lucro_por_cnpj.get(cnpj)
-        total = total_por_cnpj.get(cnpj)
-        tesouraria = tesouraria_por_cnpj.get(cnpj, 0.0)
+        capital = capital_por_cnpj.get(cnpj)
 
-        if not lucro_anos and not total:
+        if not lucro_anos and not capital:
             continue  # nada de novo pra essa empresa, não polui o JSON
 
         entry = {}
         if lucro_anos:
             entry["lucroLiquidoAnos"] = lucro_anos
-        if total:
+        if capital:
+            total = capital["total"]
+            tesouraria = capital["tesouraria"]
             entry["acoesTotal"] = total
             entry["acoesTesouraria"] = tesouraria
             entry["acoesExTesouraria"] = max(total - tesouraria, 0)
