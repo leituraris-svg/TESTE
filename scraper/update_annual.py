@@ -94,7 +94,7 @@ def _norm(s):
     return s.strip().lower()
 
 
-def _download_zip(url, retries=3, timeout=60):
+def _download_zip(url, retries=5, timeout=90):
     last_err = None
     for attempt in range(1, retries + 1):
         try:
@@ -104,7 +104,7 @@ def _download_zip(url, retries=3, timeout=60):
         except Exception as e:  # noqa: BLE001
             last_err = e
             print(f"  tentativa {attempt}/{retries} falhou ({url}): {e}", file=sys.stderr)
-            time.sleep(3 * attempt)
+            time.sleep(10 * attempt)  # espera crescente: 10s, 20s, 30s...
     print(f"  aviso: não foi possível baixar {url} ({last_err}). Pulando.", file=sys.stderr)
     return None
 
