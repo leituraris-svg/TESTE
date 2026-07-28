@@ -27,6 +27,16 @@ documentação oficial, exemplos públicos e por uma execução real do
 script. O nº total de ações e as ações em tesouraria vêm juntos do
 arquivo 'capital_social' dentro do próprio DFP (a antiga fonte prevista
 no FRE foi descontinuada pela CVM em 2016).
+
+CONVENÇÃO DE ANO DO ZIP (confirmado observando o histórico de tamanhos
+dos arquivos no índice público da CVM): o número no nome
+'dfp_cia_aberta_AAAA.zip' é o ANO DO PRÓPRIO EXERCÍCIO/BALANÇO, não o
+ano de entrega. Esse arquivo fica quase vazio logo no início do ano
+seguinte e só se completa perto do prazo de entrega (~31/mar do ano
+seguinte ao exercício). Por isso: (1) nunca usamos o zip do ANO_ATUAL
+pra nada que precise estar completo — ele corresponde ao exercício
+ainda em andamento; (2) pegamos sempre os últimos N anos JÁ FECHADOS
+(ANO_ATUAL-N até ANO_ATUAL-1).
 """
 
 import io
@@ -172,7 +182,7 @@ def fetch_lucro_liquido_por_cnpj(anos_zip):
         sub = df[mask]
 
         # o exercício reportado como "ÚLTIMO" no zip do ano X é o ano X-1
-        ano_exercicio = ano_zip - 1
+        ano_exercicio = ano_zip  # o nome do zip já É o ano do exercício (ver nota no topo do arquivo)
         contados = 0
         for _, row in sub.iterrows():
             valor = row["VL_CONTA_NUM"]
@@ -193,10 +203,14 @@ def fetch_capital_por_cnpj():
     tesouraria juntos (colunas qt_acao_total_cap_integr / qt_acao_total_tesouro).
     Não existe mais um arquivo de tesouraria separado no FRE — esse item foi
     descontinuado pela CVM em 2016."""
-    print(f"Baixando DFP {ANO_ATUAL} (composição do capital)...")
-    zf = _download_zip(f"{CVM_DFP_BASE}/dfp_cia_aberta_{ANO_ATUAL}.zip")
+    # ANO_ATUAL ainda está em andamento (o exercício só fecha em 31/dez), então o
+    # zip desse ano está quase vazio a maior parte do tempo. Usa o ano anterior,
+    # que já deve estar com o prazo de entrega vencido (~31/mar).
+    ano_capital = ANO_ATUAL - 1
+    print(f"Baixando DFP {ano_capital} (composição do capital)...")
+    zf = _download_zip(f"{CVM_DFP_BASE}/dfp_cia_aberta_{ano_capital}.zip")
     if zf is None:
-        zf = _download_zip(f"{CVM_DFP_BASE}/dfp_cia_aberta_{ANO_ATUAL - 1}.zip")
+        zf = _download_zip(f"{CVM_DFP_BASE}/dfp_cia_aberta_{ano_capital - 1}.zip")
     if zf is None:
         print("  aviso: não consegui baixar o DFP para composição do capital.", file=sys.stderr)
         return {}
@@ -252,8 +266,9 @@ def fetch_capital_por_cnpj():
 
 # --------------------------------------------------------------------------
 def main():
-    anos_exercicio = list(range(ANO_ATUAL - ANOS_LUCRO, ANO_ATUAL))  # ex: 2021..2025
-    anos_zip = [a + 1 for a in anos_exercicio]  # DFP entregue no ano seguinte ao exercício
+    # Últimos N exercícios já FECHADOS (o ano corrente ainda não fechou, então
+    # não teria DFP nenhum na prática — ver nota no topo do arquivo).
+    anos_zip = list(range(ANO_ATUAL - ANOS_LUCRO, ANO_ATUAL))  # ex: 2021..2025 se ANO_ATUAL=2026
 
     ticker_cnpj = build_ticker_cnpj_map()
     lucro_por_cnpj = fetch_lucro_liquido_por_cnpj(anos_zip)
