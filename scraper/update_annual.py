@@ -25,7 +25,7 @@ IMPORTANTE — antes do primeiro uso real:
 Os nomes de arquivo/coluna dos datasets da CVM foram confirmados via
 documentação oficial, exemplos públicos e por uma execução real do
 script. O nº total de ações e as ações em tesouraria vêm juntos do
-arquivo 'capital_social' dentro do próprio DFP (a antiga fonte prevista
+arquivo 'composicao_capital' dentro do próprio DFP (a antiga fonte prevista
 no FRE foi descontinuada pela CVM em 2016).
 
 CONVENÇÃO DE ANO DO ZIP (confirmado observando o histórico de tamanhos
@@ -49,6 +49,17 @@ from datetime import datetime, timezone
 
 import pandas as pd
 import requests
+
+# dados.cvm.gov.br responde com endereço IPv6, e alguns runners do GitHub
+# Actions têm rota IPv6 quebrada pra esse destino (dá "Network is
+# unreachable" mesmo com o site no ar). Força tudo a resolver só em IPv4.
+import socket
+import urllib3.util.connection as _urllib3_cn
+
+def _allowed_gai_family():
+    return socket.AF_INET
+
+_urllib3_cn.allowed_gai_family = _allowed_gai_family
 
 HEADERS = {
     "User-Agent": (
@@ -199,7 +210,7 @@ def fetch_lucro_liquido_por_cnpj(anos_zip):
 # 3) Número total de ações e ações em tesouraria — mesmo arquivo
 # --------------------------------------------------------------------------
 def fetch_capital_por_cnpj():
-    """O arquivo 'capital_social' do DFP já traz total de ações E ações em
+    """O arquivo 'composicao_capital' do DFP já traz total de ações E ações em
     tesouraria juntos (colunas qt_acao_total_cap_integr / qt_acao_total_tesouro).
     Não existe mais um arquivo de tesouraria separado no FRE — esse item foi
     descontinuado pela CVM em 2016."""
@@ -215,7 +226,7 @@ def fetch_capital_por_cnpj():
         print("  aviso: não consegui baixar o DFP para composição do capital.", file=sys.stderr)
         return {}
 
-    df = _read_csv_from_zip(zf, "capital_social")
+    df = _read_csv_from_zip(zf, "composicao_capital")
     if df is None:
         print(
             "  AVISO: não achei o arquivo de composição do capital dentro do zip. "
