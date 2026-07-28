@@ -1,0 +1,30 @@
+name: Atualizar dados anuais (CVM)
+
+on:
+  schedule:
+    # Roda às 12:00 UTC no dia 1º de janeiro, maio e setembro — a cada 4 meses.
+    - cron: '0 12 1 1,5,9 *'
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar dependências
+        run: pip install -r scraper/requirements.txt
+      - name: Rodar scraper anual (CVM)
+        run: python scraper/update_annual.py
+      - name: Commitar e enviar alterações (só se algo mudou)
+        run: |
+          git config user.name "Carteira Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/anuais.json
+          git diff --staged --quiet || git commit -m "Atualiza dados anuais $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
