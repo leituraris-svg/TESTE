@@ -292,12 +292,20 @@ def main():
         tickers_ativos = set(ticker_cnpj.keys())  # fallback: todo mundo mapeado
 
     saida = {}
-    for tk in tickers_ativos:
+    sem_cnpj = []          # ticker não achado no mapa FCA (código de negociação não bateu)
+    cnpj_sem_lucro = []    # tem CNPJ, mas nenhum ano de Lucro Líquido encontrado no DRE_con
+    cnpj_sem_capital = []  # tem CNPJ, mas não achou linha na composição do capital
+    for tk in sorted(tickers_ativos):
         cnpj = ticker_cnpj.get(tk)
         if not cnpj:
+            sem_cnpj.append(tk)
             continue
         lucro_anos = lucro_por_cnpj.get(cnpj)
         capital = capital_por_cnpj.get(cnpj)
+        if not lucro_anos:
+            cnpj_sem_lucro.append(tk)
+        if not capital:
+            cnpj_sem_capital.append(tk)
 
         if not lucro_anos and not capital:
             continue  # nada de novo pra essa empresa, não polui o JSON
@@ -327,6 +335,14 @@ def main():
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f"Salvo em {OUT_PATH} — {len(saida)} empresas.")
+
+    # Diagnóstico: por que cada ticker da carteira que ficou de fora ficou de fora.
+    if sem_cnpj:
+        print(f"\n{len(sem_cnpj)} tickers sem CNPJ mapeado no FCA (não entraram em nada): {sem_cnpj}")
+    if cnpj_sem_lucro:
+        print(f"{len(cnpj_sem_lucro)} tickers com CNPJ mas sem Lucro Líquido encontrado no DRE_con: {cnpj_sem_lucro}")
+    if cnpj_sem_capital:
+        print(f"{len(cnpj_sem_capital)} tickers com CNPJ mas sem composição do capital: {cnpj_sem_capital}")
 
 
 if __name__ == "__main__":
