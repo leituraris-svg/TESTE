@@ -123,42 +123,68 @@ def _read_csv_from_zip(zf, name_contains):
 # --------------------------------------------------------------------------
 # 1) Mapeamento ticker (B3) -> CNPJ da companhia
 # --------------------------------------------------------------------------
-def build_ticker_cnpj_map():
-    """A CVM identifica empresas por CNPJ/código CVM, não por ticker. O
-    Formulário Cadastral (FCA) tem o arquivo 'valor_mobiliario', que lista
-    o código de negociação de cada classe de ação por empresa."""
-    print("Baixando FCA (cadastro) para montar mapa ticker -> CNPJ...")
-    zf = _download_zip(f"{CVM_FCA_BASE}/fca_cia_aberta_{ANO_ATUAL}.zip")
-    if zf is None:
-        # No início do ano, o FCA do ano corrente pode ainda não ter sido
-        # entregue por ninguém; tenta o ano anterior.
-        zf = _download_zip(f"{CVM_FCA_BASE}/fca_cia_aberta_{ANO_ATUAL - 1}.zip")
-    if zf is None:
-        raise RuntimeError("Não foi possível baixar o FCA para montar o mapa de tickers.")
-
+def _parse_fca_valor_mobiliario(zf):
     df = _read_csv_from_zip(zf, "valor_mobiliario")
     if df is None:
-        raise RuntimeError(
-            "Arquivo 'valor_mobiliario' não encontrado dentro do FCA. "
-            f"Conteúdo do zip: {zf.namelist()}"
-        )
-
+        return None
     df.columns = [_norm(c) for c in df.columns]
     col_ticker = next((c for c in df.columns if "codigo_negociacao" in c), None)
     col_cnpj = next((c for c in df.columns if c == "cnpj_cia" or "cnpj" in c), None)
     if not col_ticker or not col_cnpj:
-        raise RuntimeError(
-            "Não achei as colunas de ticker/CNPJ no FCA. "
-            f"Colunas disponíveis: {list(df.columns)}"
-        )
+        print(f"  aviso: colunas de ticker/CNPJ não reconhecidas no FCA. "
+              f"Colunas: {list(df.columns)}", file=sys.stderr)
+        return None
+    df["_TK"] = df[col_ticker].astype(str).str.strip().str.upper()
+    df["_CNPJ"] = df[col_cnpj].astype(str).str.strip()
+    return df[["_TK", "_CNPJ"]]
 
+
+def build_ticker_cnpj_map(tickers_alvo=None):
+    """A CVM identifica empresas por CNPJ/código CVM, não por ticker. O
+    Formulário Cadastral (FCA) tem o arquivo 'valor_mobiliario', que lista
+    o código de negociação de cada classe de ação por empresa.
+
+    Funde os FCAs do ano atual E do ano anterior (união, ano atual tem
+    prioridade em caso de conflito) — empresas que ainda não reenviaram o
+    FCA deste ano continuam aparecendo com o dado do ano passado.
+
+    Se `tickers_alvo` for passado, imprime um diagnóstico pra cada ticker
+    dessa lista que não for encontrado: mostra linhas do FCA cujo código
+    começa com as mesmas 4 letras, pra revelar problema de formatação
+    (sufixo, espaço etc.) em vez de simplesmente dizer "não achei"."""
+    print("Baixando FCA (cadastro) para montar mapa ticker -> CNPJ...")
+    frames = []
+    for ano in (ANO_ATUAL, ANO_ATUAL - 1):
+        zf = _download_zip(f"{CVM_FCA_BASE}/fca_cia_aberta_{ano}.zip")
+        if zf is None:
+            continue
+        parsed = _parse_fca_valor_mobiliario(zf)
+        if parsed is not None:
+            frames.append((ano, parsed))
+    if not frames:
+        raise RuntimeError("Não foi possível baixar/ler nenhum FCA para montar o mapa de tickers.")
+
+    # Funde do ano mais antigo pro mais novo, assim o mais novo sobrescreve.
+    frames.sort(key=lambda x: x[0])
     mapping = {}
-    for _, row in df.iterrows():
-        tk = str(row.get(col_ticker) or "").strip().upper()
-        cnpj = str(row.get(col_cnpj) or "").strip()
-        if tk and tk != "NAN" and cnpj and cnpj != "NAN":
-            mapping[tk] = cnpj
-    print(f"  {len(mapping)} tickers mapeados para CNPJ.")
+    for _, parsed in frames:
+        for tk, cnpj in zip(parsed["_TK"], parsed["_CNPJ"]):
+            if tk and tk != "NAN" and cnpj and cnpj != "NAN":
+                mapping[tk] = cnpj
+    print(f"  {len(mapping)} tickers mapeados para CNPJ (usando {len(frames)} ano(s) de FCA).")
+
+    if tickers_alvo:
+        faltando = [tk for tk in tickers_alvo if tk not in mapping]
+        if faltando:
+            todo_df = pd.concat([p for _, p in frames], ignore_index=True)
+            print(f"\n  Diagnóstico dos {len(faltando)} tickers ainda sem CNPJ:")
+            for tk in faltando:
+                raiz = tk[:4]
+                parecidos = sorted(set(todo_df.loc[todo_df["_TK"].str.startswith(raiz), "_TK"]))
+                if parecidos:
+                    print(f"    {tk}: não achei exato, mas o FCA tem parecidos: {parecidos}")
+                else:
+                    print(f"    {tk}: nenhuma linha no FCA começa nem com '{raiz}'")
     return mapping
 
 
@@ -337,14 +363,17 @@ def main():
     # não teria DFP nenhum na prática — ver nota no topo do arquivo).
     anos_zip = list(range(ANO_ATUAL - ANOS_LUCRO, ANO_ATUAL))  # ex: 2021..2025 se ANO_ATUAL=2026
 
-    ticker_cnpj = build_ticker_cnpj_map()
-    lucro_por_cnpj = fetch_lucro_liquido_por_cnpj(anos_zip)
-    capital_por_cnpj = fetch_capital_por_cnpj()
-
     try:
         with open(COTACOES_PATH, "r", encoding="utf-8") as f:
             tickers_ativos = set(json.load(f).get("acoes", {}).keys())
     except Exception:
+        tickers_ativos = None  # define depois de ter o mapa, como fallback
+
+    ticker_cnpj = build_ticker_cnpj_map(tickers_alvo=tickers_ativos)
+    lucro_por_cnpj = fetch_lucro_liquido_por_cnpj(anos_zip)
+    capital_por_cnpj = fetch_capital_por_cnpj()
+
+    if tickers_ativos is None:
         tickers_ativos = set(ticker_cnpj.keys())  # fallback: todo mundo mapeado
 
     saida = {}
