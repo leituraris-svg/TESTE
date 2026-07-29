@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-07-29T18:38:38+00:00",
+  "atualizado_em": "2026-07-29T18:56:01+00:00",
   "fonte": "CVM - dados.cvm.gov.br (DFP + FRE)",
   "dados": {
     "AALR3": {
@@ -748,6 +748,42 @@
       "acoesTotal": 260509778.0,
       "acoesTesouraria": 0.0,
       "acoesExTesouraria": 260509778.0
+    },
+    "BPAC11": {
+      "lucroLiquidoAnos": {
+        "2021": 7064470.0,
+        "2022": 8020194.0,
+        "2023": 10254760.0,
+        "2024": 11080445.0,
+        "2025": 16663803.0
+      },
+      "acoesTotal": 11670063466.0,
+      "acoesTesouraria": 82408800.0,
+      "acoesExTesouraria": 11587654666.0
+    },
+    "BPAC3": {
+      "lucroLiquidoAnos": {
+        "2021": 7064470.0,
+        "2022": 8020194.0,
+        "2023": 10254760.0,
+        "2024": 11080445.0,
+        "2025": 16663803.0
+      },
+      "acoesTotal": 11670063466.0,
+      "acoesTesouraria": 82408800.0,
+      "acoesExTesouraria": 11587654666.0
+    },
+    "BPAC5": {
+      "lucroLiquidoAnos": {
+        "2021": 7064470.0,
+        "2022": 8020194.0,
+        "2023": 10254760.0,
+        "2024": 11080445.0,
+        "2025": 16663803.0
+      },
+      "acoesTotal": 11670063466.0,
+      "acoesTesouraria": 82408800.0,
+      "acoesExTesouraria": 11587654666.0
     },
     "BRAP3": {
       "lucroLiquidoAnos": {
