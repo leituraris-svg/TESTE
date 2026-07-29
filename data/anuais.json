@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-07-29T02:21:48+00:00",
+  "atualizado_em": "2026-07-29T02:30:04+00:00",
   "fonte": "CVM - dados.cvm.gov.br (DFP + FRE)",
   "dados": {
     "AALR3": {
@@ -215,6 +215,18 @@
       "acoesTotal": 346494097.0,
       "acoesTesouraria": 93898.0,
       "acoesExTesouraria": 346400199.0
+    },
+    "ARND3": {
+      "lucroLiquidoAnos": {
+        "2021": -41004.0,
+        "2022": -15843.0,
+        "2023": 3687.0,
+        "2024": 33665.0,
+        "2025": -459708.0
+      },
+      "acoesTotal": 140991806.0,
+      "acoesTesouraria": 191719.0,
+      "acoesExTesouraria": 140800087.0
     },
     "ASAI3": {
       "lucroLiquidoAnos": {
@@ -1278,6 +1290,22 @@
       "acoesTotal": 6205.0,
       "acoesTesouraria": 0.0,
       "acoesExTesouraria": 6205.0
+    },
+    "CTSA3": {
+      "lucroLiquidoAnos": {
+        "2021": 27107.0,
+        "2022": 6185.0,
+        "2023": -94606.0,
+        "2024": -161364.0
+      }
+    },
+    "CTSA4": {
+      "lucroLiquidoAnos": {
+        "2021": 27107.0,
+        "2022": 6185.0,
+        "2023": -94606.0,
+        "2024": -161364.0
+      }
     },
     "CURY3": {
       "lucroLiquidoAnos": {
