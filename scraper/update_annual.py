@@ -165,76 +165,100 @@ def build_ticker_cnpj_map():
 # --------------------------------------------------------------------------
 # 2) Lucro Líquido Consolidado — últimos N anos
 # --------------------------------------------------------------------------
-def fetch_lucro_liquido_por_cnpj(anos_zip):
-    """Retorna {cnpj: {ano: valor}} com o Lucro/Prejuízo Consolidado do
-    Período de cada ano, lendo direto da DRE consolidada de cada DFP.
+def _extrair_lucro_liquido(df):
+    """Recebe o DataFrame de uma DRE (consolidada ou individual) já com
+    ORDEM_EXERC=='ÚLTIMO' filtrado e devolve {cnpj: valor} do Lucro Líquido
+    do período, tentando primeiro pelo código de conta padrão e, pra quem
+    não aparecer, pela descrição da conta (mais no fundo da hierarquia)."""
+    df = df.copy()
+    df["CD_CONTA"] = df["CD_CONTA"].astype(str).str.strip()
+    df["DS_CONTA_NORM"] = df["DS_CONTA"].map(_norm)
+    df["VL_CONTA_NUM"] = pd.to_numeric(df["VL_CONTA"], errors="coerce")
+    df["CNPJ_NORM"] = df["CNPJ_CIA"].astype(str).str.strip()
 
-    Bancos, seguradoras e concessionárias costumam usar um plano de contas
-    um pouco diferente das empresas "normais" (o código da linha de Lucro
-    Líquido não é necessariamente 3.11/3.09). Por isso, além da busca
-    padrão por código, há um fallback que procura pela DESCRIÇÃO da conta
-    pra quem não foi encontrado no passo padrão."""
+    mask_padrao = (
+        df["CD_CONTA"].isin(CODIGOS_LUCRO_LIQUIDO)
+        & (df["DS_CONTA_NORM"].str.contains("lucro") | df["DS_CONTA_NORM"].str.contains("prejuizo"))
+    )
+    achados = {}
+    for _, row in df[mask_padrao].iterrows():
+        valor = row["VL_CONTA_NUM"]
+        if pd.notna(valor):
+            achados[row["CNPJ_NORM"]] = float(valor)
+    n_padrao = len(achados)
+
+    faltando = set(df["CNPJ_NORM"]) - set(achados.keys())
+    if faltando:
+        candidatos = df[
+            df["CNPJ_NORM"].isin(faltando)
+            & df["CD_CONTA"].str.startswith("3.")
+            & (
+                df["DS_CONTA_NORM"].str.contains("lucro liquido")
+                | df["DS_CONTA_NORM"].str.contains("prejuizo liquido")
+                | df["DS_CONTA_NORM"].str.contains("lucro/prejuizo")
+                | df["DS_CONTA_NORM"].str.contains("resultado liquido")
+            )
+        ].copy()
+        if len(candidatos):
+            candidatos["_profundidade"] = candidatos["CD_CONTA"].str.count(r"\.")
+            candidatos = candidatos.sort_values(["CNPJ_NORM", "_profundidade", "CD_CONTA"])
+            for cnpj, grupo in candidatos.groupby("CNPJ_NORM"):
+                valor = grupo.iloc[-1]["VL_CONTA_NUM"]
+                if pd.notna(valor):
+                    achados[cnpj] = float(valor)
+    n_fallback = len(achados) - n_padrao
+    return achados, n_padrao, n_fallback
+
+
+def fetch_lucro_liquido_por_cnpj(anos_zip):
+    """Retorna {cnpj: {ano: valor}} com o Lucro Líquido do Período de cada
+    ano, lendo a DRE de cada DFP.
+
+    Prioriza a DRE CONSOLIDADA (grupo econômico todo). Empresas sem
+    subsidiárias (comum em bancos regionais e concessionárias pequenas)
+    costumam só entregar a DRE INDIVIDUAL — pra essas, usamos a individual
+    como fallback (que, sem subsidiária pra consolidar, é essencialmente
+    o mesmo número)."""
     resultado = {}
     for ano_zip in anos_zip:
-        print(f"Baixando DFP {ano_zip} (DRE consolidada)...")
+        print(f"Baixando DFP {ano_zip} (DRE)...")
         zf = _download_zip(f"{CVM_DFP_BASE}/dfp_cia_aberta_{ano_zip}.zip")
         if zf is None:
             continue
-        df = _read_csv_from_zip(zf, "DRE_con")
-        if df is None:
-            print(f"  aviso: DRE_con não encontrada no DFP {ano_zip}. "
+
+        df_con = _read_csv_from_zip(zf, "DRE_con")
+        ultimo_con = None
+        if df_con is not None:
+            df_con["ORDEM_NORM"] = df_con["ORDEM_EXERC"].astype(str).str.strip().str.upper()
+            ultimo_con = df_con[df_con["ORDEM_NORM"] == "ÚLTIMO"]
+
+        achados, n_padrao, n_fallback = ({}, 0, 0)
+        if ultimo_con is not None and len(ultimo_con):
+            achados, n_padrao, n_fallback = _extrair_lucro_liquido(ultimo_con)
+
+        # Fallback: DRE individual, só pra quem não veio na consolidada.
+        n_individual = 0
+        df_ind = _read_csv_from_zip(zf, "DRE_ind")
+        if df_ind is not None:
+            df_ind["ORDEM_NORM"] = df_ind["ORDEM_EXERC"].astype(str).str.strip().str.upper()
+            ultimo_ind = df_ind[df_ind["ORDEM_NORM"] == "ÚLTIMO"]
+            ultimo_ind = ultimo_ind[~ultimo_ind["CNPJ_CIA"].astype(str).str.strip().isin(achados.keys())]
+            if len(ultimo_ind):
+                achados_ind, _, _ = _extrair_lucro_liquido(ultimo_ind)
+                n_individual = len(achados_ind)
+                achados.update(achados_ind)
+
+        if not achados:
+            print(f"  aviso: nenhuma DRE utilizável no DFP {ano_zip}. "
                   f"Conteúdo: {zf.namelist()}", file=sys.stderr)
             continue
-
-        df["CD_CONTA"] = df["CD_CONTA"].astype(str).str.strip()
-        df["DS_CONTA_NORM"] = df["DS_CONTA"].map(_norm)
-        df["VL_CONTA_NUM"] = pd.to_numeric(df["VL_CONTA"], errors="coerce")
-        df["ORDEM_NORM"] = df["ORDEM_EXERC"].astype(str).str.strip().str.upper()
-        ultimo = df[df["ORDEM_NORM"] == "ÚLTIMO"].copy()
-        ultimo["CNPJ_NORM"] = ultimo["CNPJ_CIA"].astype(str).str.strip()
-
-        # Passo 1 (padrão): código de conta conhecido.
-        mask_padrao = (
-            ultimo["CD_CONTA"].isin(CODIGOS_LUCRO_LIQUIDO)
-            & (ultimo["DS_CONTA_NORM"].str.contains("lucro") | ultimo["DS_CONTA_NORM"].str.contains("prejuizo"))
-        )
-        achados = {}
-        for _, row in ultimo[mask_padrao].iterrows():
-            valor = row["VL_CONTA_NUM"]
-            if pd.notna(valor):
-                achados[row["CNPJ_NORM"]] = float(valor)
-        n_padrao = len(achados)
-
-        # Passo 2 (fallback): quem não apareceu no passo 1 — busca pela
-        # descrição da conta (independente do código), pegando a linha mais
-        # "no fundo" da hierarquia (maior nº de níveis no código, ex: 3.1.2
-        # é mais profundo que 3.1) — que costuma ser o resultado final.
-        faltando = set(ultimo["CNPJ_NORM"]) - set(achados.keys())
-        if faltando:
-            candidatos = ultimo[
-                ultimo["CNPJ_NORM"].isin(faltando)
-                & ultimo["CD_CONTA"].str.startswith("3.")
-                & (
-                    ultimo["DS_CONTA_NORM"].str.contains("lucro liquido")
-                    | ultimo["DS_CONTA_NORM"].str.contains("prejuizo liquido")
-                    | ultimo["DS_CONTA_NORM"].str.contains("lucro/prejuizo")
-                    | ultimo["DS_CONTA_NORM"].str.contains("resultado liquido")
-                )
-            ].copy()
-            if len(candidatos):
-                candidatos["_profundidade"] = candidatos["CD_CONTA"].str.count(r"\.")
-                candidatos = candidatos.sort_values(["CNPJ_NORM", "_profundidade", "CD_CONTA"])
-                for cnpj, grupo in candidatos.groupby("CNPJ_NORM"):
-                    valor = grupo.iloc[-1]["VL_CONTA_NUM"]  # última = mais profunda = mais específica
-                    if pd.notna(valor):
-                        achados[cnpj] = float(valor)
-        n_fallback = len(achados) - n_padrao
 
         ano_exercicio = ano_zip  # o nome do zip já É o ano do exercício (ver nota no topo do arquivo)
         for cnpj, valor in achados.items():
             resultado.setdefault(cnpj, {})[str(ano_exercicio)] = valor
         print(f"  {len(achados)} empresas com Lucro Líquido {ano_exercicio} encontradas "
-              f"({n_padrao} padrão + {n_fallback} via descrição da conta).")
+              f"({n_padrao} padrão + {n_fallback} via descrição, consolidado; "
+              f"{n_individual} via DRE individual).")
     return resultado
 
 
