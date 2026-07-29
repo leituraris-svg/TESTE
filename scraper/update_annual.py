@@ -156,15 +156,23 @@ def _parse_fca_valor_mobiliario(zf):
     return df[["_TK", "_CNPJ"]]
 
 
+# Abreviações comuns nos nomes que o Fundamentus usa, que o cadastro oficial
+# da CVM escreve por extenso. Só as inequívocas (sem risco de trocar o
+# sentido), pra não arriscar casar empresa errada.
+_ABREV_EMPRESA = {"BCO": "BANCO", "CIA": "COMPANHIA"}
+
+
 def _norm_company_name(s):
     """Normaliza nome de empresa pra comparação: sem acento, maiúsculas,
-    sem pontuação, sem sufixos societários comuns (S.A., S/A, ON, PN...)."""
+    sem pontuação, sem sufixos societários comuns (S.A., S/A, ON, PN...),
+    com abreviações comuns expandidas (BCO -> BANCO etc)."""
     s = _norm(s).upper()
     for lixo in (" S.A.", " S/A", " SA", " ON", " PN", " N1", " N2", " NM", "."):
         s = s.replace(lixo.upper(), " ")
     s = re.sub(r"[^A-Z0-9 ]", " ", s)
     s = re.sub(r"\s+", " ", s).strip()
-    return s
+    palavras = [_ABREV_EMPRESA.get(p, p) for p in s.split()]
+    return " ".join(palavras)
 
 
 def fetch_cvm_company_names():
