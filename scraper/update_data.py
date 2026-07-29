@@ -7,6 +7,7 @@ do Fundamentus (resultado.php e fii_resultado.php).
 Só faz 2 requisições no total (uma para ações, outra para FIIs) — não é
 scraping ticker a ticker. Feito para rodar 1x/dia via GitHub Actions.
 """
+
 import json
 import sys
 import time
@@ -28,14 +29,24 @@ HEADERS = {
 URL_ACOES = "https://www.fundamentus.com.br/resultado.php"
 URL_FIIS = "https://www.fundamentus.com.br/fii_resultado.php"
 NAMES_URL = "https://brapi.dev/api/quote/list"  # nome das empresas (best-effort)
-
 OUT_PATH = "data/cotacoes.json"
+
+# Guarda de sanidade: a B3 tem hoje algo entre ~400-480 ações e ~380-450 FIIs
+# ativos, então 300 é um piso alto o bastante pra pegar um scraping quebrado
+# (ex: paginação cortada, tabela carregada pela metade), mas baixo o
+# suficiente pra não disparar falso positivo em oscilação normal.
+MIN_ACOES_ESPERADO = 300
+MIN_FIIS_ESPERADO = 300
 
 
 def fetch_names():
     """Busca o nome de cada empresa/fundo via brapi.dev. Isso é 'melhor esforço':
     se o endpoint mudar, exigir chave, ou cair, simplesmente seguimos sem nomes
-    (o app usa só o ticker nesse caso) — não deve travar o robô."""
+    (o app usa só o ticker nesse caso) — não deve travar o robô.
+
+    Observação: pra FIIs, esse endpoint costuma devolver o próprio ticker
+    como "nome" (não tem o nome comercial do fundo) — é uma limitação da
+    fonte, não um bug daqui. Pra ações costuma vir o nome de verdade."""
     try:
         r = requests.get(NAMES_URL, headers=HEADERS, timeout=20)
         r.raise_for_status()
@@ -128,6 +139,7 @@ def build_acoes(rows, names=None):
         tk = row.get("papel", "").strip().upper()
         if not tk:
             continue
+
         preco = parse_br_number(row.get("cotacao"))
         pl = parse_br_number(row.get("p/l"))
         pvp = parse_br_number(row.get("p/vp"))
@@ -147,8 +159,15 @@ def build_acoes(rows, names=None):
 
         # Fundamentus não publica LPA/VPA direto nessa tabela, mas dá pra
         # derivar a partir de Cotação/P-L e Cotação/P-VP.
-        lpa = (preco / pl) if (preco and pl and pl > 0) else None
-        vpa = (preco / pvp) if (preco and pvp and pvp > 0) else None
+        #
+        # IMPORTANTE: usamos "pl not in (None, 0)" e não "pl > 0" de propósito.
+        # P/L negativo é o que a empresa tem QUANDO está com prejuízo — nesse
+        # caso, Preço/P_L ainda é uma conta válida e dá um LPA negativo (o
+        # sinal certo, que é justamente o alerta de risco que importa mostrar).
+        # Se a gente exigisse pl > 0, LPA de empresa com prejuízo vira None,
+        # ficando indistinguível de "essa métrica não está disponível".
+        lpa = (preco / pl) if (preco and pl not in (None, 0)) else None
+        vpa = (preco / pvp) if (preco and pvp not in (None, 0)) else None
 
         out[tk] = {
             "preco": preco,
@@ -165,6 +184,7 @@ def build_acoes(rows, names=None):
             "liq_2m": liq2m,
             "nome": names.get(tk),
         }
+
     print(f"  {skipped} ações descartadas (sem cotação/liquidez recente).")
     return out
 
@@ -177,6 +197,7 @@ def build_fiis(rows, names=None):
         tk = row.get("papel", "").strip().upper()
         if not tk:
             continue
+
         preco = parse_br_number(row.get("cotacao"))
         pvp = parse_br_number(row.get("p/vp"))
         dy = parse_br_number(row.get("dividend yield"))
@@ -189,7 +210,11 @@ def build_fiis(rows, names=None):
             skipped += 1
             continue
 
-        vpa = (preco / pvp) if (preco and pvp and pvp > 0) else None
+        # Mesmo raciocínio do build_acoes: P/VP negativo (patrimônio líquido
+        # negativo) ainda dá um VPA válido (negativo), que é o sinal de risco
+        # que interessa preservar — em vez de virar None e se confundir com
+        # "métrica indisponível".
+        vpa = (preco / pvp) if (preco and pvp not in (None, 0)) else None
 
         out[tk] = {
             "preco": preco,
@@ -202,6 +227,7 @@ def build_fiis(rows, names=None):
             "liq_2m": liquidez,
             "nome": names.get(tk),
         }
+
     print(f"  {skipped} FIIs descartados (sem cotação/liquidez recente).")
     return out
 
@@ -221,12 +247,13 @@ def main():
     fiis = build_fiis(rows_fiis, names)
     print(f"  {len(fiis)} FIIs processados.")
 
-    if len(acoes) < 50 or len(fiis) < 50:
+    if len(acoes) < MIN_ACOES_ESPERADO or len(fiis) < MIN_FIIS_ESPERADO:
         # Guarda de sanidade: se vier muito pouca coisa, o site provavelmente
         # mudou o layout ou bloqueou a requisição — melhor não sobrescrever
         # o JSON bom que já está no repositório com um resultado quebrado.
         raise RuntimeError(
-            f"Resultado suspeito (ações={len(acoes)}, fiis={len(fiis)}). "
+            f"Resultado suspeito (ações={len(acoes)}, esperado >= {MIN_ACOES_ESPERADO}; "
+            f"fiis={len(fiis)}, esperado >= {MIN_FIIS_ESPERADO}). "
             "Abortando para não sobrescrever dados válidos."
         )
 
@@ -235,7 +262,6 @@ def main():
         "acoes": acoes,
         "fiis": fiis,
     }
-
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f"Salvo em {OUT_PATH} — {len(acoes)} ações + {len(fiis)} FIIs.")
