@@ -302,15 +302,32 @@ def build_ticker_cnpj_map(tickers_alvo=None, nomes_por_ticker=None):
 # --------------------------------------------------------------------------
 # 2) Lucro Líquido Consolidado — últimos N anos
 # --------------------------------------------------------------------------
+def _escala_para_reais(df):
+    """Devolve um multiplicador por linha pra converter VL_CONTA em REAIS
+    CHEIOS, baseado na coluna ESCALA_MOEDA da CVM ('MIL' ou 'UNIDADE').
+
+    A maioria das empresas reporta em MIL, mas nem todas — aplicar um x1000
+    fixo pra todo mundo inflaria em 1000x quem reporta em UNIDADE, de forma
+    silenciosa (sem erro nenhum). Por isso lemos a escala linha a linha."""
+    col = next((c for c in df.columns if c.upper() == "ESCALA_MOEDA"), None)
+    if col is None:
+        # Coluna ausente nessa versão do arquivo: assume MIL (padrão CVM),
+        # mas sem confirmação linha a linha.
+        return pd.Series(1000.0, index=df.index)
+    escala = df[col].astype(str).str.strip().str.upper()
+    return escala.map({"MIL": 1000.0, "UNIDADE": 1.0}).fillna(1000.0)
+
+
 def _extrair_lucro_liquido(df):
     """Recebe o DataFrame de uma DRE (consolidada ou individual) já com
     ORDEM_EXERC=='ÚLTIMO' filtrado e devolve {cnpj: valor} do Lucro Líquido
-    do período, tentando primeiro pelo código de conta padrão e, pra quem
-    não aparecer, pela descrição da conta (mais no fundo da hierarquia)."""
+    do período (em REAIS CHEIOS, já normalizado pela ESCALA_MOEDA), tentando
+    primeiro pelo código de conta padrão e, pra quem não aparecer, pela
+    descrição da conta (mais no fundo da hierarquia)."""
     df = df.copy()
     df["CD_CONTA"] = df["CD_CONTA"].astype(str).str.strip()
     df["DS_CONTA_NORM"] = df["DS_CONTA"].map(_norm)
-    df["VL_CONTA_NUM"] = pd.to_numeric(df["VL_CONTA"], errors="coerce")
+    df["VL_CONTA_NUM"] = pd.to_numeric(df["VL_CONTA"], errors="coerce") * _escala_para_reais(df)
     df["CNPJ_NORM"] = df["CNPJ_CIA"].astype(str).str.strip()
 
     mask_padrao = (
@@ -520,15 +537,27 @@ def main():
             entry["acoesExTesouraria"] = max(total - tesouraria, 0)
         saida[tk] = entry
 
-    if len(saida) < 50:
+    # Guarda de sanidade: com a cobertura atual do pipeline (alias + nome +
+    # DRE individual como fallback), o normal é ficar na faixa de 350-400
+    # empresas. Um valor bem abaixo disso (< 200) é sinal de algo quebrado
+    # no meio do caminho (FCA, DFP, ou fusão dos dois) — melhor abortar do
+    # que sobrescrever o anuais.json bom com um resultado capado.
+    MIN_EMPRESAS_ESPERADO = 200
+    if len(saida) < MIN_EMPRESAS_ESPERADO:
         raise RuntimeError(
-            f"Resultado suspeito (apenas {len(saida)} empresas). "
+            f"Resultado suspeito (apenas {len(saida)} empresas, esperado >= {MIN_EMPRESAS_ESPERADO}). "
             "Abortando para não sobrescrever o data/anuais.json anterior com algo quebrado."
         )
 
     data = {
         "atualizado_em": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "fonte": "CVM - dados.cvm.gov.br (DFP + FRE)",
+        "unidades": {
+            "lucroLiquidoAnos": "reais (R$) cheios — já normalizado pela ESCALA_MOEDA de cada empresa, não em milhares",
+            "acoesTotal": "número de ações (unidades)",
+            "acoesTesouraria": "número de ações (unidades)",
+            "acoesExTesouraria": "número de ações (unidades)",
+        },
         "dados": saida,
     }
     with open(OUT_PATH, "w", encoding="utf-8") as f:
