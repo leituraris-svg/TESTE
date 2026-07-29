@@ -41,6 +41,7 @@ ainda em andamento; (2) pegamos sempre os últimos N anos JÁ FECHADOS
 
 import io
 import json
+import re
 import sys
 import time
 import unicodedata
@@ -70,6 +71,7 @@ HEADERS = {
 
 CVM_DFP_BASE = "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/DFP/DADOS"
 CVM_FCA_BASE = "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/FCA/DADOS"
+CVM_CAD_URL = "https://dados.cvm.gov.br/dados/CIA_ABERTA/CAD/DADOS/cad_cia_aberta.csv"
 
 OUT_PATH = "data/anuais.json"
 COTACOES_PATH = "data/cotacoes.json"  # usado só pra saber quais tickers existem hoje
@@ -123,6 +125,21 @@ def _read_csv_from_zip(zf, name_contains):
 # --------------------------------------------------------------------------
 # 1) Mapeamento ticker (B3) -> CNPJ da companhia
 # --------------------------------------------------------------------------
+# Mesma empresa, ticker de negociação diferente do que está no FCA — confirmado
+# via diagnóstico real (não é chute): a empresa só cadastra a "unit" ou uma
+# classe de ação no FCA, mas Lucro Líquido/capital são dados da empresa toda,
+# então mapear pro CNPJ do "irmão" é exato, não aproximação.
+TICKER_ALIASES = {
+    "KLBN3": "KLBN11", "KLBN4": "KLBN11",   # Klabin: só a unit está no FCA
+    "ALUP3": "ALUP11", "ALUP4": "ALUP11",   # Alupar: idem
+    "MRSA3B": "MRSA3", "MRSA5B": "MRSA5", "MRSA6B": "MRSA6",  # MRS Log.: sufixo "B" a mais
+    "INEP4": "INEP3",     # Inepar: só a classe ON está no FCA
+    "AXIA6": "AXIA3",     # Axia: sufixo de classe diferente
+    "TXRX3": "TXRX4",     # Têxtil Renaux: idem
+    "OBTC3": "OBTC",      # Omega/Brasil Telecom antiga: código sem número no FCA
+}
+
+
 def _parse_fca_valor_mobiliario(zf):
     df = _read_csv_from_zip(zf, "valor_mobiliario")
     if df is None:
@@ -139,7 +156,43 @@ def _parse_fca_valor_mobiliario(zf):
     return df[["_TK", "_CNPJ"]]
 
 
-def build_ticker_cnpj_map(tickers_alvo=None):
+def _norm_company_name(s):
+    """Normaliza nome de empresa pra comparação: sem acento, maiúsculas,
+    sem pontuação, sem sufixos societários comuns (S.A., S/A, ON, PN...)."""
+    s = _norm(s).upper()
+    for lixo in (" S.A.", " S/A", " SA", " ON", " PN", " N1", " N2", " NM", "."):
+        s = s.replace(lixo.upper(), " ")
+    s = re.sub(r"[^A-Z0-9 ]", " ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+
+def fetch_cvm_company_names():
+    """Baixa o cadastro geral de companhias abertas (nome <-> CNPJ). Não é
+    um zip — é um CSV direto."""
+    print("Baixando cadastro geral de companhias (CAD) para tentar por nome...")
+    try:
+        r = requests.get(CVM_CAD_URL, headers=HEADERS, timeout=90)
+        r.raise_for_status()
+    except Exception as e:  # noqa: BLE001
+        print(f"  aviso: não consegui baixar o CAD ({e}). Pulando fallback por nome.", file=sys.stderr)
+        return None
+    df = pd.read_csv(io.BytesIO(r.content), sep=";", encoding="latin-1", dtype=str)
+    df.columns = [_norm(c) for c in df.columns]
+    col_cnpj = next((c for c in df.columns if "cnpj" in c), None)
+    col_nome = next((c for c in df.columns if "denom_social" in c), None)
+    col_nome2 = next((c for c in df.columns if "denom_comerc" in c), None)
+    if not col_cnpj or not col_nome:
+        print(f"  aviso: colunas do CAD não reconhecidas. Colunas: {list(df.columns)}", file=sys.stderr)
+        return None
+    df["_CNPJ"] = df[col_cnpj].astype(str).str.strip()
+    df["_NOME_NORM"] = df[col_nome].map(_norm_company_name)
+    if col_nome2:
+        df["_NOME2_NORM"] = df[col_nome2].map(_norm_company_name)
+    return df
+
+
+def build_ticker_cnpj_map(tickers_alvo=None, nomes_por_ticker=None):
     """A CVM identifica empresas por CNPJ/código CVM, não por ticker. O
     Formulário Cadastral (FCA) tem o arquivo 'valor_mobiliario', que lista
     o código de negociação de cada classe de ação por empresa.
@@ -148,10 +201,11 @@ def build_ticker_cnpj_map(tickers_alvo=None):
     prioridade em caso de conflito) — empresas que ainda não reenviaram o
     FCA deste ano continuam aparecendo com o dado do ano passado.
 
-    Se `tickers_alvo` for passado, imprime um diagnóstico pra cada ticker
-    dessa lista que não for encontrado: mostra linhas do FCA cujo código
-    começa com as mesmas 4 letras, pra revelar problema de formatação
-    (sufixo, espaço etc.) em vez de simplesmente dizer "não achei"."""
+    Depois aplica TICKER_ALIASES (mesma empresa, ticker diferente, já
+    confirmado por diagnóstico real) e, pra quem ainda faltar, tenta casar
+    pelo NOME da empresa (cadastro CAD) — só aceita automaticamente se o
+    nome bater com alta confiança; o resto fica listado pra revisão manual.
+    """
     print("Baixando FCA (cadastro) para montar mapa ticker -> CNPJ...")
     frames = []
     for ano in (ANO_ATUAL, ANO_ATUAL - 1):
@@ -173,6 +227,53 @@ def build_ticker_cnpj_map(tickers_alvo=None):
                 mapping[tk] = cnpj
     print(f"  {len(mapping)} tickers mapeados para CNPJ (usando {len(frames)} ano(s) de FCA).")
 
+    # Aplica os aliases confirmados (mesma empresa, outro ticker no FCA).
+    n_alias = 0
+    for tk, tk_origem in TICKER_ALIASES.items():
+        if tk not in mapping and tk_origem in mapping:
+            mapping[tk] = mapping[tk_origem]
+            n_alias += 1
+    if n_alias:
+        print(f"  +{n_alias} tickers resolvidos via alias (mesma empresa, ticker-irmão no FCA).")
+
+    # Fallback por nome, só pra quem ainda não tem CNPJ.
+    if tickers_alvo and nomes_por_ticker:
+        ainda_faltando = [tk for tk in tickers_alvo if tk not in mapping and nomes_por_ticker.get(tk)]
+        if ainda_faltando:
+            cad = fetch_cvm_company_names()
+            if cad is not None:
+                n_nome = 0
+                duvidosos = []
+                for tk in ainda_faltando:
+                    alvo = _norm_company_name(nomes_por_ticker[tk])
+                    if not alvo:
+                        continue
+                    alvo_tokens = set(alvo.split())
+                    # match exato do nome normalizado primeiro
+                    exato = cad[(cad["_NOME_NORM"] == alvo) | (cad.get("_NOME2_NORM", "") == alvo)]
+                    if len(exato) == 1:
+                        mapping[tk] = exato.iloc[0]["_CNPJ"]
+                        n_nome += 1
+                        continue
+                    # senão, empresa cujo nome contém TODAS as palavras do nome
+                    # do ticker (ou vice-versa) — só aceita se for candidato único
+                    def bate(row_nome):
+                        row_tokens = set(row_nome.split())
+                        return alvo_tokens and (alvo_tokens <= row_tokens or row_tokens <= alvo_tokens)
+                    candidatos = cad[cad["_NOME_NORM"].map(bate)]
+                    cnpjs_unicos = candidatos["_CNPJ"].unique()
+                    if len(cnpjs_unicos) == 1:
+                        mapping[tk] = cnpjs_unicos[0]
+                        n_nome += 1
+                    elif len(cnpjs_unicos) > 1:
+                        duvidosos.append((tk, nomes_por_ticker[tk], list(candidatos["_NOME_NORM"].unique())[:5]))
+                if n_nome:
+                    print(f"  +{n_nome} tickers resolvidos via nome da empresa (cadastro CAD).")
+                if duvidosos:
+                    print(f"  {len(duvidosos)} tickers com mais de um nome parecido no CAD (não apliquei, ambíguo):")
+                    for tk, nome, opcoes in duvidosos:
+                        print(f"    {tk} (\"{nome}\"): candidatos {opcoes}")
+
     if tickers_alvo:
         faltando = [tk for tk in tickers_alvo if tk not in mapping]
         if faltando:
@@ -181,10 +282,12 @@ def build_ticker_cnpj_map(tickers_alvo=None):
             for tk in faltando:
                 raiz = tk[:4]
                 parecidos = sorted(set(todo_df.loc[todo_df["_TK"].str.startswith(raiz), "_TK"]))
+                nome = (nomes_por_ticker or {}).get(tk, "")
+                extra = f' — nome no cotacoes.json: "{nome}"' if nome else ""
                 if parecidos:
-                    print(f"    {tk}: não achei exato, mas o FCA tem parecidos: {parecidos}")
+                    print(f"    {tk}: não achei exato, mas o FCA tem parecidos: {parecidos}{extra}")
                 else:
-                    print(f"    {tk}: nenhuma linha no FCA começa nem com '{raiz}'")
+                    print(f"    {tk}: nenhuma linha no FCA começa nem com '{raiz}'{extra}")
     return mapping
 
 
@@ -365,11 +468,14 @@ def main():
 
     try:
         with open(COTACOES_PATH, "r", encoding="utf-8") as f:
-            tickers_ativos = set(json.load(f).get("acoes", {}).keys())
+            acoes_cotacoes = json.load(f).get("acoes", {})
+            tickers_ativos = set(acoes_cotacoes.keys())
+            nomes_por_ticker = {tk: d.get("nome") for tk, d in acoes_cotacoes.items() if d.get("nome")}
     except Exception:
         tickers_ativos = None  # define depois de ter o mapa, como fallback
+        nomes_por_ticker = {}
 
-    ticker_cnpj = build_ticker_cnpj_map(tickers_alvo=tickers_ativos)
+    ticker_cnpj = build_ticker_cnpj_map(tickers_alvo=tickers_ativos, nomes_por_ticker=nomes_por_ticker)
     lucro_por_cnpj = fetch_lucro_liquido_por_cnpj(anos_zip)
     capital_por_cnpj = fetch_capital_por_cnpj()
 
