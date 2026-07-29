@@ -167,7 +167,13 @@ def build_ticker_cnpj_map():
 # --------------------------------------------------------------------------
 def fetch_lucro_liquido_por_cnpj(anos_zip):
     """Retorna {cnpj: {ano: valor}} com o Lucro/Prejuízo Consolidado do
-    Período de cada ano, lendo direto da DRE consolidada de cada DFP."""
+    Período de cada ano, lendo direto da DRE consolidada de cada DFP.
+
+    Bancos, seguradoras e concessionárias costumam usar um plano de contas
+    um pouco diferente das empresas "normais" (o código da linha de Lucro
+    Líquido não é necessariamente 3.11/3.09). Por isso, além da busca
+    padrão por código, há um fallback que procura pela DESCRIÇÃO da conta
+    pra quem não foi encontrado no passo padrão."""
     resultado = {}
     for ano_zip in anos_zip:
         print(f"Baixando DFP {ano_zip} (DRE consolidada)...")
@@ -184,25 +190,51 @@ def fetch_lucro_liquido_por_cnpj(anos_zip):
         df["DS_CONTA_NORM"] = df["DS_CONTA"].map(_norm)
         df["VL_CONTA_NUM"] = pd.to_numeric(df["VL_CONTA"], errors="coerce")
         df["ORDEM_NORM"] = df["ORDEM_EXERC"].astype(str).str.strip().str.upper()
+        ultimo = df[df["ORDEM_NORM"] == "ÚLTIMO"].copy()
+        ultimo["CNPJ_NORM"] = ultimo["CNPJ_CIA"].astype(str).str.strip()
 
-        mask = (
-            (df["ORDEM_NORM"] == "ÚLTIMO")
-            & df["CD_CONTA"].isin(CODIGOS_LUCRO_LIQUIDO)
-            & (df["DS_CONTA_NORM"].str.contains("lucro") | df["DS_CONTA_NORM"].str.contains("prejuizo"))
+        # Passo 1 (padrão): código de conta conhecido.
+        mask_padrao = (
+            ultimo["CD_CONTA"].isin(CODIGOS_LUCRO_LIQUIDO)
+            & (ultimo["DS_CONTA_NORM"].str.contains("lucro") | ultimo["DS_CONTA_NORM"].str.contains("prejuizo"))
         )
-        sub = df[mask]
-
-        # o exercício reportado como "ÚLTIMO" no zip do ano X é o ano X-1
-        ano_exercicio = ano_zip  # o nome do zip já É o ano do exercício (ver nota no topo do arquivo)
-        contados = 0
-        for _, row in sub.iterrows():
+        achados = {}
+        for _, row in ultimo[mask_padrao].iterrows():
             valor = row["VL_CONTA_NUM"]
-            if pd.isna(valor):
-                continue
-            cnpj = str(row["CNPJ_CIA"]).strip()
-            resultado.setdefault(cnpj, {})[str(ano_exercicio)] = float(valor)
-            contados += 1
-        print(f"  {contados} empresas com Lucro Líquido {ano_exercicio} encontradas.")
+            if pd.notna(valor):
+                achados[row["CNPJ_NORM"]] = float(valor)
+        n_padrao = len(achados)
+
+        # Passo 2 (fallback): quem não apareceu no passo 1 — busca pela
+        # descrição da conta (independente do código), pegando a linha mais
+        # "no fundo" da hierarquia (maior nº de níveis no código, ex: 3.1.2
+        # é mais profundo que 3.1) — que costuma ser o resultado final.
+        faltando = set(ultimo["CNPJ_NORM"]) - set(achados.keys())
+        if faltando:
+            candidatos = ultimo[
+                ultimo["CNPJ_NORM"].isin(faltando)
+                & ultimo["CD_CONTA"].str.startswith("3.")
+                & (
+                    ultimo["DS_CONTA_NORM"].str.contains("lucro liquido")
+                    | ultimo["DS_CONTA_NORM"].str.contains("prejuizo liquido")
+                    | ultimo["DS_CONTA_NORM"].str.contains("lucro/prejuizo")
+                    | ultimo["DS_CONTA_NORM"].str.contains("resultado liquido")
+                )
+            ].copy()
+            if len(candidatos):
+                candidatos["_profundidade"] = candidatos["CD_CONTA"].str.count(r"\.")
+                candidatos = candidatos.sort_values(["CNPJ_NORM", "_profundidade", "CD_CONTA"])
+                for cnpj, grupo in candidatos.groupby("CNPJ_NORM"):
+                    valor = grupo.iloc[-1]["VL_CONTA_NUM"]  # última = mais profunda = mais específica
+                    if pd.notna(valor):
+                        achados[cnpj] = float(valor)
+        n_fallback = len(achados) - n_padrao
+
+        ano_exercicio = ano_zip  # o nome do zip já É o ano do exercício (ver nota no topo do arquivo)
+        for cnpj, valor in achados.items():
+            resultado.setdefault(cnpj, {})[str(ano_exercicio)] = valor
+        print(f"  {len(achados)} empresas com Lucro Líquido {ano_exercicio} encontradas "
+              f"({n_padrao} padrão + {n_fallback} via descrição da conta).")
     return resultado
 
 
