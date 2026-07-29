@@ -448,6 +448,7 @@ def fetch_capital_por_cnpj():
     df.columns = [_norm(c) for c in df.columns]
     col_cnpj = next((c for c in df.columns if "cnpj" in c), None)
     col_versao = next((c for c in df.columns if c == "versao"), None)
+    col_escala = next((c for c in df.columns if "escala" in c), None)
     col_total = next((c for c in df.columns if "acao" in c and "total" in c and "tesour" not in c), None)
     col_tesouro = next((c for c in df.columns if "acao" in c and "total" in c and "tesour" in c), None)
     col_ordin = next((c for c in df.columns if "acao" in c and "ordin" in c and "tesour" not in c), None)
@@ -458,9 +459,19 @@ def fetch_capital_por_cnpj():
               f"Colunas: {list(df.columns)}", file=sys.stderr)
         return {}
 
+    # Mesmo problema do Lucro Líquido: a CVM pode reportar as quantidades de
+    # ações em MIL em vez de unidades absolutas, dependendo da empresa (foi
+    # o caso da VALE3 — dava 1000x menos ações que o real). Normaliza linha
+    # a linha usando a mesma coluna ESCALA_MOEDA, se existir nesse arquivo.
+    if col_escala:
+        escala = df[col_escala].astype(str).str.strip().str.upper()
+        multiplicador = escala.map({"MIL": 1000.0, "UNIDADE": 1.0}).fillna(1.0)
+    else:
+        multiplicador = pd.Series(1.0, index=df.index)
+
     for c in (col_total, col_tesouro, col_ordin, col_pref):
         if c:
-            df[c] = pd.to_numeric(df[c], errors="coerce")
+            df[c] = pd.to_numeric(df[c], errors="coerce") * multiplicador
 
     # Uma empresa pode ter mais de uma versão do documento entregue
     # (reapresentações); fica só com a versão mais recente de cada CNPJ.
