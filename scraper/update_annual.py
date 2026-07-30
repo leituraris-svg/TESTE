@@ -318,6 +318,25 @@ def _escala_para_reais(df):
     return escala.map({"MIL": 1000.0, "UNIDADE": 1.0}).fillna(1000.0)
 
 
+def _mapa_escala_por_cnpj(df):
+    """{cnpj: multiplicador} a partir de uma DRE (que tem ESCALA_MOEDA).
+
+    Confirmado com dado real (VALE3): o arquivo de composição do capital
+    NÃO tem coluna própria de escala, mas os números de ações dela também
+    saem "em MIL" quando a empresa escolhe reportar o DFP inteiro nessa
+    escala — a escala é por EMPRESA/DOCUMENTO, não por arquivo. Por isso
+    pegamos a escala da DRE (que declara isso) e aplicamos também nas
+    quantidades de ações."""
+    col_escala = next((c for c in df.columns if c.upper() == "ESCALA_MOEDA"), None)
+    if col_escala is None:
+        return {}
+    tmp = df[["CNPJ_CIA", col_escala]].copy()
+    tmp["_CNPJ"] = tmp["CNPJ_CIA"].astype(str).str.strip()
+    tmp["_MULT"] = tmp[col_escala].astype(str).str.strip().str.upper().map({"MIL": 1000.0, "UNIDADE": 1.0})
+    tmp = tmp.dropna(subset=["_MULT"]).drop_duplicates(subset=["_CNPJ"])
+    return dict(zip(tmp["_CNPJ"], tmp["_MULT"]))
+
+
 def _extrair_lucro_liquido(df):
     """Recebe o DataFrame de uma DRE (consolidada ou individual) já com
     ORDEM_EXERC=='ÚLTIMO' filtrado e devolve {cnpj: valor} do Lucro Líquido
@@ -445,10 +464,24 @@ def fetch_capital_por_cnpj():
         )
         return {}
 
+    # O arquivo de composição do capital NÃO tem coluna própria de escala
+    # (confirmado com dado real: colunas são só cnpj_cia, dt_refer, versao,
+    # denom_cia, qt_acao_*). Mas a escala é definida por EMPRESA/DOCUMENTO,
+    # não por arquivo — então pegamos a escala declarada na DRE (que tem
+    # ESCALA_MOEDA) da mesma empresa/ano, que já está no mesmo zip.
+    escala_por_cnpj = {}
+    df_dre = _read_csv_from_zip(zf, "DRE_con")
+    if df_dre is not None:
+        escala_por_cnpj.update(_mapa_escala_por_cnpj(df_dre))
+    df_dre_ind = _read_csv_from_zip(zf, "DRE_ind")
+    if df_dre_ind is not None:
+        # só preenche quem não veio na consolidada
+        for cnpj, mult in _mapa_escala_por_cnpj(df_dre_ind).items():
+            escala_por_cnpj.setdefault(cnpj, mult)
+
     df.columns = [_norm(c) for c in df.columns]
     col_cnpj = next((c for c in df.columns if "cnpj" in c), None)
     col_versao = next((c for c in df.columns if c == "versao"), None)
-    col_escala = next((c for c in df.columns if "escala" in c), None)
     col_total = next((c for c in df.columns if "acao" in c and "total" in c and "tesour" not in c), None)
     col_tesouro = next((c for c in df.columns if "acao" in c and "total" in c and "tesour" in c), None)
     col_ordin = next((c for c in df.columns if "acao" in c and "ordin" in c and "tesour" not in c), None)
@@ -459,16 +492,11 @@ def fetch_capital_por_cnpj():
               f"Colunas: {list(df.columns)}", file=sys.stderr)
         return {}
 
-    # Mesmo problema do Lucro Líquido: a CVM pode reportar as quantidades de
-    # ações em MIL em vez de unidades absolutas, dependendo da empresa (foi
-    # o caso da VALE3 — dava 1000x menos ações que o real). Normaliza linha
-    # a linha usando a mesma coluna ESCALA_MOEDA, se existir nesse arquivo.
-    if col_escala:
-        escala = df[col_escala].astype(str).str.strip().str.upper()
-        multiplicador = escala.map({"MIL": 1000.0, "UNIDADE": 1.0}).fillna(1.0)
-    else:
-        multiplicador = pd.Series(1.0, index=df.index)
-
+    df["_CNPJ_NORM"] = df[col_cnpj].astype(str).str.strip()
+    # Confirmado com dado real (VALE3): quando a empresa reporta o DFP em
+    # MIL, as quantidades de ações aqui também vêm em MIL. Default MIL
+    # (1000) pra quem não achamos escala na DRE, que é o caso mais comum.
+    multiplicador = df["_CNPJ_NORM"].map(escala_por_cnpj).fillna(1000.0)
     for c in (col_total, col_tesouro, col_ordin, col_pref):
         if c:
             df[c] = pd.to_numeric(df[c], errors="coerce") * multiplicador
