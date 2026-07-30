@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-07-29T19:42:17+00:00",
+  "atualizado_em": "2026-07-30T05:07:23+00:00",
   "fonte": "CVM - dados.cvm.gov.br (DFP + FRE)",
   "unidades": {
     "lucroLiquidoAnos": "reais (R$) cheios — já normalizado pela ESCALA_MOEDA de cada empresa, não em milhares",
@@ -24,9 +24,9 @@
         "2024": 971274000.0,
         "2025": 1002000000.0
       },
-      "acoesTotal": 244656857.0,
-      "acoesTesouraria": 3493826.0,
-      "acoesExTesouraria": 241163031.0
+      "acoesTotal": 244656857000.0,
+      "acoesTesouraria": 3493826000.0,
+      "acoesExTesouraria": 241163031000.0
     },
     "ABEV3": {
       "lucroLiquidoAnos": {
@@ -36,9 +36,9 @@
         "2024": 14846952000.0,
         "2025": 15988433000.0
       },
-      "acoesTotal": 15761639.0,
-      "acoesTesouraria": 145113.0,
-      "acoesExTesouraria": 15616526.0
+      "acoesTotal": 15761639000.0,
+      "acoesTesouraria": 145113000.0,
+      "acoesExTesouraria": 15616526000.0
     },
     "AERI3": {
       "lucroLiquidoAnos": {
@@ -48,9 +48,9 @@
         "2024": -934083000.0,
         "2025": -901213000.0
       },
-      "acoesTotal": 62120196.0,
-      "acoesTesouraria": 732772.0,
-      "acoesExTesouraria": 61387424.0
+      "acoesTotal": 62120196000.0,
+      "acoesTesouraria": 732772000.0,
+      "acoesExTesouraria": 61387424000.0
     },
     "AFLT3": {
       "lucroLiquidoAnos": {
@@ -60,9 +60,9 @@
         "2024": 34029000.0,
         "2025": 23830000.0
       },
-      "acoesTotal": 63085.0,
+      "acoesTotal": 63085000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 63085.0
+      "acoesExTesouraria": 63085000.0
     },
     "AGRO3": {
       "lucroLiquidoAnos": {
@@ -72,9 +72,9 @@
         "2024": 226867000.0,
         "2025": 138019000.0
       },
-      "acoesTotal": 102683444.0,
-      "acoesTesouraria": 3067987.0,
-      "acoesExTesouraria": 99615457.0
+      "acoesTotal": 102683444000.0,
+      "acoesTesouraria": 3067987000.0,
+      "acoesExTesouraria": 99615457000.0
     },
     "AGXY3": {
       "lucroLiquidoAnos": {
@@ -92,9 +92,9 @@
         "2024": 150235000.0,
         "2025": 39213000.0
       },
-      "acoesTotal": 8542.0,
-      "acoesTesouraria": 1.0,
-      "acoesExTesouraria": 8541.0
+      "acoesTotal": 8542000.0,
+      "acoesTesouraria": 1000.0,
+      "acoesExTesouraria": 8541000.0
     },
     "ALLD3": {
       "lucroLiquidoAnos": {
@@ -104,9 +104,9 @@
         "2024": 145532000.0,
         "2025": 332712000.0
       },
-      "acoesTotal": 94931.0,
+      "acoesTotal": 94931000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 94931.0
+      "acoesExTesouraria": 94931000.0
     },
     "ALOS3": {
       "lucroLiquidoAnos": {
@@ -116,9 +116,9 @@
         "2024": 811978000.0,
         "2025": 945293000.0
       },
-      "acoesTotal": 504190947.0,
-      "acoesTesouraria": 5010167.0,
-      "acoesExTesouraria": 499180780.0
+      "acoesTotal": 504190947000.0,
+      "acoesTesouraria": 5010167000.0,
+      "acoesExTesouraria": 499180780000.0
     },
     "ALPA3": {
       "lucroLiquidoAnos": {
@@ -128,9 +128,9 @@
         "2024": 107397000.0,
         "2025": 567926000.0
       },
-      "acoesTotal": 683062222.0,
-      "acoesTesouraria": 5209498.0,
-      "acoesExTesouraria": 677852724.0
+      "acoesTotal": 683062222000.0,
+      "acoesTesouraria": 5209498000.0,
+      "acoesExTesouraria": 677852724000.0
     },
     "ALPA4": {
       "lucroLiquidoAnos": {
@@ -140,9 +140,9 @@
         "2024": 107397000.0,
         "2025": 567926000.0
       },
-      "acoesTotal": 683062222.0,
-      "acoesTesouraria": 5209498.0,
-      "acoesExTesouraria": 677852724.0
+      "acoesTotal": 683062222000.0,
+      "acoesTesouraria": 5209498000.0,
+      "acoesExTesouraria": 677852724000.0
     },
     "ALPK3": {
       "lucroLiquidoAnos": {
@@ -152,9 +152,9 @@
         "2024": -8719000.0,
         "2025": 14096000.0
       },
-      "acoesTotal": 219305733.0,
-      "acoesTesouraria": 1420945.0,
-      "acoesExTesouraria": 217884788.0
+      "acoesTotal": 219305733000.0,
+      "acoesTesouraria": 1420945000.0,
+      "acoesExTesouraria": 217884788000.0
     },
     "ALUP11": {
       "lucroLiquidoAnos": {
@@ -164,9 +164,9 @@
         "2024": 1859906000.0,
         "2025": 1733193000.0
       },
-      "acoesTotal": 988880601.0,
+      "acoesTotal": 988880601000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 988880601.0
+      "acoesExTesouraria": 988880601000.0
     },
     "ALUP3": {
       "lucroLiquidoAnos": {
@@ -176,9 +176,9 @@
         "2024": 1859906000.0,
         "2025": 1733193000.0
       },
-      "acoesTotal": 988880601.0,
+      "acoesTotal": 988880601000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 988880601.0
+      "acoesExTesouraria": 988880601000.0
     },
     "ALUP4": {
       "lucroLiquidoAnos": {
@@ -188,9 +188,9 @@
         "2024": 1859906000.0,
         "2025": 1733193000.0
       },
-      "acoesTotal": 988880601.0,
+      "acoesTotal": 988880601000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 988880601.0
+      "acoesExTesouraria": 988880601000.0
     },
     "AMAR3": {
       "lucroLiquidoAnos": {
@@ -200,9 +200,9 @@
         "2024": -315784000.0,
         "2025": -59982000.0
       },
-      "acoesTotal": 513516302.0,
-      "acoesTesouraria": 27551.0,
-      "acoesExTesouraria": 513488751.0
+      "acoesTotal": 513516302000.0,
+      "acoesTesouraria": 27551000.0,
+      "acoesExTesouraria": 513488751000.0
     },
     "AMBP3": {
       "lucroLiquidoAnos": {
@@ -220,9 +220,9 @@
         "2024": 8281000000.0,
         "2025": -271000000.0
       },
-      "acoesTotal": 200244998.0,
-      "acoesTesouraria": 73.0,
-      "acoesExTesouraria": 200244925.0
+      "acoesTotal": 200244998000.0,
+      "acoesTesouraria": 73000.0,
+      "acoesExTesouraria": 200244925000.0
     },
     "AMOB3": {
       "lucroLiquidoAnos": {
@@ -230,9 +230,9 @@
         "2024": -105482000.0,
         "2025": -285575000.0
       },
-      "acoesTotal": 37886057.0,
+      "acoesTotal": 37886057000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 37886057.0
+      "acoesExTesouraria": 37886057000.0
     },
     "ANIM3": {
       "lucroLiquidoAnos": {
@@ -242,9 +242,9 @@
         "2024": 204444000.0,
         "2025": 256665000.0
       },
-      "acoesTotal": 403868805.0,
-      "acoesTesouraria": 26008863.0,
-      "acoesExTesouraria": 377859942.0
+      "acoesTotal": 403868805000.0,
+      "acoesTesouraria": 26008863000.0,
+      "acoesExTesouraria": 377859942000.0
     },
     "ARML3": {
       "lucroLiquidoAnos": {
@@ -254,9 +254,9 @@
         "2024": 175639000.0,
         "2025": 73771000.0
       },
-      "acoesTotal": 346494097.0,
-      "acoesTesouraria": 93898.0,
-      "acoesExTesouraria": 346400199.0
+      "acoesTotal": 346494097000.0,
+      "acoesTesouraria": 93898000.0,
+      "acoesExTesouraria": 346400199000.0
     },
     "ARND3": {
       "lucroLiquidoAnos": {
@@ -266,9 +266,9 @@
         "2024": 33665000.0,
         "2025": -459708000.0
       },
-      "acoesTotal": 140991806.0,
-      "acoesTesouraria": 191719.0,
-      "acoesExTesouraria": 140800087.0
+      "acoesTotal": 140991806000.0,
+      "acoesTesouraria": 191719000.0,
+      "acoesExTesouraria": 140800087000.0
     },
     "ASAI3": {
       "lucroLiquidoAnos": {
@@ -278,18 +278,18 @@
         "2024": 769000000.0,
         "2025": 497000000.0
       },
-      "acoesTotal": 1353497.0,
-      "acoesTesouraria": 11789.0,
-      "acoesExTesouraria": 1341708.0
+      "acoesTotal": 1353497000.0,
+      "acoesTesouraria": 11789000.0,
+      "acoesExTesouraria": 1341708000.0
     },
     "ATED3": {
       "lucroLiquidoAnos": {
         "2024": 459000.0,
         "2025": -3939000.0
       },
-      "acoesTotal": 23804.0,
-      "acoesTesouraria": 1318.0,
-      "acoesExTesouraria": 22486.0
+      "acoesTotal": 23804000.0,
+      "acoesTesouraria": 1318000.0,
+      "acoesExTesouraria": 22486000.0
     },
     "AUAU3": {
       "lucroLiquidoAnos": {
@@ -297,9 +297,9 @@
         "2024": 116793000.0,
         "2025": 109339000.0
       },
-      "acoesTotal": 409653901.0,
-      "acoesTesouraria": 3686823.0,
-      "acoesExTesouraria": 405967078.0
+      "acoesTotal": 409653901000.0,
+      "acoesTesouraria": 3686823000.0,
+      "acoesExTesouraria": 405967078000.0
     },
     "AURE3": {
       "lucroLiquidoAnos": {
@@ -309,9 +309,9 @@
         "2024": 271869000.0,
         "2025": -557875000.0
       },
-      "acoesTotal": 1050378.0,
-      "acoesTesouraria": 5850.0,
-      "acoesExTesouraria": 1044528.0
+      "acoesTotal": 1050378000.0,
+      "acoesTesouraria": 5850000.0,
+      "acoesExTesouraria": 1044528000.0
     },
     "AVLL3": {
       "lucroLiquidoAnos": {
@@ -321,9 +321,9 @@
         "2024": 85202000.0,
         "2025": -105497000.0
       },
-      "acoesTotal": 195330061.0,
-      "acoesTesouraria": 295.0,
-      "acoesExTesouraria": 195329766.0
+      "acoesTotal": 195330061000.0,
+      "acoesTesouraria": 295000.0,
+      "acoesExTesouraria": 195329766000.0
     },
     "AXIA3": {
       "lucroLiquidoAnos": {
@@ -333,9 +333,9 @@
         "2024": 10380753000.0,
         "2025": 6559659000.0
       },
-      "acoesTotal": 2915428.0,
-      "acoesTesouraria": 75980.0,
-      "acoesExTesouraria": 2839448.0
+      "acoesTotal": 2915428000.0,
+      "acoesTesouraria": 75980000.0,
+      "acoesExTesouraria": 2839448000.0
     },
     "AXIA6": {
       "lucroLiquidoAnos": {
@@ -345,9 +345,9 @@
         "2024": 10380753000.0,
         "2025": 6559659000.0
       },
-      "acoesTotal": 2915428.0,
-      "acoesTesouraria": 75980.0,
-      "acoesExTesouraria": 2839448.0
+      "acoesTotal": 2915428000.0,
+      "acoesTesouraria": 75980000.0,
+      "acoesExTesouraria": 2839448000.0
     },
     "AZEV3": {
       "lucroLiquidoAnos": {
@@ -357,9 +357,9 @@
         "2024": -266491000.0,
         "2025": -618309000.0
       },
-      "acoesTotal": 592755600.0,
+      "acoesTotal": 592755600000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 592755600.0
+      "acoesExTesouraria": 592755600000.0
     },
     "AZEV4": {
       "lucroLiquidoAnos": {
@@ -369,9 +369,9 @@
         "2024": -266491000.0,
         "2025": -618309000.0
       },
-      "acoesTotal": 592755600.0,
+      "acoesTotal": 592755600000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 592755600.0
+      "acoesExTesouraria": 592755600000.0
     },
     "AZTE3": {
       "lucroLiquidoAnos": {
@@ -379,9 +379,9 @@
         "2024": -38651000.0,
         "2025": -9854000.0
       },
-      "acoesTotal": 339094779.0,
+      "acoesTotal": 339094779000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 339094779.0
+      "acoesExTesouraria": 339094779000.0
     },
     "AZUL3": {
       "lucroLiquidoAnos": {
@@ -391,9 +391,9 @@
         "2024": -9151371000.0,
         "2025": 124858000.0
       },
-      "acoesTotal": 3025004874.0,
-      "acoesTesouraria": 88679.0,
-      "acoesExTesouraria": 3024916195.0
+      "acoesTotal": 3025004874000.0,
+      "acoesTesouraria": 88679000.0,
+      "acoesExTesouraria": 3024916195000.0
     },
     "AZZA3": {
       "lucroLiquidoAnos": {
@@ -403,9 +403,9 @@
         "2024": 338549000.0,
         "2025": 911249000.0
       },
-      "acoesTotal": 206489813.0,
-      "acoesTesouraria": 4564391.0,
-      "acoesExTesouraria": 201925422.0
+      "acoesTotal": 206489813000.0,
+      "acoesTesouraria": 4564391000.0,
+      "acoesExTesouraria": 201925422000.0
     },
     "B3SA3": {
       "lucroLiquidoAnos": {
@@ -415,9 +415,9 @@
         "2024": 4576691000.0,
         "2025": 4586872000.0
       },
-      "acoesTotal": 5266500000.0,
-      "acoesTesouraria": 231938708.0,
-      "acoesExTesouraria": 5034561292.0
+      "acoesTotal": 5266500000000.0,
+      "acoesTesouraria": 231938708000.0,
+      "acoesExTesouraria": 5034561292000.0
     },
     "BALM3": {
       "lucroLiquidoAnos": {
@@ -427,9 +427,9 @@
         "2024": 29261000.0,
         "2025": 22106000.0
       },
-      "acoesTotal": 9800000.0,
-      "acoesTesouraria": 15490.0,
-      "acoesExTesouraria": 9784510.0
+      "acoesTotal": 9800000000.0,
+      "acoesTesouraria": 15490000.0,
+      "acoesExTesouraria": 9784510000.0
     },
     "BALM4": {
       "lucroLiquidoAnos": {
@@ -439,9 +439,9 @@
         "2024": 29261000.0,
         "2025": 22106000.0
       },
-      "acoesTotal": 9800000.0,
-      "acoesTesouraria": 15490.0,
-      "acoesExTesouraria": 9784510.0
+      "acoesTotal": 9800000000.0,
+      "acoesTesouraria": 15490000.0,
+      "acoesExTesouraria": 9784510000.0
     },
     "BAUH4": {
       "lucroLiquidoAnos": {
@@ -451,9 +451,9 @@
         "2024": 25823000.0,
         "2025": 22645000.0
       },
-      "acoesTotal": 5222222.0,
+      "acoesTotal": 5222222000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 5222222.0
+      "acoesExTesouraria": 5222222000.0
     },
     "BAZA3": {
       "lucroLiquidoAnos": {
@@ -463,9 +463,9 @@
         "2024": 1132027000.0,
         "2025": 1105418000.0
       },
-      "acoesTotal": 56058315.0,
+      "acoesTotal": 56058315000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 56058315.0
+      "acoesExTesouraria": 56058315000.0
     },
     "BBAS3": {
       "lucroLiquidoAnos": {
@@ -475,9 +475,9 @@
         "2024": 29171564000.0,
         "2025": 16781938000.0
       },
-      "acoesTotal": 5730834040.0,
-      "acoesTesouraria": 22370399.0,
-      "acoesExTesouraria": 5708463641.0
+      "acoesTotal": 5730834040000.0,
+      "acoesTesouraria": 22370399000.0,
+      "acoesExTesouraria": 5708463641000.0
     },
     "BBDC3": {
       "lucroLiquidoAnos": {
@@ -487,9 +487,9 @@
         "2024": 17542153000.0,
         "2025": 23924636000.0
       },
-      "acoesTotal": 10592012028.0,
-      "acoesTesouraria": 15000000.0,
-      "acoesExTesouraria": 10577012028.0
+      "acoesTotal": 10592012028000.0,
+      "acoesTesouraria": 15000000000.0,
+      "acoesExTesouraria": 10577012028000.0
     },
     "BBDC4": {
       "lucroLiquidoAnos": {
@@ -499,9 +499,9 @@
         "2024": 17542153000.0,
         "2025": 23924636000.0
       },
-      "acoesTotal": 10592012028.0,
-      "acoesTesouraria": 15000000.0,
-      "acoesExTesouraria": 10577012028.0
+      "acoesTotal": 10592012028000.0,
+      "acoesTesouraria": 15000000000.0,
+      "acoesExTesouraria": 10577012028000.0
     },
     "BBSE3": {
       "lucroLiquidoAnos": {
@@ -511,9 +511,9 @@
         "2024": 10410989000.0,
         "2025": 10941368000.0
       },
-      "acoesTotal": 2000000000.0,
-      "acoesTesouraria": 58785091.0,
-      "acoesExTesouraria": 1941214909.0
+      "acoesTotal": 2000000000000.0,
+      "acoesTesouraria": 58785091000.0,
+      "acoesExTesouraria": 1941214909000.0
     },
     "BDLL3": {
       "lucroLiquidoAnos": {
@@ -523,9 +523,9 @@
         "2024": -30921000.0,
         "2025": -20752000.0
       },
-      "acoesTotal": 1600000.0,
+      "acoesTotal": 1600000000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 1600000.0
+      "acoesExTesouraria": 1600000000.0
     },
     "BDLL4": {
       "lucroLiquidoAnos": {
@@ -535,9 +535,9 @@
         "2024": -30921000.0,
         "2025": -20752000.0
       },
-      "acoesTotal": 1600000.0,
+      "acoesTotal": 1600000000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 1600000.0
+      "acoesExTesouraria": 1600000000.0
     },
     "BEEF3": {
       "lucroLiquidoAnos": {
@@ -547,9 +547,9 @@
         "2024": -1563806000.0,
         "2025": 848260000.0
       },
-      "acoesTotal": 1000296097.0,
-      "acoesTesouraria": 14887274.0,
-      "acoesExTesouraria": 985408823.0
+      "acoesTotal": 1000296097000.0,
+      "acoesTesouraria": 14887274000.0,
+      "acoesExTesouraria": 985408823000.0
     },
     "BEES3": {
       "lucroLiquidoAnos": {
@@ -559,9 +559,9 @@
         "2024": 428634000.0,
         "2025": 339919000.0
       },
-      "acoesTotal": 347504.0,
+      "acoesTotal": 347504000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 347504.0
+      "acoesExTesouraria": 347504000.0
     },
     "BEES4": {
       "lucroLiquidoAnos": {
@@ -571,9 +571,9 @@
         "2024": 428634000.0,
         "2025": 339919000.0
       },
-      "acoesTotal": 347504.0,
+      "acoesTotal": 347504000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 347504.0
+      "acoesExTesouraria": 347504000.0
     },
     "BGIP3": {
       "lucroLiquidoAnos": {
@@ -583,9 +583,9 @@
         "2024": 146703000.0,
         "2025": 151470000.0
       },
-      "acoesTotal": 21548228.0,
+      "acoesTotal": 21548228000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 21548228.0
+      "acoesExTesouraria": 21548228000.0
     },
     "BGIP4": {
       "lucroLiquidoAnos": {
@@ -595,9 +595,9 @@
         "2024": 146703000.0,
         "2025": 151470000.0
       },
-      "acoesTotal": 21548228.0,
+      "acoesTotal": 21548228000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 21548228.0
+      "acoesExTesouraria": 21548228000.0
     },
     "BHIA3": {
       "lucroLiquidoAnos": {
@@ -607,9 +607,9 @@
         "2024": -1045000000.0,
         "2025": -2988000000.0
       },
-      "acoesTotal": 653878.0,
-      "acoesTesouraria": 15.0,
-      "acoesExTesouraria": 653863.0
+      "acoesTotal": 653878000.0,
+      "acoesTesouraria": 15000.0,
+      "acoesExTesouraria": 653863000.0
     },
     "BIED3": {
       "lucroLiquidoAnos": {
@@ -619,9 +619,9 @@
         "2024": -74340000.0,
         "2025": -61569000.0
       },
-      "acoesTotal": 26633197.0,
+      "acoesTotal": 26633197000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 26633197.0
+      "acoesExTesouraria": 26633197000.0
     },
     "BIOM3": {
       "lucroLiquidoAnos": {
@@ -631,9 +631,9 @@
         "2024": -77238000.0,
         "2025": -6687000.0
       },
-      "acoesTotal": 136841532.0,
+      "acoesTotal": 136841532000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 136841532.0
+      "acoesExTesouraria": 136841532000.0
     },
     "BLAU3": {
       "lucroLiquidoAnos": {
@@ -643,9 +643,9 @@
         "2024": 213525000.0,
         "2025": 296773000.0
       },
-      "acoesTotal": 230984962.0,
-      "acoesTesouraria": 2227160.0,
-      "acoesExTesouraria": 228757802.0
+      "acoesTotal": 230984962000.0,
+      "acoesTesouraria": 2227160000.0,
+      "acoesExTesouraria": 228757802000.0
     },
     "BMEB3": {
       "lucroLiquidoAnos": {
@@ -655,9 +655,9 @@
         "2024": 510618000.0,
         "2025": 640758000.0
       },
-      "acoesTotal": 104832.0,
-      "acoesTesouraria": 349.0,
-      "acoesExTesouraria": 104483.0
+      "acoesTotal": 104832000.0,
+      "acoesTesouraria": 349000.0,
+      "acoesExTesouraria": 104483000.0
     },
     "BMEB4": {
       "lucroLiquidoAnos": {
@@ -667,9 +667,9 @@
         "2024": 510618000.0,
         "2025": 640758000.0
       },
-      "acoesTotal": 104832.0,
-      "acoesTesouraria": 349.0,
-      "acoesExTesouraria": 104483.0
+      "acoesTotal": 104832000.0,
+      "acoesTesouraria": 349000.0,
+      "acoesExTesouraria": 104483000.0
     },
     "BMGB4": {
       "lucroLiquidoAnos": {
@@ -679,9 +679,9 @@
         "2024": 279349000.0,
         "2025": 587304000.0
       },
-      "acoesTotal": 599088294.0,
-      "acoesTesouraria": 2601348.0,
-      "acoesExTesouraria": 596486946.0
+      "acoesTotal": 599088294000.0,
+      "acoesTesouraria": 2601348000.0,
+      "acoesExTesouraria": 596486946000.0
     },
     "BMIN3": {
       "lucroLiquidoAnos": {
@@ -691,9 +691,9 @@
         "2024": 7187000.0,
         "2025": 10396000.0
       },
-      "acoesTotal": 4825.0,
+      "acoesTotal": 4825000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 4825.0
+      "acoesExTesouraria": 4825000.0
     },
     "BMIN4": {
       "lucroLiquidoAnos": {
@@ -703,9 +703,9 @@
         "2024": 7187000.0,
         "2025": 10396000.0
       },
-      "acoesTotal": 4825.0,
+      "acoesTotal": 4825000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 4825.0
+      "acoesExTesouraria": 4825000.0
     },
     "BMKS3": {
       "lucroLiquidoAnos": {
@@ -715,9 +715,9 @@
         "2024": 15036000.0,
         "2025": 59048000.0
       },
-      "acoesTotal": 454750.0,
+      "acoesTotal": 454750000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 454750.0
+      "acoesExTesouraria": 454750000.0
     },
     "BMOB3": {
       "lucroLiquidoAnos": {
@@ -727,9 +727,9 @@
         "2024": 120163000.0,
         "2025": 161262000.0
       },
-      "acoesTotal": 85608392.0,
+      "acoesTotal": 85608392000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 85608392.0
+      "acoesExTesouraria": 85608392000.0
     },
     "BNBR3": {
       "lucroLiquidoAnos": {
@@ -739,9 +739,9 @@
         "2024": 2342566000.0,
         "2025": 3083510000.0
       },
-      "acoesTotal": 98700.0,
+      "acoesTotal": 98700000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 98700.0
+      "acoesExTesouraria": 98700000.0
     },
     "BOBR4": {
       "lucroLiquidoAnos": {
@@ -751,9 +751,9 @@
         "2024": -1552216000.0,
         "2025": 68008000.0
       },
-      "acoesTotal": 260509778.0,
+      "acoesTotal": 260509778000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 260509778.0
+      "acoesExTesouraria": 260509778000.0
     },
     "BPAC11": {
       "lucroLiquidoAnos": {
@@ -763,9 +763,9 @@
         "2024": 11080445000.0,
         "2025": 16663803000.0
       },
-      "acoesTotal": 11670063466.0,
-      "acoesTesouraria": 82408800.0,
-      "acoesExTesouraria": 11587654666.0
+      "acoesTotal": 11670063466000.0,
+      "acoesTesouraria": 82408800000.0,
+      "acoesExTesouraria": 11587654666000.0
     },
     "BPAC3": {
       "lucroLiquidoAnos": {
@@ -775,9 +775,9 @@
         "2024": 11080445000.0,
         "2025": 16663803000.0
       },
-      "acoesTotal": 11670063466.0,
-      "acoesTesouraria": 82408800.0,
-      "acoesExTesouraria": 11587654666.0
+      "acoesTotal": 11670063466000.0,
+      "acoesTesouraria": 82408800000.0,
+      "acoesExTesouraria": 11587654666000.0
     },
     "BPAC5": {
       "lucroLiquidoAnos": {
@@ -787,9 +787,9 @@
         "2024": 11080445000.0,
         "2025": 16663803000.0
       },
-      "acoesTotal": 11670063466.0,
-      "acoesTesouraria": 82408800.0,
-      "acoesExTesouraria": 11587654666.0
+      "acoesTotal": 11670063466000.0,
+      "acoesTesouraria": 82408800000.0,
+      "acoesExTesouraria": 11587654666000.0
     },
     "BRAP3": {
       "lucroLiquidoAnos": {
@@ -799,9 +799,9 @@
         "2024": 1192208000.0,
         "2025": 546993000.0
       },
-      "acoesTotal": 393097.0,
+      "acoesTotal": 393097000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 393097.0
+      "acoesExTesouraria": 393097000.0
     },
     "BRAP4": {
       "lucroLiquidoAnos": {
@@ -811,9 +811,9 @@
         "2024": 1192208000.0,
         "2025": 546993000.0
       },
-      "acoesTotal": 393097.0,
+      "acoesTotal": 393097000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 393097.0
+      "acoesExTesouraria": 393097000.0
     },
     "BRAV3": {
       "lucroLiquidoAnos": {
@@ -823,9 +823,9 @@
         "2024": -909691000.0,
         "2025": 1411225000.0
       },
-      "acoesTotal": 464557268.0,
-      "acoesTesouraria": 14166.0,
-      "acoesExTesouraria": 464543102.0
+      "acoesTotal": 464557268000.0,
+      "acoesTesouraria": 14166000.0,
+      "acoesExTesouraria": 464543102000.0
     },
     "BRBI11": {
       "lucroLiquidoAnos": {
@@ -835,9 +835,9 @@
         "2024": 193670000.0,
         "2025": 175073000.0
       },
-      "acoesTotal": 314987112.0,
+      "acoesTotal": 314987112000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 314987112.0
+      "acoesExTesouraria": 314987112000.0
     },
     "BRKM3": {
       "lucroLiquidoAnos": {
@@ -847,9 +847,9 @@
         "2024": -12052000000.0,
         "2025": -10961000000.0
       },
-      "acoesTotal": 797207807.0,
-      "acoesTesouraria": 27.0,
-      "acoesExTesouraria": 797207780.0
+      "acoesTotal": 797207807000.0,
+      "acoesTesouraria": 27000.0,
+      "acoesExTesouraria": 797207780000.0
     },
     "BRKM5": {
       "lucroLiquidoAnos": {
@@ -859,9 +859,9 @@
         "2024": -12052000000.0,
         "2025": -10961000000.0
       },
-      "acoesTotal": 797207807.0,
-      "acoesTesouraria": 27.0,
-      "acoesExTesouraria": 797207780.0
+      "acoesTotal": 797207807000.0,
+      "acoesTesouraria": 27000.0,
+      "acoesExTesouraria": 797207780000.0
     },
     "BRKM6": {
       "lucroLiquidoAnos": {
@@ -871,9 +871,9 @@
         "2024": -12052000000.0,
         "2025": -10961000000.0
       },
-      "acoesTotal": 797207807.0,
-      "acoesTesouraria": 27.0,
-      "acoesExTesouraria": 797207780.0
+      "acoesTotal": 797207807000.0,
+      "acoesTesouraria": 27000.0,
+      "acoesExTesouraria": 797207780000.0
     },
     "BRSR3": {
       "lucroLiquidoAnos": {
@@ -883,9 +883,9 @@
         "2024": 727798000.0,
         "2025": 1714551000.0
       },
-      "acoesTotal": 408974.0,
+      "acoesTotal": 408974000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 408974.0
+      "acoesExTesouraria": 408974000.0
     },
     "BRSR5": {
       "lucroLiquidoAnos": {
@@ -895,9 +895,9 @@
         "2024": 727798000.0,
         "2025": 1714551000.0
       },
-      "acoesTotal": 408974.0,
+      "acoesTotal": 408974000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 408974.0
+      "acoesExTesouraria": 408974000.0
     },
     "BRSR6": {
       "lucroLiquidoAnos": {
@@ -907,9 +907,9 @@
         "2024": 727798000.0,
         "2025": 1714551000.0
       },
-      "acoesTotal": 408974.0,
+      "acoesTotal": 408974000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 408974.0
+      "acoesExTesouraria": 408974000.0
     },
     "BRST3": {
       "lucroLiquidoAnos": {
@@ -917,9 +917,9 @@
         "2024": 60794000.0,
         "2025": 40884000.0
       },
-      "acoesTotal": 438007537.0,
+      "acoesTotal": 438007537000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 438007537.0
+      "acoesExTesouraria": 438007537000.0
     },
     "BSLI3": {
       "lucroLiquidoAnos": {
@@ -945,9 +945,9 @@
         "2024": 7950000.0,
         "2025": 45872000.0
       },
-      "acoesTotal": 6988800.0,
+      "acoesTotal": 6988800000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 6988800.0
+      "acoesExTesouraria": 6988800000.0
     },
     "CAMB3": {
       "lucroLiquidoAnos": {
@@ -957,9 +957,9 @@
         "2024": 76418000.0,
         "2025": 68390000.0
       },
-      "acoesTotal": 42275080.0,
-      "acoesTesouraria": 435507.0,
-      "acoesExTesouraria": 41839573.0
+      "acoesTotal": 42275080000.0,
+      "acoesTesouraria": 435507000.0,
+      "acoesExTesouraria": 41839573000.0
     },
     "CAML3": {
       "lucroLiquidoAnos": {
@@ -969,9 +969,9 @@
         "2024": 360461000.0,
         "2025": 217001000.0
       },
-      "acoesTotal": 350000000.0,
-      "acoesTesouraria": 8928768.0,
-      "acoesExTesouraria": 341071232.0
+      "acoesTotal": 350000000000.0,
+      "acoesTesouraria": 8928768000.0,
+      "acoesExTesouraria": 341071232000.0
     },
     "CASH3": {
       "lucroLiquidoAnos": {
@@ -981,9 +981,9 @@
         "2024": -11334000.0,
         "2025": -1140000.0
       },
-      "acoesTotal": 113222554.0,
+      "acoesTotal": 113222554000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 113222554.0
+      "acoesExTesouraria": 113222554000.0
     },
     "CBAV3": {
       "lucroLiquidoAnos": {
@@ -993,9 +993,9 @@
         "2024": -72889000.0,
         "2025": 229854000.0
       },
-      "acoesTotal": 651073.0,
+      "acoesTotal": 651073000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 651073.0
+      "acoesExTesouraria": 651073000.0
     },
     "CBEE3": {
       "lucroLiquidoAnos": {
@@ -1005,9 +1005,9 @@
         "2024": 670153000.0,
         "2025": -9034000.0
       },
-      "acoesTotal": 453224.0,
+      "acoesTotal": 453224000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 453224.0
+      "acoesExTesouraria": 453224000.0
     },
     "CEAB3": {
       "lucroLiquidoAnos": {
@@ -1017,9 +1017,9 @@
         "2024": 452478000.0,
         "2025": 587087000.0
       },
-      "acoesTotal": 308245068.0,
-      "acoesTesouraria": 5330734.0,
-      "acoesExTesouraria": 302914334.0
+      "acoesTotal": 308245068000.0,
+      "acoesTesouraria": 5330734000.0,
+      "acoesExTesouraria": 302914334000.0
     },
     "CEBR3": {
       "lucroLiquidoAnos": {
@@ -1029,9 +1029,9 @@
         "2024": 225527000.0,
         "2025": 235310000.0
       },
-      "acoesTotal": 72081915.0,
+      "acoesTotal": 72081915000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 72081915.0
+      "acoesExTesouraria": 72081915000.0
     },
     "CEBR5": {
       "lucroLiquidoAnos": {
@@ -1041,9 +1041,9 @@
         "2024": 225527000.0,
         "2025": 235310000.0
       },
-      "acoesTotal": 72081915.0,
+      "acoesTotal": 72081915000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 72081915.0
+      "acoesExTesouraria": 72081915000.0
     },
     "CEBR6": {
       "lucroLiquidoAnos": {
@@ -1053,9 +1053,9 @@
         "2024": 225527000.0,
         "2025": 235310000.0
       },
-      "acoesTotal": 72081915.0,
+      "acoesTotal": 72081915000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 72081915.0
+      "acoesExTesouraria": 72081915000.0
     },
     "CEDO3": {
       "lucroLiquidoAnos": {
@@ -1065,9 +1065,9 @@
         "2024": 110590000.0,
         "2025": -32695000.0
       },
-      "acoesTotal": 10011167.0,
+      "acoesTotal": 10011167000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 10011167.0
+      "acoesExTesouraria": 10011167000.0
     },
     "CEDO4": {
       "lucroLiquidoAnos": {
@@ -1077,9 +1077,9 @@
         "2024": 110590000.0,
         "2025": -32695000.0
       },
-      "acoesTotal": 10011167.0,
+      "acoesTotal": 10011167000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 10011167.0
+      "acoesExTesouraria": 10011167000.0
     },
     "CEEB3": {
       "lucroLiquidoAnos": {
@@ -1089,9 +1089,9 @@
         "2024": 1808000000.0,
         "2025": 1954000000.0
       },
-      "acoesTotal": 262096.0,
+      "acoesTotal": 262096000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 262096.0
+      "acoesExTesouraria": 262096000.0
     },
     "CEEB5": {
       "lucroLiquidoAnos": {
@@ -1101,9 +1101,9 @@
         "2024": 1808000000.0,
         "2025": 1954000000.0
       },
-      "acoesTotal": 262096.0,
+      "acoesTotal": 262096000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 262096.0
+      "acoesExTesouraria": 262096000.0
     },
     "CEED3": {
       "lucroLiquidoAnos": {
@@ -1113,9 +1113,9 @@
         "2024": -438888000.0,
         "2025": -704584000.0
       },
-      "acoesTotal": 68254930.0,
+      "acoesTotal": 68254930000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 68254930.0
+      "acoesExTesouraria": 68254930000.0
     },
     "CEGR3": {
       "lucroLiquidoAnos": {
@@ -1125,9 +1125,9 @@
         "2024": 526755000.0,
         "2025": 615291000.0
       },
-      "acoesTotal": 259638.0,
-      "acoesTesouraria": 12206.0,
-      "acoesExTesouraria": 247432.0
+      "acoesTotal": 259638000.0,
+      "acoesTesouraria": 12206000.0,
+      "acoesExTesouraria": 247432000.0
     },
     "CGAS3": {
       "lucroLiquidoAnos": {
@@ -1137,9 +1137,9 @@
         "2024": 1792464000.0,
         "2025": 1546478000.0
       },
-      "acoesTotal": 132520587.0,
+      "acoesTotal": 132520587000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 132520587.0
+      "acoesExTesouraria": 132520587000.0
     },
     "CGAS5": {
       "lucroLiquidoAnos": {
@@ -1149,9 +1149,9 @@
         "2024": 1792464000.0,
         "2025": 1546478000.0
       },
-      "acoesTotal": 132520587.0,
+      "acoesTotal": 132520587000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 132520587.0
+      "acoesExTesouraria": 132520587000.0
     },
     "CGRA3": {
       "lucroLiquidoAnos": {
@@ -1161,9 +1161,9 @@
         "2024": 104649000.0,
         "2025": 83855000.0
       },
-      "acoesTotal": 23957319.0,
-      "acoesTesouraria": 413601.0,
-      "acoesExTesouraria": 23543718.0
+      "acoesTotal": 23957319000.0,
+      "acoesTesouraria": 413601000.0,
+      "acoesExTesouraria": 23543718000.0
     },
     "CGRA4": {
       "lucroLiquidoAnos": {
@@ -1173,9 +1173,9 @@
         "2024": 104649000.0,
         "2025": 83855000.0
       },
-      "acoesTotal": 23957319.0,
-      "acoesTesouraria": 413601.0,
-      "acoesExTesouraria": 23543718.0
+      "acoesTotal": 23957319000.0,
+      "acoesTesouraria": 413601000.0,
+      "acoesExTesouraria": 23543718000.0
     },
     "CLSC3": {
       "lucroLiquidoAnos": {
@@ -1185,9 +1185,9 @@
         "2024": 715802000.0,
         "2025": 729495000.0
       },
-      "acoesTotal": 38571.0,
+      "acoesTotal": 38571000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 38571.0
+      "acoesExTesouraria": 38571000.0
     },
     "CLSC4": {
       "lucroLiquidoAnos": {
@@ -1197,9 +1197,9 @@
         "2024": 715802000.0,
         "2025": 729495000.0
       },
-      "acoesTotal": 38571.0,
+      "acoesTotal": 38571000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 38571.0
+      "acoesExTesouraria": 38571000.0
     },
     "CMIG3": {
       "lucroLiquidoAnos": {
@@ -1209,9 +1209,9 @@
         "2024": 7119287000.0,
         "2025": 4899617000.0
       },
-      "acoesTotal": 2861782.0,
-      "acoesTesouraria": 1100.0,
-      "acoesExTesouraria": 2860682.0
+      "acoesTotal": 2861782000.0,
+      "acoesTesouraria": 1100000.0,
+      "acoesExTesouraria": 2860682000.0
     },
     "CMIG4": {
       "lucroLiquidoAnos": {
@@ -1221,9 +1221,9 @@
         "2024": 7119287000.0,
         "2025": 4899617000.0
       },
-      "acoesTotal": 2861782.0,
-      "acoesTesouraria": 1100.0,
-      "acoesExTesouraria": 2860682.0
+      "acoesTotal": 2861782000.0,
+      "acoesTesouraria": 1100000.0,
+      "acoesExTesouraria": 2860682000.0
     },
     "CMIN3": {
       "lucroLiquidoAnos": {
@@ -1233,9 +1233,9 @@
         "2024": 4527718000.0,
         "2025": 1649159000.0
       },
-      "acoesTotal": 54320445380.0,
-      "acoesTesouraria": 53294297.0,
-      "acoesExTesouraria": 54267151083.0
+      "acoesTotal": 54320445380000.0,
+      "acoesTesouraria": 53294297000.0,
+      "acoesExTesouraria": 54267151083000.0
     },
     "COCE3": {
       "lucroLiquidoAnos": {
@@ -1245,9 +1245,9 @@
         "2024": 464914000.0,
         "2025": 393974000.0
       },
-      "acoesTotal": 86302019.0,
+      "acoesTotal": 86302019000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 86302019.0
+      "acoesExTesouraria": 86302019000.0
     },
     "COCE5": {
       "lucroLiquidoAnos": {
@@ -1257,9 +1257,9 @@
         "2024": 464914000.0,
         "2025": 393974000.0
       },
-      "acoesTotal": 86302019.0,
+      "acoesTotal": 86302019000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 86302019.0
+      "acoesExTesouraria": 86302019000.0
     },
     "COGN3": {
       "lucroLiquidoAnos": {
@@ -1269,9 +1269,9 @@
         "2024": 991631000.0,
         "2025": 586035000.0
       },
-      "acoesTotal": 2064266831.0,
-      "acoesTesouraria": 68678656.0,
-      "acoesExTesouraria": 1995588175.0
+      "acoesTotal": 2064266831000.0,
+      "acoesTesouraria": 68678656000.0,
+      "acoesExTesouraria": 1995588175000.0
     },
     "CPFE3": {
       "lucroLiquidoAnos": {
@@ -1281,9 +1281,9 @@
         "2024": 5761554000.0,
         "2025": 5742553000.0
       },
-      "acoesTotal": 1152254440.0,
+      "acoesTotal": 1152254440000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 1152254440.0
+      "acoesExTesouraria": 1152254440000.0
     },
     "CPLE3": {
       "lucroLiquidoAnos": {
@@ -1293,9 +1293,9 @@
         "2024": 2799370000.0,
         "2025": 2687939000.0
       },
-      "acoesTotal": 2982810591.0,
-      "acoesTesouraria": 12740266.0,
-      "acoesExTesouraria": 2970070325.0
+      "acoesTotal": 2982810591000.0,
+      "acoesTesouraria": 12740266000.0,
+      "acoesExTesouraria": 2970070325000.0
     },
     "CRPG5": {
       "lucroLiquidoAnos": {
@@ -1305,9 +1305,9 @@
         "2024": -113694000.0,
         "2025": -66637000.0
       },
-      "acoesTotal": 29018747.0,
+      "acoesTotal": 29018747000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 29018747.0
+      "acoesExTesouraria": 29018747000.0
     },
     "CRPG6": {
       "lucroLiquidoAnos": {
@@ -1317,9 +1317,9 @@
         "2024": -113694000.0,
         "2025": -66637000.0
       },
-      "acoesTotal": 29018747.0,
+      "acoesTotal": 29018747000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 29018747.0
+      "acoesExTesouraria": 29018747000.0
     },
     "CSAN3": {
       "lucroLiquidoAnos": {
@@ -1329,9 +1329,9 @@
         "2024": -8161766000.0,
         "2025": -10194401000.0
       },
-      "acoesTotal": 3966570932.0,
-      "acoesTesouraria": 7142335.0,
-      "acoesExTesouraria": 3959428597.0
+      "acoesTotal": 3966570932000.0,
+      "acoesTesouraria": 7142335000.0,
+      "acoesExTesouraria": 3959428597000.0
     },
     "CSED3": {
       "lucroLiquidoAnos": {
@@ -1341,9 +1341,9 @@
         "2024": 144306000.0,
         "2025": 296866000.0
       },
-      "acoesTotal": 364542552.0,
+      "acoesTotal": 364542552000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 364542552.0
+      "acoesExTesouraria": 364542552000.0
     },
     "CSMG3": {
       "lucroLiquidoAnos": {
@@ -1353,9 +1353,9 @@
         "2024": 1316920000.0,
         "2025": 1415744000.0
       },
-      "acoesTotal": 380253.0,
-      "acoesTesouraria": 1072.0,
-      "acoesExTesouraria": 379181.0
+      "acoesTotal": 380253000.0,
+      "acoesTesouraria": 1072000.0,
+      "acoesExTesouraria": 379181000.0
     },
     "CSNA3": {
       "lucroLiquidoAnos": {
@@ -1365,9 +1365,9 @@
         "2024": -1538141000.0,
         "2025": -1506726000.0
       },
-      "acoesTotal": 1326093947.0,
+      "acoesTotal": 1326093947000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 1326093947.0
+      "acoesExTesouraria": 1326093947000.0
     },
     "CSUD3": {
       "lucroLiquidoAnos": {
@@ -1377,9 +1377,9 @@
         "2024": 91177000.0,
         "2025": 106051000.0
       },
-      "acoesTotal": 41800.0,
-      "acoesTesouraria": 451.0,
-      "acoesExTesouraria": 41349.0
+      "acoesTotal": 41800000.0,
+      "acoesTesouraria": 451000.0,
+      "acoesExTesouraria": 41349000.0
     },
     "CTKA3": {
       "lucroLiquidoAnos": {
@@ -1389,9 +1389,9 @@
         "2024": 118409000.0,
         "2025": 70539000.0
       },
-      "acoesTotal": 6205.0,
+      "acoesTotal": 6205000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 6205.0
+      "acoesExTesouraria": 6205000.0
     },
     "CTKA4": {
       "lucroLiquidoAnos": {
@@ -1401,9 +1401,9 @@
         "2024": 118409000.0,
         "2025": 70539000.0
       },
-      "acoesTotal": 6205.0,
+      "acoesTotal": 6205000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 6205.0
+      "acoesExTesouraria": 6205000.0
     },
     "CTSA3": {
       "lucroLiquidoAnos": {
@@ -1429,9 +1429,9 @@
         "2024": 698812000.0,
         "2025": 1081220000.0
       },
-      "acoesTotal": 308047594.0,
+      "acoesTotal": 308047594000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 308047594.0
+      "acoesExTesouraria": 308047594000.0
     },
     "CVCB3": {
       "lucroLiquidoAnos": {
@@ -1441,9 +1441,9 @@
         "2024": -103341000.0,
         "2025": -40935000.0
       },
-      "acoesTotal": 525591097.0,
-      "acoesTesouraria": 4792509.0,
-      "acoesExTesouraria": 520798588.0
+      "acoesTotal": 525591097000.0,
+      "acoesTesouraria": 4792509000.0,
+      "acoesExTesouraria": 520798588000.0
     },
     "CXSE3": {
       "lucroLiquidoAnos": {
@@ -1453,9 +1453,9 @@
         "2024": 3765184000.0,
         "2025": 4291560000.0
       },
-      "acoesTotal": 3000000.0,
+      "acoesTotal": 3000000000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 3000000.0
+      "acoesExTesouraria": 3000000000.0
     },
     "CYRE3": {
       "lucroLiquidoAnos": {
@@ -1465,9 +1465,9 @@
         "2024": 1921052000.0,
         "2025": 2395829000.0
       },
-      "acoesTotal": 384000.0,
-      "acoesTesouraria": 17689.0,
-      "acoesExTesouraria": 366311.0
+      "acoesTotal": 384000000.0,
+      "acoesTesouraria": 17689000.0,
+      "acoesExTesouraria": 366311000.0
     },
     "CYRE4": {
       "lucroLiquidoAnos": {
@@ -1477,9 +1477,9 @@
         "2024": 1921052000.0,
         "2025": 2395829000.0
       },
-      "acoesTotal": 384000.0,
-      "acoesTesouraria": 17689.0,
-      "acoesExTesouraria": 366311.0
+      "acoesTotal": 384000000.0,
+      "acoesTesouraria": 17689000.0,
+      "acoesExTesouraria": 366311000.0
     },
     "DASA3": {
       "lucroLiquidoAnos": {
@@ -1489,9 +1489,9 @@
         "2024": -1195929000.0,
         "2025": -1135024000.0
       },
-      "acoesTotal": 1255007048.0,
-      "acoesTesouraria": 5232506.0,
-      "acoesExTesouraria": 1249774542.0
+      "acoesTotal": 1255007048000.0,
+      "acoesTesouraria": 5232506000.0,
+      "acoesExTesouraria": 1249774542000.0
     },
     "DESK3": {
       "lucroLiquidoAnos": {
@@ -1501,9 +1501,9 @@
         "2024": 100074000.0,
         "2025": 80773000.0
       },
-      "acoesTotal": 115965768.0,
-      "acoesTesouraria": 12471.0,
-      "acoesExTesouraria": 115953297.0
+      "acoesTotal": 115965768000.0,
+      "acoesTesouraria": 12471000.0,
+      "acoesExTesouraria": 115953297000.0
     },
     "DEXP3": {
       "lucroLiquidoAnos": {
@@ -1513,9 +1513,9 @@
         "2024": 153199000.0,
         "2025": 143653000.0
       },
-      "acoesTotal": 122974467.0,
-      "acoesTesouraria": 2275378.0,
-      "acoesExTesouraria": 120699089.0
+      "acoesTotal": 122974467000.0,
+      "acoesTesouraria": 2275378000.0,
+      "acoesExTesouraria": 120699089000.0
     },
     "DEXP4": {
       "lucroLiquidoAnos": {
@@ -1525,9 +1525,9 @@
         "2024": 153199000.0,
         "2025": 143653000.0
       },
-      "acoesTotal": 122974467.0,
-      "acoesTesouraria": 2275378.0,
-      "acoesExTesouraria": 120699089.0
+      "acoesTotal": 122974467000.0,
+      "acoesTesouraria": 2275378000.0,
+      "acoesExTesouraria": 120699089000.0
     },
     "DIRR3": {
       "lucroLiquidoAnos": {
@@ -1537,9 +1537,9 @@
         "2024": 727668000.0,
         "2025": 979692000.0
       },
-      "acoesTotal": 520500000.0,
-      "acoesTesouraria": 1538328.0,
-      "acoesExTesouraria": 518961672.0
+      "acoesTotal": 520500000000.0,
+      "acoesTesouraria": 1538328000.0,
+      "acoesExTesouraria": 518961672000.0
     },
     "DMVF3": {
       "lucroLiquidoAnos": {
@@ -1549,9 +1549,9 @@
         "2024": 25857000.0,
         "2025": 22565000.0
       },
-      "acoesTotal": 50603.0,
+      "acoesTotal": 50603000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 50603.0
+      "acoesExTesouraria": 50603000.0
     },
     "DOHL4": {
       "lucroLiquidoAnos": {
@@ -1561,9 +1561,9 @@
         "2024": -15357000.0,
         "2025": 10242000.0
       },
-      "acoesTotal": 75645285.0,
-      "acoesTesouraria": 443193.0,
-      "acoesExTesouraria": 75202092.0
+      "acoesTotal": 75645285000.0,
+      "acoesTesouraria": 443193000.0,
+      "acoesExTesouraria": 75202092000.0
     },
     "DOTZ3": {
       "lucroLiquidoAnos": {
@@ -1573,9 +1573,9 @@
         "2024": -16487000.0,
         "2025": -469000.0
       },
-      "acoesTotal": 13244055.0,
+      "acoesTotal": 13244055000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 13244055.0
+      "acoesExTesouraria": 13244055000.0
     },
     "DTCY3": {
       "lucroLiquidoAnos": {
@@ -1585,9 +1585,9 @@
         "2024": -1139000.0,
         "2025": -303000.0
       },
-      "acoesTotal": 11131131.0,
+      "acoesTotal": 11131131000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 11131131.0
+      "acoesExTesouraria": 11131131000.0
     },
     "DXCO3": {
       "lucroLiquidoAnos": {
@@ -1597,9 +1597,9 @@
         "2024": 174375000.0,
         "2025": 63065000.0
       },
-      "acoesTotal": 919034.0,
-      "acoesTesouraria": 11381.0,
-      "acoesExTesouraria": 907653.0
+      "acoesTotal": 919034000.0,
+      "acoesTesouraria": 11381000.0,
+      "acoesExTesouraria": 907653000.0
     },
     "EALT3": {
       "lucroLiquidoAnos": {
@@ -1609,9 +1609,9 @@
         "2024": 66541000.0,
         "2025": 91042000.0
       },
-      "acoesTotal": 22500.0,
+      "acoesTotal": 22500000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 22500.0
+      "acoesExTesouraria": 22500000.0
     },
     "EALT4": {
       "lucroLiquidoAnos": {
@@ -1621,9 +1621,9 @@
         "2024": 66541000.0,
         "2025": 91042000.0
       },
-      "acoesTotal": 22500.0,
+      "acoesTotal": 22500000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 22500.0
+      "acoesExTesouraria": 22500000.0
     },
     "ECOM3": {
       "lucroLiquidoAnos": {
@@ -1633,9 +1633,9 @@
         "2024": -86775000.0,
         "2025": -85986000.0
       },
-      "acoesTotal": 40021.0,
-      "acoesTesouraria": 388.0,
-      "acoesExTesouraria": 39633.0
+      "acoesTotal": 40021000.0,
+      "acoesTesouraria": 388000.0,
+      "acoesExTesouraria": 39633000.0
     },
     "ECOR3": {
       "lucroLiquidoAnos": {
@@ -1645,9 +1645,9 @@
         "2024": 913451000.0,
         "2025": 866818000.0
       },
-      "acoesTotal": 696334.0,
-      "acoesTesouraria": 713.0,
-      "acoesExTesouraria": 695621.0
+      "acoesTotal": 696334000.0,
+      "acoesTesouraria": 713000.0,
+      "acoesExTesouraria": 695621000.0
     },
     "EGIE3": {
       "lucroLiquidoAnos": {
@@ -1657,9 +1657,9 @@
         "2024": 4302841000.0,
         "2025": 2857919000.0
       },
-      "acoesTotal": 1142298836.0,
+      "acoesTotal": 1142298836000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 1142298836.0
+      "acoesExTesouraria": 1142298836000.0
     },
     "EKTR4": {
       "lucroLiquidoAnos": {
@@ -1669,9 +1669,9 @@
         "2024": 915000000.0,
         "2025": 958000000.0
       },
-      "acoesTotal": 193759.0,
+      "acoesTotal": 193759000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 193759.0
+      "acoesExTesouraria": 193759000.0
     },
     "EMAE4": {
       "lucroLiquidoAnos": {
@@ -1681,9 +1681,9 @@
         "2024": 54724000.0,
         "2025": -133356000.0
       },
-      "acoesTotal": 36924.0,
-      "acoesTesouraria": 22.0,
-      "acoesExTesouraria": 36902.0
+      "acoesTotal": 36924000.0,
+      "acoesTesouraria": 22000.0,
+      "acoesExTesouraria": 36902000.0
     },
     "EMBJ3": {
       "lucroLiquidoAnos": {
@@ -1693,9 +1693,9 @@
         "2024": 1923831000.0,
         "2025": 1992037000.0
       },
-      "acoesTotal": 740465.0,
-      "acoesTesouraria": 17699.0,
-      "acoesExTesouraria": 722766.0
+      "acoesTotal": 740465000.0,
+      "acoesTesouraria": 17699000.0,
+      "acoesExTesouraria": 722766000.0
     },
     "ENEV3": {
       "lucroLiquidoAnos": {
@@ -1705,9 +1705,9 @@
         "2024": 549472000.0,
         "2025": 1691630000.0
       },
-      "acoesTotal": 1936974.0,
-      "acoesTesouraria": 21169.0,
-      "acoesExTesouraria": 1915805.0
+      "acoesTotal": 1936974000.0,
+      "acoesTesouraria": 21169000.0,
+      "acoesExTesouraria": 1915805000.0
     },
     "ENGI11": {
       "lucroLiquidoAnos": {
@@ -1717,9 +1717,9 @@
         "2024": 4636282000.0,
         "2025": 3140072000.0
       },
-      "acoesTotal": 2518367130.0,
-      "acoesTesouraria": 4149610.0,
-      "acoesExTesouraria": 2514217520.0
+      "acoesTotal": 2518367130000.0,
+      "acoesTesouraria": 4149610000.0,
+      "acoesExTesouraria": 2514217520000.0
     },
     "ENGI3": {
       "lucroLiquidoAnos": {
@@ -1729,9 +1729,9 @@
         "2024": 4636282000.0,
         "2025": 3140072000.0
       },
-      "acoesTotal": 2518367130.0,
-      "acoesTesouraria": 4149610.0,
-      "acoesExTesouraria": 2514217520.0
+      "acoesTotal": 2518367130000.0,
+      "acoesTesouraria": 4149610000.0,
+      "acoesExTesouraria": 2514217520000.0
     },
     "ENGI4": {
       "lucroLiquidoAnos": {
@@ -1741,9 +1741,9 @@
         "2024": 4636282000.0,
         "2025": 3140072000.0
       },
-      "acoesTotal": 2518367130.0,
-      "acoesTesouraria": 4149610.0,
-      "acoesExTesouraria": 2514217520.0
+      "acoesTotal": 2518367130000.0,
+      "acoesTesouraria": 4149610000.0,
+      "acoesExTesouraria": 2514217520000.0
     },
     "ENJU3": {
       "lucroLiquidoAnos": {
@@ -1753,9 +1753,9 @@
         "2024": -23935000.0,
         "2025": -16788000.0
       },
-      "acoesTotal": 205017.0,
+      "acoesTotal": 205017000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 205017.0
+      "acoesExTesouraria": 205017000.0
     },
     "ENMT3": {
       "lucroLiquidoAnos": {
@@ -1765,9 +1765,9 @@
         "2024": 1088082000.0,
         "2025": 871279000.0
       },
-      "acoesTotal": 218941939.0,
+      "acoesTotal": 218941939000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 218941939.0
+      "acoesExTesouraria": 218941939000.0
     },
     "ENMT4": {
       "lucroLiquidoAnos": {
@@ -1777,9 +1777,9 @@
         "2024": 1088082000.0,
         "2025": 871279000.0
       },
-      "acoesTotal": 218941939.0,
+      "acoesTotal": 218941939000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 218941939.0
+      "acoesExTesouraria": 218941939000.0
     },
     "EPAR3": {
       "lucroLiquidoAnos": {
@@ -1789,9 +1789,9 @@
         "2024": -6790000.0,
         "2025": -2865000.0
       },
-      "acoesTotal": 14860.0,
+      "acoesTotal": 14860000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 14860.0
+      "acoesExTesouraria": 14860000.0
     },
     "EQMA3B": {
       "lucroLiquidoAnos": {
@@ -1801,9 +1801,9 @@
         "2024": 741337000.0,
         "2025": 751680000.0
       },
-      "acoesTotal": 164183899.0,
+      "acoesTotal": 164183899000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 164183899.0
+      "acoesExTesouraria": 164183899000.0
     },
     "EQPA3": {
       "lucroLiquidoAnos": {
@@ -1813,9 +1813,9 @@
         "2024": 1976074000.0,
         "2025": 19245764000.0
       },
-      "acoesTotal": 2209074007.0,
+      "acoesTotal": 2209074007000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 2209074007.0
+      "acoesExTesouraria": 2209074007000.0
     },
     "EQPA7": {
       "lucroLiquidoAnos": {
@@ -1825,9 +1825,9 @@
         "2024": 1976074000.0,
         "2025": 19245764000.0
       },
-      "acoesTotal": 2209074007.0,
+      "acoesTotal": 2209074007000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 2209074007.0
+      "acoesExTesouraria": 2209074007000.0
     },
     "EQTL3": {
       "lucroLiquidoAnos": {
@@ -1837,9 +1837,9 @@
         "2024": 3767805000.0,
         "2025": 2503931000.0
       },
-      "acoesTotal": 1259019797.0,
-      "acoesTesouraria": 895716.0,
-      "acoesExTesouraria": 1258124081.0
+      "acoesTotal": 1259019797000.0,
+      "acoesTesouraria": 895716000.0,
+      "acoesExTesouraria": 1258124081000.0
     },
     "ESPA3": {
       "lucroLiquidoAnos": {
@@ -1849,9 +1849,9 @@
         "2024": 1648000.0,
         "2025": 13158000.0
       },
-      "acoesTotal": 361423066.0,
-      "acoesTesouraria": 2343681.0,
-      "acoesExTesouraria": 359079385.0
+      "acoesTotal": 361423066000.0,
+      "acoesTesouraria": 2343681000.0,
+      "acoesExTesouraria": 359079385000.0
     },
     "ESTR4": {
       "lucroLiquidoAnos": {
@@ -1861,9 +1861,9 @@
         "2024": -24261000.0,
         "2025": 142138000.0
       },
-      "acoesTotal": 8084.0,
+      "acoesTotal": 8084000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 8084.0
+      "acoesExTesouraria": 8084000.0
     },
     "ETER3": {
       "lucroLiquidoAnos": {
@@ -1873,9 +1873,9 @@
         "2024": 38820000.0,
         "2025": 48975000.0
       },
-      "acoesTotal": 61777.0,
-      "acoesTesouraria": 12.0,
-      "acoesExTesouraria": 61765.0
+      "acoesTotal": 61777000.0,
+      "acoesTesouraria": 12000.0,
+      "acoesExTesouraria": 61765000.0
     },
     "EUCA3": {
       "lucroLiquidoAnos": {
@@ -1885,9 +1885,9 @@
         "2024": 197999000.0,
         "2025": 319096000.0
       },
-      "acoesTotal": 92619.0,
-      "acoesTesouraria": 479.0,
-      "acoesExTesouraria": 92140.0
+      "acoesTotal": 92619000.0,
+      "acoesTesouraria": 479000.0,
+      "acoesExTesouraria": 92140000.0
     },
     "EUCA4": {
       "lucroLiquidoAnos": {
@@ -1897,9 +1897,9 @@
         "2024": 197999000.0,
         "2025": 319096000.0
       },
-      "acoesTotal": 92619.0,
-      "acoesTesouraria": 479.0,
-      "acoesExTesouraria": 92140.0
+      "acoesTotal": 92619000.0,
+      "acoesTesouraria": 479000.0,
+      "acoesExTesouraria": 92140000.0
     },
     "EVEN3": {
       "lucroLiquidoAnos": {
@@ -1909,9 +1909,9 @@
         "2024": 131518000.0,
         "2025": 299052000.0
       },
-      "acoesTotal": 200000000.0,
-      "acoesTesouraria": 3979536.0,
-      "acoesExTesouraria": 196020464.0
+      "acoesTotal": 200000000000.0,
+      "acoesTesouraria": 3979536000.0,
+      "acoesExTesouraria": 196020464000.0
     },
     "EZTC3": {
       "lucroLiquidoAnos": {
@@ -1921,9 +1921,9 @@
         "2024": 428718000.0,
         "2025": 547595000.0
       },
-      "acoesTotal": 281000000.0,
-      "acoesTesouraria": 3640973.0,
-      "acoesExTesouraria": 277359027.0
+      "acoesTotal": 281000000000.0,
+      "acoesTesouraria": 3640973000.0,
+      "acoesExTesouraria": 277359027000.0
     },
     "FESA3": {
       "lucroLiquidoAnos": {
@@ -1933,9 +1933,9 @@
         "2024": 327754000.0,
         "2025": 188676000.0
       },
-      "acoesTotal": 353175000.0,
-      "acoesTesouraria": 14307400.0,
-      "acoesExTesouraria": 338867600.0
+      "acoesTotal": 353175000000.0,
+      "acoesTesouraria": 14307400000.0,
+      "acoesExTesouraria": 338867600000.0
     },
     "FESA4": {
       "lucroLiquidoAnos": {
@@ -1945,9 +1945,9 @@
         "2024": 327754000.0,
         "2025": 188676000.0
       },
-      "acoesTotal": 353175000.0,
-      "acoesTesouraria": 14307400.0,
-      "acoesExTesouraria": 338867600.0
+      "acoesTotal": 353175000000.0,
+      "acoesTesouraria": 14307400000.0,
+      "acoesExTesouraria": 338867600000.0
     },
     "FHER3": {
       "lucroLiquidoAnos": {
@@ -1957,9 +1957,9 @@
         "2024": -1154741000.0,
         "2025": -172242000.0
       },
-      "acoesTotal": 53857284.0,
+      "acoesTotal": 53857284000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 53857284.0
+      "acoesExTesouraria": 53857284000.0
     },
     "FICT3": {
       "lucroLiquidoAnos": {
@@ -1969,9 +1969,9 @@
         "2024": -1419000.0,
         "2025": -23420000.0
       },
-      "acoesTotal": 43862205.0,
+      "acoesTotal": 43862205000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 43862205.0
+      "acoesExTesouraria": 43862205000.0
     },
     "FIEI3": {
       "lucroLiquidoAnos": {
@@ -1981,9 +1981,9 @@
         "2024": -639000.0,
         "2025": -8275000.0
       },
-      "acoesTotal": 2422153.0,
+      "acoesTotal": 2422153000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 2422153.0
+      "acoesExTesouraria": 2422153000.0
     },
     "FIQE3": {
       "lucroLiquidoAnos": {
@@ -1993,9 +1993,9 @@
         "2024": 174566000.0,
         "2025": 208957000.0
       },
-      "acoesTotal": 399086646.0,
-      "acoesTesouraria": 9860102.0,
-      "acoesExTesouraria": 389226544.0
+      "acoesTotal": 399086646000.0,
+      "acoesTesouraria": 9860102000.0,
+      "acoesExTesouraria": 389226544000.0
     },
     "FLRY3": {
       "lucroLiquidoAnos": {
@@ -2005,9 +2005,9 @@
         "2024": 603654000.0,
         "2025": 596671000.0
       },
-      "acoesTotal": 547191026.0,
-      "acoesTesouraria": 2175555.0,
-      "acoesExTesouraria": 545015471.0
+      "acoesTotal": 547191026000.0,
+      "acoesTesouraria": 2175555000.0,
+      "acoesExTesouraria": 545015471000.0
     },
     "FRAS3": {
       "lucroLiquidoAnos": {
@@ -2017,9 +2017,9 @@
         "2024": 374703000.0,
         "2025": 283166000.0
       },
-      "acoesTotal": 277335.0,
-      "acoesTesouraria": 3000.0,
-      "acoesExTesouraria": 274335.0
+      "acoesTotal": 277335000.0,
+      "acoesTesouraria": 3000000.0,
+      "acoesExTesouraria": 274335000.0
     },
     "FRIO3": {
       "lucroLiquidoAnos": {
@@ -2029,9 +2029,9 @@
         "2024": -22573000.0,
         "2025": 21936000.0
       },
-      "acoesTotal": 6382377.0,
+      "acoesTotal": 6382377000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 6382377.0
+      "acoesExTesouraria": 6382377000.0
     },
     "GEPA3": {
       "lucroLiquidoAnos": {
@@ -2041,9 +2041,9 @@
         "2024": 0.0,
         "2025": 0.0
       },
-      "acoesTotal": 94433283.0,
+      "acoesTotal": 94433283000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 94433283.0
+      "acoesExTesouraria": 94433283000.0
     },
     "GEPA4": {
       "lucroLiquidoAnos": {
@@ -2053,9 +2053,9 @@
         "2024": 0.0,
         "2025": 0.0
       },
-      "acoesTotal": 94433283.0,
+      "acoesTotal": 94433283000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 94433283.0
+      "acoesExTesouraria": 94433283000.0
     },
     "GFSA3": {
       "lucroLiquidoAnos": {
@@ -2065,9 +2065,9 @@
         "2024": -40723000.0,
         "2025": -544550000.0
       },
-      "acoesTotal": 11162.0,
-      "acoesTesouraria": 1646.0,
-      "acoesExTesouraria": 9516.0
+      "acoesTotal": 11162000.0,
+      "acoesTesouraria": 1646000.0,
+      "acoesExTesouraria": 9516000.0
     },
     "GGBR3": {
       "lucroLiquidoAnos": {
@@ -2077,9 +2077,9 @@
         "2024": 4599062000.0,
         "2025": 1418438000.0
       },
-      "acoesTotal": 2000879949.0,
-      "acoesTesouraria": 25736058.0,
-      "acoesExTesouraria": 1975143891.0
+      "acoesTotal": 2000879949000.0,
+      "acoesTesouraria": 25736058000.0,
+      "acoesExTesouraria": 1975143891000.0
     },
     "GGBR4": {
       "lucroLiquidoAnos": {
@@ -2089,9 +2089,9 @@
         "2024": 4599062000.0,
         "2025": 1418438000.0
       },
-      "acoesTotal": 2000879949.0,
-      "acoesTesouraria": 25736058.0,
-      "acoesExTesouraria": 1975143891.0
+      "acoesTotal": 2000879949000.0,
+      "acoesTesouraria": 25736058000.0,
+      "acoesExTesouraria": 1975143891000.0
     },
     "GGPS3": {
       "lucroLiquidoAnos": {
@@ -2101,9 +2101,9 @@
         "2024": 666434000.0,
         "2025": 694143000.0
       },
-      "acoesTotal": 750009979.0,
+      "acoesTotal": 750009979000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 750009979.0
+      "acoesExTesouraria": 750009979000.0
     },
     "GMAT3": {
       "lucroLiquidoAnos": {
@@ -2113,9 +2113,9 @@
         "2024": 1334894000.0,
         "2025": 1857293000.0
       },
-      "acoesTotal": 2248469834.0,
-      "acoesTesouraria": 3644947.0,
-      "acoesExTesouraria": 2244824887.0
+      "acoesTotal": 2248469834000.0,
+      "acoesTesouraria": 3644947000.0,
+      "acoesExTesouraria": 2244824887000.0
     },
     "GOAU3": {
       "lucroLiquidoAnos": {
@@ -2125,9 +2125,9 @@
         "2024": 4610512000.0,
         "2025": 1413724000.0
       },
-      "acoesTotal": 1324907948.0,
-      "acoesTesouraria": 2683.0,
-      "acoesExTesouraria": 1324905265.0
+      "acoesTotal": 1324907948000.0,
+      "acoesTesouraria": 2683000.0,
+      "acoesExTesouraria": 1324905265000.0
     },
     "GOAU4": {
       "lucroLiquidoAnos": {
@@ -2137,9 +2137,9 @@
         "2024": 4610512000.0,
         "2025": 1413724000.0
       },
-      "acoesTotal": 1324907948.0,
-      "acoesTesouraria": 2683.0,
-      "acoesExTesouraria": 1324905265.0
+      "acoesTotal": 1324907948000.0,
+      "acoesTesouraria": 2683000.0,
+      "acoesExTesouraria": 1324905265000.0
     },
     "GPAR3": {
       "lucroLiquidoAnos": {
@@ -2149,9 +2149,9 @@
         "2024": 37486000.0,
         "2025": 0.0
       },
-      "acoesTotal": 79676.0,
+      "acoesTotal": 79676000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 79676.0
+      "acoesExTesouraria": 79676000.0
     },
     "GRND3": {
       "lucroLiquidoAnos": {
@@ -2161,9 +2161,9 @@
         "2024": 735236000.0,
         "2025": 644808000.0
       },
-      "acoesTotal": 902160.0,
+      "acoesTotal": 902160000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 902160.0
+      "acoesExTesouraria": 902160000.0
     },
     "GSHP3": {
       "lucroLiquidoAnos": {
@@ -2173,9 +2173,9 @@
         "2024": -815268000.0,
         "2025": 22170000.0
       },
-      "acoesTotal": 1928769.0,
-      "acoesTesouraria": 53431.0,
-      "acoesExTesouraria": 1875338.0
+      "acoesTotal": 1928769000.0,
+      "acoesTesouraria": 53431000.0,
+      "acoesExTesouraria": 1875338000.0
     },
     "HAGA3": {
       "lucroLiquidoAnos": {
@@ -2209,9 +2209,9 @@
         "2024": -649376000.0,
         "2025": -142169000.0
       },
-      "acoesTotal": 502630884.0,
-      "acoesTesouraria": 27905027.0,
-      "acoesExTesouraria": 474725857.0
+      "acoesTotal": 502630884000.0,
+      "acoesTesouraria": 27905027000.0,
+      "acoesExTesouraria": 474725857000.0
     },
     "HBOR3": {
       "lucroLiquidoAnos": {
@@ -2221,9 +2221,9 @@
         "2024": 163020000.0,
         "2025": 92028000.0
       },
-      "acoesTotal": 133851.0,
-      "acoesTesouraria": 1157.0,
-      "acoesExTesouraria": 132694.0
+      "acoesTotal": 133851000.0,
+      "acoesTesouraria": 1157000.0,
+      "acoesExTesouraria": 132694000.0
     },
     "HBRE3": {
       "lucroLiquidoAnos": {
@@ -2233,9 +2233,9 @@
         "2024": 135524000.0,
         "2025": 96823000.0
       },
-      "acoesTotal": 103188981.0,
-      "acoesTesouraria": 222573.0,
-      "acoesExTesouraria": 102966408.0
+      "acoesTotal": 103188981000.0,
+      "acoesTesouraria": 222573000.0,
+      "acoesExTesouraria": 102966408000.0
     },
     "HBSA3": {
       "lucroLiquidoAnos": {
@@ -2245,9 +2245,9 @@
         "2024": -621699000.0,
         "2025": -140918000.0
       },
-      "acoesTotal": 1360382.0,
+      "acoesTotal": 1360382000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 1360382.0
+      "acoesExTesouraria": 1360382000.0
     },
     "HBTS5": {
       "lucroLiquidoAnos": {
@@ -2257,9 +2257,9 @@
         "2024": 14959000.0,
         "2025": 74559000.0
       },
-      "acoesTotal": 9133687.0,
+      "acoesTotal": 9133687000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 9133687.0
+      "acoesExTesouraria": 9133687000.0
     },
     "HETA4": {
       "lucroLiquidoAnos": {
@@ -2269,9 +2269,9 @@
         "2024": 723000.0,
         "2025": 943000.0
       },
-      "acoesTotal": 509999.0,
+      "acoesTotal": 509999000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 509999.0
+      "acoesExTesouraria": 509999000.0
     },
     "HOOT4": {
       "lucroLiquidoAnos": {
@@ -2281,9 +2281,9 @@
         "2024": 81134000.0,
         "2025": 30596000.0
       },
-      "acoesTotal": 18372.0,
+      "acoesTotal": 18372000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 18372.0
+      "acoesExTesouraria": 18372000.0
     },
     "HYPE3": {
       "lucroLiquidoAnos": {
@@ -2293,9 +2293,9 @@
         "2024": 1330875000.0,
         "2025": 1190132000.0
       },
-      "acoesTotal": 633420823.0,
-      "acoesTesouraria": 467311.0,
-      "acoesExTesouraria": 632953512.0
+      "acoesTotal": 633420823000.0,
+      "acoesTesouraria": 467311000.0,
+      "acoesExTesouraria": 632953512000.0
     },
     "IFCM3": {
       "lucroLiquidoAnos": {
@@ -2305,9 +2305,9 @@
         "2024": -1756143000.0,
         "2025": -341892000.0
       },
-      "acoesTotal": 121258965.0,
+      "acoesTotal": 121258965000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 121258965.0
+      "acoesExTesouraria": 121258965000.0
     },
     "IGTI11": {
       "lucroLiquidoAnos": {
@@ -2317,9 +2317,9 @@
         "2024": 399876000.0,
         "2025": 582576000.0
       },
-      "acoesTotal": 1206361185.0,
-      "acoesTesouraria": 84159.0,
-      "acoesExTesouraria": 1206277026.0
+      "acoesTotal": 1206361185000.0,
+      "acoesTesouraria": 84159000.0,
+      "acoesExTesouraria": 1206277026000.0
     },
     "IGTI3": {
       "lucroLiquidoAnos": {
@@ -2329,9 +2329,9 @@
         "2024": 399876000.0,
         "2025": 582576000.0
       },
-      "acoesTotal": 1206361185.0,
-      "acoesTesouraria": 84159.0,
-      "acoesExTesouraria": 1206277026.0
+      "acoesTotal": 1206361185000.0,
+      "acoesTesouraria": 84159000.0,
+      "acoesExTesouraria": 1206277026000.0
     },
     "INEP3": {
       "lucroLiquidoAnos": {
@@ -2341,9 +2341,9 @@
         "2024": -236773000.0,
         "2025": -513225000.0
       },
-      "acoesTotal": 48951.0,
+      "acoesTotal": 48951000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 48951.0
+      "acoesExTesouraria": 48951000.0
     },
     "INEP4": {
       "lucroLiquidoAnos": {
@@ -2353,9 +2353,9 @@
         "2024": -236773000.0,
         "2025": -513225000.0
       },
-      "acoesTotal": 48951.0,
+      "acoesTotal": 48951000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 48951.0
+      "acoesExTesouraria": 48951000.0
     },
     "INTB3": {
       "lucroLiquidoAnos": {
@@ -2365,9 +2365,9 @@
         "2024": 528412000.0,
         "2025": 483733000.0
       },
-      "acoesTotal": 327611110.0,
-      "acoesTesouraria": 329500.0,
-      "acoesExTesouraria": 327281610.0
+      "acoesTotal": 327611110000.0,
+      "acoesTesouraria": 329500000.0,
+      "acoesExTesouraria": 327281610000.0
     },
     "IRBR3": {
       "lucroLiquidoAnos": {
@@ -2377,9 +2377,9 @@
         "2024": 1196546000.0,
         "2025": 602561000.0
       },
-      "acoesTotal": 81842887.0,
-      "acoesTesouraria": 220000.0,
-      "acoesExTesouraria": 81622887.0
+      "acoesTotal": 81842887000.0,
+      "acoesTesouraria": 220000000.0,
+      "acoesExTesouraria": 81622887000.0
     },
     "ISAE3": {
       "lucroLiquidoAnos": {
@@ -2389,9 +2389,9 @@
         "2024": 3552731000.0,
         "2025": 2511015000.0
       },
-      "acoesTotal": 658883304.0,
+      "acoesTotal": 658883304000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 658883304.0
+      "acoesExTesouraria": 658883304000.0
     },
     "ISAE4": {
       "lucroLiquidoAnos": {
@@ -2401,9 +2401,9 @@
         "2024": 3552731000.0,
         "2025": 2511015000.0
       },
-      "acoesTotal": 658883304.0,
+      "acoesTotal": 658883304000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 658883304.0
+      "acoesExTesouraria": 658883304000.0
     },
     "ITSA3": {
       "lucroLiquidoAnos": {
@@ -2413,9 +2413,9 @@
         "2024": 14887000000.0,
         "2025": 16550000000.0
       },
-      "acoesTotal": 11213687.0,
-      "acoesTesouraria": 2340.0,
-      "acoesExTesouraria": 11211347.0
+      "acoesTotal": 11213687000.0,
+      "acoesTesouraria": 2340000.0,
+      "acoesExTesouraria": 11211347000.0
     },
     "ITSA4": {
       "lucroLiquidoAnos": {
@@ -2425,9 +2425,9 @@
         "2024": 14887000000.0,
         "2025": 16550000000.0
       },
-      "acoesTotal": 11213687.0,
-      "acoesTesouraria": 2340.0,
-      "acoesExTesouraria": 11211347.0
+      "acoesTotal": 11213687000.0,
+      "acoesTesouraria": 2340000.0,
+      "acoesExTesouraria": 11211347000.0
     },
     "ITUB3": {
       "lucroLiquidoAnos": {
@@ -2437,9 +2437,9 @@
         "2024": 42128000000.0,
         "2025": 45849000000.0
       },
-      "acoesTotal": 11026869.0,
-      "acoesTesouraria": 345.0,
-      "acoesExTesouraria": 11026524.0
+      "acoesTotal": 11026869000.0,
+      "acoesTesouraria": 345000.0,
+      "acoesExTesouraria": 11026524000.0
     },
     "ITUB4": {
       "lucroLiquidoAnos": {
@@ -2449,9 +2449,9 @@
         "2024": 42128000000.0,
         "2025": 45849000000.0
       },
-      "acoesTotal": 11026869.0,
-      "acoesTesouraria": 345.0,
-      "acoesExTesouraria": 11026524.0
+      "acoesTotal": 11026869000.0,
+      "acoesTesouraria": 345000.0,
+      "acoesExTesouraria": 11026524000.0
     },
     "JALL3": {
       "lucroLiquidoAnos": {
@@ -2461,9 +2461,9 @@
         "2024": 85118000.0,
         "2025": -55950000.0
       },
-      "acoesTotal": 303541864.0,
-      "acoesTesouraria": 1994200.0,
-      "acoesExTesouraria": 301547664.0
+      "acoesTotal": 303541864000.0,
+      "acoesTesouraria": 1994200000.0,
+      "acoesExTesouraria": 301547664000.0
     },
     "JFEN3": {
       "lucroLiquidoAnos": {
@@ -2473,9 +2473,9 @@
         "2024": -224400000.0,
         "2025": -223606000.0
       },
-      "acoesTotal": 12802745.0,
+      "acoesTotal": 12802745000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 12802745.0
+      "acoesExTesouraria": 12802745000.0
     },
     "JHSF3": {
       "lucroLiquidoAnos": {
@@ -2485,9 +2485,9 @@
         "2024": 861545000.0,
         "2025": 1868540000.0
       },
-      "acoesTotal": 681322756.0,
-      "acoesTesouraria": 15043952.0,
-      "acoesExTesouraria": 666278804.0
+      "acoesTotal": 681322756000.0,
+      "acoesTesouraria": 15043952000.0,
+      "acoesExTesouraria": 666278804000.0
     },
     "JOPA3": {
       "lucroLiquidoAnos": {
@@ -2497,9 +2497,9 @@
         "2024": 28902000.0,
         "2025": 16792000.0
       },
-      "acoesTotal": 10582.0,
+      "acoesTotal": 10582000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 10582.0
+      "acoesExTesouraria": 10582000.0
     },
     "JOPA4": {
       "lucroLiquidoAnos": {
@@ -2509,9 +2509,9 @@
         "2024": 28902000.0,
         "2025": 16792000.0
       },
-      "acoesTotal": 10582.0,
+      "acoesTotal": 10582000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 10582.0
+      "acoesExTesouraria": 10582000.0
     },
     "JSLG3": {
       "lucroLiquidoAnos": {
@@ -2521,9 +2521,9 @@
         "2024": 207312000.0,
         "2025": 81704000.0
       },
-      "acoesTotal": 286431078.0,
-      "acoesTesouraria": 1986132.0,
-      "acoesExTesouraria": 284444946.0
+      "acoesTotal": 286431078000.0,
+      "acoesTesouraria": 1986132000.0,
+      "acoesExTesouraria": 284444946000.0
     },
     "KEPL3": {
       "lucroLiquidoAnos": {
@@ -2533,9 +2533,9 @@
         "2024": 199183000.0,
         "2025": 156270000.0
       },
-      "acoesTotal": 179720.0,
-      "acoesTesouraria": 6388.0,
-      "acoesExTesouraria": 173332.0
+      "acoesTotal": 179720000.0,
+      "acoesTesouraria": 6388000.0,
+      "acoesExTesouraria": 173332000.0
     },
     "KLBN11": {
       "lucroLiquidoAnos": {
@@ -2545,9 +2545,9 @@
         "2024": 2046945000.0,
         "2025": 1678211000.0
       },
-      "acoesTotal": 6241478850.0,
-      "acoesTesouraria": 106051185.0,
-      "acoesExTesouraria": 6135427665.0
+      "acoesTotal": 6241478850000.0,
+      "acoesTesouraria": 106051185000.0,
+      "acoesExTesouraria": 6135427665000.0
     },
     "KLBN3": {
       "lucroLiquidoAnos": {
@@ -2557,9 +2557,9 @@
         "2024": 2046945000.0,
         "2025": 1678211000.0
       },
-      "acoesTotal": 6241478850.0,
-      "acoesTesouraria": 106051185.0,
-      "acoesExTesouraria": 6135427665.0
+      "acoesTotal": 6241478850000.0,
+      "acoesTesouraria": 106051185000.0,
+      "acoesExTesouraria": 6135427665000.0
     },
     "KLBN4": {
       "lucroLiquidoAnos": {
@@ -2569,9 +2569,9 @@
         "2024": 2046945000.0,
         "2025": 1678211000.0
       },
-      "acoesTotal": 6241478850.0,
-      "acoesTesouraria": 106051185.0,
-      "acoesExTesouraria": 6135427665.0
+      "acoesTotal": 6241478850000.0,
+      "acoesTesouraria": 106051185000.0,
+      "acoesExTesouraria": 6135427665000.0
     },
     "LAND3": {
       "lucroLiquidoAnos": {
@@ -2581,9 +2581,9 @@
         "2024": 7332000.0,
         "2025": 4745000.0
       },
-      "acoesTotal": 96227.0,
-      "acoesTesouraria": 20.0,
-      "acoesExTesouraria": 96207.0
+      "acoesTotal": 96227000.0,
+      "acoesTesouraria": 20000.0,
+      "acoesExTesouraria": 96207000.0
     },
     "LAVV3": {
       "lucroLiquidoAnos": {
@@ -2593,9 +2593,9 @@
         "2024": 392456000.0,
         "2025": 464164000.0
       },
-      "acoesTotal": 195434352.0,
+      "acoesTotal": 195434352000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 195434352.0
+      "acoesExTesouraria": 195434352000.0
     },
     "LEVE3": {
       "lucroLiquidoAnos": {
@@ -2605,9 +2605,9 @@
         "2024": 541204000.0,
         "2025": 608756000.0
       },
-      "acoesTotal": 135539000.0,
+      "acoesTotal": 135539000000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 135539000.0
+      "acoesExTesouraria": 135539000000.0
     },
     "LIGT3": {
       "lucroLiquidoAnos": {
@@ -2617,9 +2617,9 @@
         "2024": 1643779000.0,
         "2025": 213095000.0
       },
-      "acoesTotal": 372555324.0,
+      "acoesTotal": 372555324000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 372555324.0
+      "acoesExTesouraria": 372555324000.0
     },
     "LJQQ3": {
       "lucroLiquidoAnos": {
@@ -2629,9 +2629,9 @@
         "2024": 146000.0,
         "2025": -161941000.0
       },
-      "acoesTotal": 206917.0,
+      "acoesTotal": 206917000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 206917.0
+      "acoesExTesouraria": 206917000.0
     },
     "LOGG3": {
       "lucroLiquidoAnos": {
@@ -2641,9 +2641,9 @@
         "2024": 344378000.0,
         "2025": 363486000.0
       },
-      "acoesTotal": 87859.0,
-      "acoesTesouraria": 434.0,
-      "acoesExTesouraria": 87425.0
+      "acoesTotal": 87859000.0,
+      "acoesTesouraria": 434000.0,
+      "acoesExTesouraria": 87425000.0
     },
     "LOGN3": {
       "lucroLiquidoAnos": {
@@ -2653,9 +2653,9 @@
         "2024": 53703000.0,
         "2025": 93675000.0
       },
-      "acoesTotal": 107306486.0,
-      "acoesTesouraria": 1218772.0,
-      "acoesExTesouraria": 106087714.0
+      "acoesTotal": 107306486000.0,
+      "acoesTesouraria": 1218772000.0,
+      "acoesExTesouraria": 106087714000.0
     },
     "LPSB3": {
       "lucroLiquidoAnos": {
@@ -2665,9 +2665,9 @@
         "2024": 34526000.0,
         "2025": 52090000.0
       },
-      "acoesTotal": 147555.0,
-      "acoesTesouraria": 10267.0,
-      "acoesExTesouraria": 137288.0
+      "acoesTotal": 147555000.0,
+      "acoesTesouraria": 10267000.0,
+      "acoesExTesouraria": 137288000.0
     },
     "LREN3": {
       "lucroLiquidoAnos": {
@@ -2677,9 +2677,9 @@
         "2024": 1196668000.0,
         "2025": 1457566000.0
       },
-      "acoesTotal": 1006845.0,
-      "acoesTesouraria": 24646.0,
-      "acoesExTesouraria": 982199.0
+      "acoesTotal": 1006845000.0,
+      "acoesTesouraria": 24646000.0,
+      "acoesExTesouraria": 982199000.0
     },
     "LUPA3": {
       "lucroLiquidoAnos": {
@@ -2689,9 +2689,9 @@
         "2024": -31772000.0,
         "2025": -60176000.0
       },
-      "acoesTotal": 46687694.0,
+      "acoesTotal": 46687694000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 46687694.0
+      "acoesExTesouraria": 46687694000.0
     },
     "LUXM4": {
       "lucroLiquidoAnos": {
@@ -2701,9 +2701,9 @@
         "2024": 37134000.0,
         "2025": 22822000.0
       },
-      "acoesTotal": 41568.0,
+      "acoesTotal": 41568000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 41568.0
+      "acoesExTesouraria": 41568000.0
     },
     "LWSA3": {
       "lucroLiquidoAnos": {
@@ -2713,9 +2713,9 @@
         "2024": 42194000.0,
         "2025": -225450000.0
       },
-      "acoesTotal": 568561350.0,
-      "acoesTesouraria": 18129533.0,
-      "acoesExTesouraria": 550431817.0
+      "acoesTotal": 568561350000.0,
+      "acoesTesouraria": 18129533000.0,
+      "acoesExTesouraria": 550431817000.0
     },
     "MATD3": {
       "lucroLiquidoAnos": {
@@ -2725,9 +2725,9 @@
         "2024": -323904000.0,
         "2025": 111916000.0
       },
-      "acoesTotal": 333548825.0,
-      "acoesTesouraria": 1422400.0,
-      "acoesExTesouraria": 332126425.0
+      "acoesTotal": 333548825000.0,
+      "acoesTesouraria": 1422400000.0,
+      "acoesExTesouraria": 332126425000.0
     },
     "MDIA3": {
       "lucroLiquidoAnos": {
@@ -2737,9 +2737,9 @@
         "2024": 645948000.0,
         "2025": 659817000.0
       },
-      "acoesTotal": 339000000.0,
-      "acoesTesouraria": 3616747.0,
-      "acoesExTesouraria": 335383253.0
+      "acoesTotal": 339000000000.0,
+      "acoesTesouraria": 3616747000.0,
+      "acoesExTesouraria": 335383253000.0
     },
     "MDNE3": {
       "lucroLiquidoAnos": {
@@ -2749,9 +2749,9 @@
         "2024": 251054000.0,
         "2025": 420173000.0
       },
-      "acoesTotal": 84909375.0,
-      "acoesTesouraria": 426382.0,
-      "acoesExTesouraria": 84482993.0
+      "acoesTotal": 84909375000.0,
+      "acoesTesouraria": 426382000.0,
+      "acoesExTesouraria": 84482993000.0
     },
     "MEAL3": {
       "lucroLiquidoAnos": {
@@ -2761,9 +2761,9 @@
         "2024": -76278000.0,
         "2025": -148968000.0
       },
-      "acoesTotal": 5727390600.0,
-      "acoesTesouraria": 18530000.0,
-      "acoesExTesouraria": 5708860600.0
+      "acoesTotal": 5727390600000.0,
+      "acoesTesouraria": 18530000000.0,
+      "acoesExTesouraria": 5708860600000.0
     },
     "MELK3": {
       "lucroLiquidoAnos": {
@@ -2773,9 +2773,9 @@
         "2024": 136833000.0,
         "2025": 150056000.0
       },
-      "acoesTotal": 206269341.0,
-      "acoesTesouraria": 752289.0,
-      "acoesExTesouraria": 205517052.0
+      "acoesTotal": 206269341000.0,
+      "acoesTesouraria": 752289000.0,
+      "acoesExTesouraria": 205517052000.0
     },
     "MGEL4": {
       "lucroLiquidoAnos": {
@@ -2785,9 +2785,9 @@
         "2024": -41575000.0,
         "2025": 48022000.0
       },
-      "acoesTotal": 5783212.0,
+      "acoesTotal": 5783212000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 5783212.0
+      "acoesExTesouraria": 5783212000.0
     },
     "MGLU3": {
       "lucroLiquidoAnos": {
@@ -2797,9 +2797,9 @@
         "2024": 448717000.0,
         "2025": 204603000.0
       },
-      "acoesTotal": 775945010.0,
-      "acoesTesouraria": 1343449.0,
-      "acoesExTesouraria": 774601561.0
+      "acoesTotal": 775945010000.0,
+      "acoesTesouraria": 1343449000.0,
+      "acoesExTesouraria": 774601561000.0
     },
     "MILS3": {
       "lucroLiquidoAnos": {
@@ -2809,9 +2809,9 @@
         "2024": 285188000.0,
         "2025": 301263000.0
       },
-      "acoesTotal": 234178.0,
-      "acoesTesouraria": 7502.0,
-      "acoesExTesouraria": 226676.0
+      "acoesTotal": 234178000.0,
+      "acoesTesouraria": 7502000.0,
+      "acoesExTesouraria": 226676000.0
     },
     "MLAS3": {
       "lucroLiquidoAnos": {
@@ -2821,9 +2821,9 @@
         "2024": -321233000.0,
         "2025": 121899000.0
       },
-      "acoesTotal": 820539225.0,
-      "acoesTesouraria": 13123495.0,
-      "acoesExTesouraria": 807415730.0
+      "acoesTotal": 820539225000.0,
+      "acoesTesouraria": 13123495000.0,
+      "acoesExTesouraria": 807415730000.0
     },
     "MNDL3": {
       "lucroLiquidoAnos": {
@@ -2833,9 +2833,9 @@
         "2024": 3818000.0,
         "2025": -21970000.0
       },
-      "acoesTotal": 9921040.0,
-      "acoesTesouraria": 3064.0,
-      "acoesExTesouraria": 9917976.0
+      "acoesTotal": 9921040000.0,
+      "acoesTesouraria": 3064000.0,
+      "acoesExTesouraria": 9917976000.0
     },
     "MNPR3": {
       "lucroLiquidoAnos": {
@@ -2845,9 +2845,9 @@
         "2024": 12050000.0,
         "2025": 516149000.0
       },
-      "acoesTotal": 71001.0,
+      "acoesTotal": 71001000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 71001.0
+      "acoesExTesouraria": 71001000.0
     },
     "MOTV3": {
       "lucroLiquidoAnos": {
@@ -2857,9 +2857,9 @@
         "2024": 1311615000.0,
         "2025": 3503497000.0
       },
-      "acoesTotal": 2020000000.0,
-      "acoesTesouraria": 9512335.0,
-      "acoesExTesouraria": 2010487665.0
+      "acoesTotal": 2020000000000.0,
+      "acoesTesouraria": 9512335000.0,
+      "acoesExTesouraria": 2010487665000.0
     },
     "MOVI3": {
       "lucroLiquidoAnos": {
@@ -2869,9 +2869,9 @@
         "2024": 231493000.0,
         "2025": 318364000.0
       },
-      "acoesTotal": 347931466.0,
-      "acoesTesouraria": 8775700.0,
-      "acoesExTesouraria": 339155766.0
+      "acoesTotal": 347931466000.0,
+      "acoesTesouraria": 8775700000.0,
+      "acoesExTesouraria": 339155766000.0
     },
     "MRSA3B": {
       "lucroLiquidoAnos": {
@@ -2881,9 +2881,9 @@
         "2024": 1415510000.0,
         "2025": 1555063000.0
       },
-      "acoesTotal": 337977.0,
+      "acoesTotal": 337977000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 337977.0
+      "acoesExTesouraria": 337977000.0
     },
     "MRSA5B": {
       "lucroLiquidoAnos": {
@@ -2893,9 +2893,9 @@
         "2024": 1415510000.0,
         "2025": 1555063000.0
       },
-      "acoesTotal": 337977.0,
+      "acoesTotal": 337977000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 337977.0
+      "acoesExTesouraria": 337977000.0
     },
     "MRSA6B": {
       "lucroLiquidoAnos": {
@@ -2905,9 +2905,9 @@
         "2024": 1415510000.0,
         "2025": 1555063000.0
       },
-      "acoesTotal": 337977.0,
+      "acoesTotal": 337977000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 337977.0
+      "acoesExTesouraria": 337977000.0
     },
     "MRVE3": {
       "lucroLiquidoAnos": {
@@ -2917,9 +2917,9 @@
         "2024": -482097000.0,
         "2025": -1042704000.0
       },
-      "acoesTotal": 562827.0,
-      "acoesTesouraria": 1.0,
-      "acoesExTesouraria": 562826.0
+      "acoesTotal": 562827000.0,
+      "acoesTesouraria": 1000.0,
+      "acoesExTesouraria": 562826000.0
     },
     "MSPA3": {
       "lucroLiquidoAnos": {
@@ -2929,9 +2929,9 @@
         "2024": 3312000.0,
         "2025": -32702000.0
       },
-      "acoesTotal": 6404.0,
-      "acoesTesouraria": 6.0,
-      "acoesExTesouraria": 6398.0
+      "acoesTotal": 6404000.0,
+      "acoesTesouraria": 6000.0,
+      "acoesExTesouraria": 6398000.0
     },
     "MSPA4": {
       "lucroLiquidoAnos": {
@@ -2941,9 +2941,9 @@
         "2024": 3312000.0,
         "2025": -32702000.0
       },
-      "acoesTotal": 6404.0,
-      "acoesTesouraria": 6.0,
-      "acoesExTesouraria": 6398.0
+      "acoesTotal": 6404000.0,
+      "acoesTesouraria": 6000.0,
+      "acoesExTesouraria": 6398000.0
     },
     "MTRE3": {
       "lucroLiquidoAnos": {
@@ -2953,9 +2953,9 @@
         "2024": 69624000.0,
         "2025": 78116000.0
       },
-      "acoesTotal": 105774820.0,
+      "acoesTotal": 105774820000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 105774820.0
+      "acoesExTesouraria": 105774820000.0
     },
     "MTSA4": {
       "lucroLiquidoAnos": {
@@ -2977,9 +2977,9 @@
         "2024": 1340986000.0,
         "2025": 1141233000.0
       },
-      "acoesTotal": 513163701.0,
-      "acoesTesouraria": 23835034.0,
-      "acoesExTesouraria": 489328667.0
+      "acoesTotal": 513163701000.0,
+      "acoesTesouraria": 23835034000.0,
+      "acoesExTesouraria": 489328667000.0
     },
     "MWET3": {
       "lucroLiquidoAnos": {
@@ -2989,9 +2989,9 @@
         "2024": 32880000.0,
         "2025": -28578000.0
       },
-      "acoesTotal": 2058.0,
+      "acoesTotal": 2058000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 2058.0
+      "acoesExTesouraria": 2058000.0
     },
     "MWET4": {
       "lucroLiquidoAnos": {
@@ -3001,9 +3001,9 @@
         "2024": 32880000.0,
         "2025": -28578000.0
       },
-      "acoesTotal": 2058.0,
+      "acoesTotal": 2058000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 2058.0
+      "acoesExTesouraria": 2058000.0
     },
     "MYPK3": {
       "lucroLiquidoAnos": {
@@ -3013,9 +3013,9 @@
         "2024": 380084000.0,
         "2025": 217134000.0
       },
-      "acoesTotal": 153720.0,
-      "acoesTesouraria": 3950.0,
-      "acoesExTesouraria": 149770.0
+      "acoesTotal": 153720000.0,
+      "acoesTesouraria": 3950000.0,
+      "acoesExTesouraria": 149770000.0
     },
     "NATU3": {
       "lucroLiquidoAnos": {
@@ -3025,9 +3025,9 @@
         "2024": 760639000.0,
         "2025": -1785238000.0
       },
-      "acoesTotal": 1773371.0,
-      "acoesTesouraria": 385.0,
-      "acoesExTesouraria": 1772986.0
+      "acoesTotal": 1773371000.0,
+      "acoesTesouraria": 385000.0,
+      "acoesExTesouraria": 1772986000.0
     },
     "NEXP3": {
       "lucroLiquidoAnos": {
@@ -3037,9 +3037,9 @@
         "2024": -48496000.0,
         "2025": 107550000.0
       },
-      "acoesTotal": 2655569.0,
+      "acoesTotal": 2655569000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 2655569.0
+      "acoesExTesouraria": 2655569000.0
     },
     "NGRD3": {
       "lucroLiquidoAnos": {
@@ -3049,9 +3049,9 @@
         "2024": -33816000.0,
         "2025": -5383000.0
       },
-      "acoesTotal": 9140944.0,
-      "acoesTesouraria": 185696.0,
-      "acoesExTesouraria": 8955248.0
+      "acoesTotal": 9140944000.0,
+      "acoesTesouraria": 185696000.0,
+      "acoesExTesouraria": 8955248000.0
     },
     "NORD3": {
       "lucroLiquidoAnos": {
@@ -3061,9 +3061,9 @@
         "2024": 39723000.0,
         "2025": -12234000.0
       },
-      "acoesTotal": 6621.0,
+      "acoesTotal": 6621000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 6621.0
+      "acoesExTesouraria": 6621000.0
     },
     "NUTR3": {
       "lucroLiquidoAnos": {
@@ -3073,17 +3073,17 @@
         "2024": 10276000.0,
         "2025": 5386000.0
       },
-      "acoesTotal": 13244400.0,
-      "acoesTesouraria": 11000.0,
-      "acoesExTesouraria": 13233400.0
+      "acoesTotal": 13244400000.0,
+      "acoesTesouraria": 11000000.0,
+      "acoesExTesouraria": 13233400000.0
     },
     "OBTC3": {
       "lucroLiquidoAnos": {
         "2025": -469986000.0
       },
-      "acoesTotal": 317613740.0,
-      "acoesTesouraria": 26797700.0,
-      "acoesExTesouraria": 290816040.0
+      "acoesTotal": 317613740000.0,
+      "acoesTesouraria": 26797700000.0,
+      "acoesExTesouraria": 290816040000.0
     },
     "OFSA3": {
       "lucroLiquidoAnos": {
@@ -3093,9 +3093,9 @@
         "2024": 134329000.0,
         "2025": 222311000.0
       },
-      "acoesTotal": 53949006.0,
-      "acoesTesouraria": 181400.0,
-      "acoesExTesouraria": 53767606.0
+      "acoesTotal": 53949006000.0,
+      "acoesTesouraria": 181400000.0,
+      "acoesExTesouraria": 53767606000.0
     },
     "OIBR3": {
       "lucroLiquidoAnos": {
@@ -3121,9 +3121,9 @@
         "2024": -717425000.0,
         "2025": -3671107000.0
       },
-      "acoesTotal": 1132929494.0,
-      "acoesTesouraria": 14727103.0,
-      "acoesExTesouraria": 1118202391.0
+      "acoesTotal": 1132929494000.0,
+      "acoesTesouraria": 14727103000.0,
+      "acoesExTesouraria": 1118202391000.0
     },
     "OPCT3": {
       "lucroLiquidoAnos": {
@@ -3133,9 +3133,9 @@
         "2024": -15598000.0,
         "2025": 105475000.0
       },
-      "acoesTotal": 199959554.0,
-      "acoesTesouraria": 612201.0,
-      "acoesExTesouraria": 199347353.0
+      "acoesTotal": 199959554000.0,
+      "acoesTesouraria": 612201000.0,
+      "acoesExTesouraria": 199347353000.0
     },
     "ORVR3": {
       "lucroLiquidoAnos": {
@@ -3145,9 +3145,9 @@
         "2024": 74476000.0,
         "2025": 73962000.0
       },
-      "acoesTotal": 96127.0,
+      "acoesTotal": 96127000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 96127.0
+      "acoesExTesouraria": 96127000.0
     },
     "OSXB3": {
       "lucroLiquidoAnos": {
@@ -3157,9 +3157,9 @@
         "2024": -1591264000.0,
         "2025": -1106833000.0
       },
-      "acoesTotal": 3148038.0,
+      "acoesTotal": 3148038000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 3148038.0
+      "acoesExTesouraria": 3148038000.0
     },
     "PASS3": {
       "lucroLiquidoAnos": {
@@ -3169,9 +3169,9 @@
         "2024": 2122454000.0,
         "2025": 1459707000.0
       },
-      "acoesTotal": 714190095.0,
+      "acoesTotal": 714190095000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 714190095.0
+      "acoesExTesouraria": 714190095000.0
     },
     "PATI3": {
       "lucroLiquidoAnos": {
@@ -3181,9 +3181,9 @@
         "2024": 84659000.0,
         "2025": 49866000.0
       },
-      "acoesTotal": 23932.0,
+      "acoesTotal": 23932000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 23932.0
+      "acoesExTesouraria": 23932000.0
     },
     "PATI4": {
       "lucroLiquidoAnos": {
@@ -3193,9 +3193,9 @@
         "2024": 84659000.0,
         "2025": 49866000.0
       },
-      "acoesTotal": 23932.0,
+      "acoesTotal": 23932000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 23932.0
+      "acoesExTesouraria": 23932000.0
     },
     "PCAR3": {
       "lucroLiquidoAnos": {
@@ -3205,9 +3205,9 @@
         "2024": -2403000000.0,
         "2025": -815000000.0
       },
-      "acoesTotal": 490797.0,
-      "acoesTesouraria": 160.0,
-      "acoesExTesouraria": 490637.0
+      "acoesTotal": 490797000.0,
+      "acoesTesouraria": 160000.0,
+      "acoesExTesouraria": 490637000.0
     },
     "PDGR3": {
       "lucroLiquidoAnos": {
@@ -3217,9 +3217,9 @@
         "2024": -429848000.0,
         "2025": -333739000.0
       },
-      "acoesTotal": 3287.0,
+      "acoesTotal": 3287000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 3287.0
+      "acoesExTesouraria": 3287000.0
     },
     "PDTC3": {
       "lucroLiquidoAnos": {
@@ -3241,9 +3241,9 @@
         "2024": 41040000.0,
         "2025": 33709000.0
       },
-      "acoesTotal": 18138974.0,
+      "acoesTotal": 18138974000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 18138974.0
+      "acoesExTesouraria": 18138974000.0
     },
     "PEAB4": {
       "lucroLiquidoAnos": {
@@ -3253,9 +3253,9 @@
         "2024": 41040000.0,
         "2025": 33709000.0
       },
-      "acoesTotal": 18138974.0,
+      "acoesTotal": 18138974000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 18138974.0
+      "acoesExTesouraria": 18138974000.0
     },
     "PETR3": {
       "lucroLiquidoAnos": {
@@ -3265,9 +3265,9 @@
         "2024": 37009000000.0,
         "2025": 110605000000.0
       },
-      "acoesTotal": 12888732761.0,
+      "acoesTotal": 12888732761000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 12888732761.0
+      "acoesExTesouraria": 12888732761000.0
     },
     "PETR4": {
       "lucroLiquidoAnos": {
@@ -3277,9 +3277,9 @@
         "2024": 37009000000.0,
         "2025": 110605000000.0
       },
-      "acoesTotal": 12888732761.0,
+      "acoesTotal": 12888732761000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 12888732761.0
+      "acoesExTesouraria": 12888732761000.0
     },
     "PFRM3": {
       "lucroLiquidoAnos": {
@@ -3289,9 +3289,9 @@
         "2024": 122813000.0,
         "2025": 126013000.0
       },
-      "acoesTotal": 123813.0,
-      "acoesTesouraria": 1202.0,
-      "acoesExTesouraria": 122611.0
+      "acoesTotal": 123813000.0,
+      "acoesTesouraria": 1202000.0,
+      "acoesExTesouraria": 122611000.0
     },
     "PGMN3": {
       "lucroLiquidoAnos": {
@@ -3301,9 +3301,9 @@
         "2024": 103148000.0,
         "2025": 260930000.0
       },
-      "acoesTotal": 662673160.0,
-      "acoesTesouraria": 3065072.0,
-      "acoesExTesouraria": 659608088.0
+      "acoesTotal": 662673160000.0,
+      "acoesTesouraria": 3065072000.0,
+      "acoesExTesouraria": 659608088000.0
     },
     "PINE3": {
       "lucroLiquidoAnos": {
@@ -3313,9 +3313,9 @@
         "2024": 101734000.0,
         "2025": 432878000.0
       },
-      "acoesTotal": 232451347.0,
-      "acoesTesouraria": 823248.0,
-      "acoesExTesouraria": 231628099.0
+      "acoesTotal": 232451347000.0,
+      "acoesTesouraria": 823248000.0,
+      "acoesExTesouraria": 231628099000.0
     },
     "PINE4": {
       "lucroLiquidoAnos": {
@@ -3325,9 +3325,9 @@
         "2024": 101734000.0,
         "2025": 432878000.0
       },
-      "acoesTotal": 232451347.0,
-      "acoesTesouraria": 823248.0,
-      "acoesExTesouraria": 231628099.0
+      "acoesTotal": 232451347000.0,
+      "acoesTesouraria": 823248000.0,
+      "acoesExTesouraria": 231628099000.0
     },
     "PLAS3": {
       "lucroLiquidoAnos": {
@@ -3337,9 +3337,9 @@
         "2024": -109995000.0,
         "2025": -203946000.0
       },
-      "acoesTotal": 12425.0,
+      "acoesTotal": 12425000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 12425.0
+      "acoesExTesouraria": 12425000.0
     },
     "PLPL3": {
       "lucroLiquidoAnos": {
@@ -3349,9 +3349,9 @@
         "2024": 390565000.0,
         "2025": 422700000.0
       },
-      "acoesTotal": 203901000.0,
-      "acoesTesouraria": 991220.0,
-      "acoesExTesouraria": 202909780.0
+      "acoesTotal": 203901000000.0,
+      "acoesTesouraria": 991220000.0,
+      "acoesExTesouraria": 202909780000.0
     },
     "PMAM3": {
       "lucroLiquidoAnos": {
@@ -3361,9 +3361,9 @@
         "2024": -2138610000.0,
         "2025": -1331490000.0
       },
-      "acoesTotal": 120541596.0,
-      "acoesTesouraria": 1441.0,
-      "acoesExTesouraria": 120540155.0
+      "acoesTotal": 120541596000.0,
+      "acoesTesouraria": 1441000.0,
+      "acoesExTesouraria": 120540155000.0
     },
     "PNVL3": {
       "lucroLiquidoAnos": {
@@ -3373,9 +3373,9 @@
         "2024": 105509000.0,
         "2025": 124605000.0
       },
-      "acoesTotal": 150377481.0,
-      "acoesTesouraria": 1692866.0,
-      "acoesExTesouraria": 148684615.0
+      "acoesTotal": 150377481000.0,
+      "acoesTesouraria": 1692866000.0,
+      "acoesExTesouraria": 148684615000.0
     },
     "POMO3": {
       "lucroLiquidoAnos": {
@@ -3385,9 +3385,9 @@
         "2024": 1222377000.0,
         "2025": 1235508000.0
       },
-      "acoesTotal": 1249898603.0,
-      "acoesTesouraria": 9306656.0,
-      "acoesExTesouraria": 1240591947.0
+      "acoesTotal": 1249898603000.0,
+      "acoesTesouraria": 9306656000.0,
+      "acoesExTesouraria": 1240591947000.0
     },
     "POMO4": {
       "lucroLiquidoAnos": {
@@ -3397,9 +3397,9 @@
         "2024": 1222377000.0,
         "2025": 1235508000.0
       },
-      "acoesTotal": 1249898603.0,
-      "acoesTesouraria": 9306656.0,
-      "acoesExTesouraria": 1240591947.0
+      "acoesTotal": 1249898603000.0,
+      "acoesTesouraria": 9306656000.0,
+      "acoesExTesouraria": 1240591947000.0
     },
     "POSI3": {
       "lucroLiquidoAnos": {
@@ -3409,9 +3409,9 @@
         "2024": 85038000.0,
         "2025": 12234000.0
       },
-      "acoesTotal": 141800.0,
-      "acoesTesouraria": 2589.0,
-      "acoesExTesouraria": 139211.0
+      "acoesTotal": 141800000.0,
+      "acoesTesouraria": 2589000.0,
+      "acoesExTesouraria": 139211000.0
     },
     "PRIO3": {
       "lucroLiquidoAnos": {
@@ -3421,9 +3421,9 @@
         "2024": 10301606000.0,
         "2025": 2251479000.0
       },
-      "acoesTotal": 869455788.0,
-      "acoesTesouraria": 59533057.0,
-      "acoesExTesouraria": 809922731.0
+      "acoesTotal": 869455788000.0,
+      "acoesTesouraria": 59533057000.0,
+      "acoesExTesouraria": 809922731000.0
     },
     "PRNR3": {
       "lucroLiquidoAnos": {
@@ -3433,9 +3433,9 @@
         "2024": 27817000.0,
         "2025": 8404000.0
       },
-      "acoesTotal": 56720757.0,
+      "acoesTotal": 56720757000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 56720757.0
+      "acoesExTesouraria": 56720757000.0
     },
     "PSSA3": {
       "lucroLiquidoAnos": {
@@ -3445,9 +3445,9 @@
         "2024": 2690782000.0,
         "2025": 3424078000.0
       },
-      "acoesTotal": 646586.0,
-      "acoesTesouraria": 6226.0,
-      "acoesExTesouraria": 640360.0
+      "acoesTotal": 646586000.0,
+      "acoesTesouraria": 6226000.0,
+      "acoesExTesouraria": 640360000.0
     },
     "PTBL3": {
       "lucroLiquidoAnos": {
@@ -3457,9 +3457,9 @@
         "2024": -102017000.0,
         "2025": -291722000.0
       },
-      "acoesTotal": 140987.0,
+      "acoesTotal": 140987000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 140987.0
+      "acoesExTesouraria": 140987000.0
     },
     "QUAL3": {
       "lucroLiquidoAnos": {
@@ -3469,9 +3469,9 @@
         "2024": 15063000.0,
         "2025": 17049000.0
       },
-      "acoesTotal": 284014325.0,
-      "acoesTesouraria": 891867.0,
-      "acoesExTesouraria": 283122458.0
+      "acoesTotal": 284014325000.0,
+      "acoesTesouraria": 891867000.0,
+      "acoesExTesouraria": 283122458000.0
     },
     "RADL3": {
       "lucroLiquidoAnos": {
@@ -3481,9 +3481,9 @@
         "2024": 1211373000.0,
         "2025": 1300243000.0
       },
-      "acoesTotal": 1752367344.0,
-      "acoesTesouraria": 5103450.0,
-      "acoesExTesouraria": 1747263894.0
+      "acoesTotal": 1752367344000.0,
+      "acoesTesouraria": 5103450000.0,
+      "acoesExTesouraria": 1747263894000.0
     },
     "RAIL3": {
       "lucroLiquidoAnos": {
@@ -3493,9 +3493,9 @@
         "2024": -949242000.0,
         "2025": 865125000.0
       },
-      "acoesTotal": 1858828617.0,
-      "acoesTesouraria": 3042509.0,
-      "acoesExTesouraria": 1855786108.0
+      "acoesTotal": 1858828617000.0,
+      "acoesTesouraria": 3042509000.0,
+      "acoesExTesouraria": 1855786108000.0
     },
     "RAIZ4": {
       "lucroLiquidoAnos": {
@@ -3505,9 +3505,9 @@
         "2024": 614133000.0,
         "2025": -4176951000.0
       },
-      "acoesTotal": 10352509484.0,
-      "acoesTesouraria": 18263674.0,
-      "acoesExTesouraria": 10334245810.0
+      "acoesTotal": 10352509484000.0,
+      "acoesTesouraria": 18263674000.0,
+      "acoesExTesouraria": 10334245810000.0
     },
     "RANI3": {
       "lucroLiquidoAnos": {
@@ -3517,9 +3517,9 @@
         "2024": 304519000.0,
         "2025": 242050000.0
       },
-      "acoesTotal": 230501.0,
+      "acoesTotal": 230501000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 230501.0
+      "acoesExTesouraria": 230501000.0
     },
     "RAPT3": {
       "lucroLiquidoAnos": {
@@ -3529,9 +3529,9 @@
         "2024": 691696000.0,
         "2025": -59791000.0
       },
-      "acoesTotal": 349724671.0,
-      "acoesTesouraria": 1036900.0,
-      "acoesExTesouraria": 348687771.0
+      "acoesTotal": 349724671000.0,
+      "acoesTesouraria": 1036900000.0,
+      "acoesExTesouraria": 348687771000.0
     },
     "RAPT4": {
       "lucroLiquidoAnos": {
@@ -3541,9 +3541,9 @@
         "2024": 691696000.0,
         "2025": -59791000.0
       },
-      "acoesTotal": 349724671.0,
-      "acoesTesouraria": 1036900.0,
-      "acoesExTesouraria": 348687771.0
+      "acoesTotal": 349724671000.0,
+      "acoesTesouraria": 1036900000.0,
+      "acoesExTesouraria": 348687771000.0
     },
     "RCSL3": {
       "lucroLiquidoAnos": {
@@ -3553,9 +3553,9 @@
         "2024": -19719000.0,
         "2025": -16965000.0
       },
-      "acoesTotal": 31821.0,
+      "acoesTotal": 31821000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 31821.0
+      "acoesExTesouraria": 31821000.0
     },
     "RCSL4": {
       "lucroLiquidoAnos": {
@@ -3565,9 +3565,9 @@
         "2024": -19719000.0,
         "2025": -16965000.0
       },
-      "acoesTotal": 31821.0,
+      "acoesTotal": 31821000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 31821.0
+      "acoesExTesouraria": 31821000.0
     },
     "RDOR3": {
       "lucroLiquidoAnos": {
@@ -3577,9 +3577,9 @@
         "2024": 3934120000.0,
         "2025": 4843623000.0
       },
-      "acoesTotal": 2289292590.0,
-      "acoesTesouraria": 82882567.0,
-      "acoesExTesouraria": 2206410023.0
+      "acoesTotal": 2289292590000.0,
+      "acoesTesouraria": 82882567000.0,
+      "acoesExTesouraria": 2206410023000.0
     },
     "RECV3": {
       "lucroLiquidoAnos": {
@@ -3589,9 +3589,9 @@
         "2024": 437498000.0,
         "2025": 638352000.0
       },
-      "acoesTotal": 293472126.0,
-      "acoesTesouraria": 494198.0,
-      "acoesExTesouraria": 292977928.0
+      "acoesTotal": 293472126000.0,
+      "acoesTesouraria": 494198000.0,
+      "acoesExTesouraria": 292977928000.0
     },
     "REDE3": {
       "lucroLiquidoAnos": {
@@ -3601,9 +3601,9 @@
         "2024": 2008005000.0,
         "2025": 1677899000.0
       },
-      "acoesTotal": 2568204239.0,
+      "acoesTotal": 2568204239000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 2568204239.0
+      "acoesExTesouraria": 2568204239000.0
     },
     "RENT3": {
       "lucroLiquidoAnos": {
@@ -3613,9 +3613,9 @@
         "2024": 1813310000.0,
         "2025": 1870470000.0
       },
-      "acoesTotal": 1124259345.0,
-      "acoesTesouraria": 29218474.0,
-      "acoesExTesouraria": 1095040871.0
+      "acoesTotal": 1124259345000.0,
+      "acoesTesouraria": 29218474000.0,
+      "acoesExTesouraria": 1095040871000.0
     },
     "RIAA3": {
       "lucroLiquidoAnos": {
@@ -3625,9 +3625,9 @@
         "2024": 235138000.0,
         "2025": 1475168000.0
       },
-      "acoesTotal": 500058238.0,
-      "acoesTesouraria": 2560.0,
-      "acoesExTesouraria": 500055678.0
+      "acoesTotal": 500058238000.0,
+      "acoesTesouraria": 2560000.0,
+      "acoesExTesouraria": 500055678000.0
     },
     "RNEW3": {
       "lucroLiquidoAnos": {
@@ -3637,9 +3637,9 @@
         "2024": -117069000.0,
         "2025": -162231000.0
       },
-      "acoesTotal": 373114600.0,
+      "acoesTotal": 373114600000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 373114600.0
+      "acoesExTesouraria": 373114600000.0
     },
     "RNEW4": {
       "lucroLiquidoAnos": {
@@ -3649,9 +3649,9 @@
         "2024": -117069000.0,
         "2025": -162231000.0
       },
-      "acoesTotal": 373114600.0,
+      "acoesTotal": 373114600000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 373114600.0
+      "acoesExTesouraria": 373114600000.0
     },
     "ROMI3": {
       "lucroLiquidoAnos": {
@@ -3661,9 +3661,9 @@
         "2024": 114964000.0,
         "2025": 86170000.0
       },
-      "acoesTotal": 93170747.0,
+      "acoesTotal": 93170747000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 93170747.0
+      "acoesExTesouraria": 93170747000.0
     },
     "RPAD3": {
       "lucroLiquidoAnos": {
@@ -3673,9 +3673,9 @@
         "2024": -115465000.0,
         "2025": 82199000.0
       },
-      "acoesTotal": 84682269.0,
+      "acoesTotal": 84682269000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 84682269.0
+      "acoesExTesouraria": 84682269000.0
     },
     "RPAD5": {
       "lucroLiquidoAnos": {
@@ -3685,9 +3685,9 @@
         "2024": -115465000.0,
         "2025": 82199000.0
       },
-      "acoesTotal": 84682269.0,
+      "acoesTotal": 84682269000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 84682269.0
+      "acoesExTesouraria": 84682269000.0
     },
     "RPAD6": {
       "lucroLiquidoAnos": {
@@ -3697,9 +3697,9 @@
         "2024": -115465000.0,
         "2025": 82199000.0
       },
-      "acoesTotal": 84682269.0,
+      "acoesTotal": 84682269000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 84682269.0
+      "acoesExTesouraria": 84682269000.0
     },
     "RPMG3": {
       "lucroLiquidoAnos": {
@@ -3725,9 +3725,9 @@
         "2024": 58732000.0,
         "2025": 64448000.0
       },
-      "acoesTotal": 6072128.0,
+      "acoesTotal": 6072128000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 6072128.0
+      "acoesExTesouraria": 6072128000.0
     },
     "RVEE3": {
       "lucroLiquidoAnos": {
@@ -3747,9 +3747,9 @@
         "2024": 13413763000.0,
         "2025": 12965123000.0
       },
-      "acoesTotal": 7498531.0,
-      "acoesTesouraria": 27331.0,
-      "acoesExTesouraria": 7471200.0
+      "acoesTotal": 7498531000.0,
+      "acoesTesouraria": 27331000.0,
+      "acoesExTesouraria": 7471200000.0
     },
     "SANB3": {
       "lucroLiquidoAnos": {
@@ -3759,9 +3759,9 @@
         "2024": 13413763000.0,
         "2025": 12965123000.0
       },
-      "acoesTotal": 7498531.0,
-      "acoesTesouraria": 27331.0,
-      "acoesExTesouraria": 7471200.0
+      "acoesTotal": 7498531000.0,
+      "acoesTesouraria": 27331000.0,
+      "acoesExTesouraria": 7471200000.0
     },
     "SANB4": {
       "lucroLiquidoAnos": {
@@ -3771,9 +3771,9 @@
         "2024": 13413763000.0,
         "2025": 12965123000.0
       },
-      "acoesTotal": 7498531.0,
-      "acoesTesouraria": 27331.0,
-      "acoesExTesouraria": 7471200.0
+      "acoesTotal": 7498531000.0,
+      "acoesTesouraria": 27331000.0,
+      "acoesExTesouraria": 7471200000.0
     },
     "SAPR11": {
       "lucroLiquidoAnos": {
@@ -3783,9 +3783,9 @@
         "2024": 1545347000.0,
         "2025": 2079568000.0
       },
-      "acoesTotal": 1511205519.0,
+      "acoesTotal": 1511205519000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 1511205519.0
+      "acoesExTesouraria": 1511205519000.0
     },
     "SAPR3": {
       "lucroLiquidoAnos": {
@@ -3795,9 +3795,9 @@
         "2024": 1545347000.0,
         "2025": 2079568000.0
       },
-      "acoesTotal": 1511205519.0,
+      "acoesTotal": 1511205519000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 1511205519.0
+      "acoesExTesouraria": 1511205519000.0
     },
     "SAPR4": {
       "lucroLiquidoAnos": {
@@ -3807,9 +3807,9 @@
         "2024": 1545347000.0,
         "2025": 2079568000.0
       },
-      "acoesTotal": 1511205519.0,
+      "acoesTotal": 1511205519000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 1511205519.0
+      "acoesExTesouraria": 1511205519000.0
     },
     "SAUD3": {
       "lucroLiquidoAnos": {
@@ -3819,9 +3819,9 @@
         "2024": 539133000.0,
         "2025": 582537000.0
       },
-      "acoesTotal": 545825286.0,
-      "acoesTesouraria": 732100.0,
-      "acoesExTesouraria": 545093186.0
+      "acoesTotal": 545825286000.0,
+      "acoesTesouraria": 732100000.0,
+      "acoesExTesouraria": 545093186000.0
     },
     "SBFG3": {
       "lucroLiquidoAnos": {
@@ -3831,9 +3831,9 @@
         "2024": 535834000.0,
         "2025": 327970000.0
       },
-      "acoesTotal": 230265713.0,
-      "acoesTesouraria": 14289617.0,
-      "acoesExTesouraria": 215976096.0
+      "acoesTotal": 230265713000.0,
+      "acoesTesouraria": 14289617000.0,
+      "acoesExTesouraria": 215976096000.0
     },
     "SBSP3": {
       "lucroLiquidoAnos": {
@@ -3843,9 +3843,9 @@
         "2024": 9579563000.0,
         "2025": 8462059000.0
       },
-      "acoesTotal": 703773869.0,
-      "acoesTesouraria": 3554431.0,
-      "acoesExTesouraria": 700219438.0
+      "acoesTotal": 703773869000.0,
+      "acoesTesouraria": 3554431000.0,
+      "acoesExTesouraria": 700219438000.0
     },
     "SCAR3": {
       "lucroLiquidoAnos": {
@@ -3855,9 +3855,9 @@
         "2024": -32922000.0,
         "2025": -48442000.0
       },
-      "acoesTotal": 57737.0,
-      "acoesTesouraria": 535.0,
-      "acoesExTesouraria": 57202.0
+      "acoesTotal": 57737000.0,
+      "acoesTesouraria": 535000.0,
+      "acoesExTesouraria": 57202000.0
     },
     "SEER3": {
       "lucroLiquidoAnos": {
@@ -3867,9 +3867,9 @@
         "2024": -1162000.0,
         "2025": 214436000.0
       },
-      "acoesTotal": 128721560.0,
-      "acoesTesouraria": 1106923.0,
-      "acoesExTesouraria": 127614637.0
+      "acoesTotal": 128721560000.0,
+      "acoesTesouraria": 1106923000.0,
+      "acoesExTesouraria": 127614637000.0
     },
     "SEQL3": {
       "lucroLiquidoAnos": {
@@ -3879,9 +3879,9 @@
         "2024": -1278391000.0,
         "2025": -195422000.0
       },
-      "acoesTotal": 11984556.0,
+      "acoesTotal": 11984556000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 11984556.0
+      "acoesExTesouraria": 11984556000.0
     },
     "SHOW3": {
       "lucroLiquidoAnos": {
@@ -3891,9 +3891,9 @@
         "2024": -68241000.0,
         "2025": -54365000.0
       },
-      "acoesTotal": 6741262.0,
+      "acoesTotal": 6741262000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 6741262.0
+      "acoesExTesouraria": 6741262000.0
     },
     "SHUL4": {
       "lucroLiquidoAnos": {
@@ -3903,9 +3903,9 @@
         "2024": 255191000.0,
         "2025": 288876000.0
       },
-      "acoesTotal": 357374780.0,
-      "acoesTesouraria": 820561.0,
-      "acoesExTesouraria": 356554219.0
+      "acoesTotal": 357374780000.0,
+      "acoesTesouraria": 820561000.0,
+      "acoesExTesouraria": 356554219000.0
     },
     "SIMH3": {
       "lucroLiquidoAnos": {
@@ -3915,9 +3915,9 @@
         "2024": 93833000.0,
         "2025": 215250000.0
       },
-      "acoesTotal": 873040533.0,
-      "acoesTesouraria": 19445017.0,
-      "acoesExTesouraria": 853595516.0
+      "acoesTotal": 873040533000.0,
+      "acoesTesouraria": 19445017000.0,
+      "acoesExTesouraria": 853595516000.0
     },
     "SLCE3": {
       "lucroLiquidoAnos": {
@@ -3927,9 +3927,9 @@
         "2024": 481723000.0,
         "2025": 565213000.0
       },
-      "acoesTotal": 498745930.0,
-      "acoesTesouraria": 1925172.0,
-      "acoesExTesouraria": 496820758.0
+      "acoesTotal": 498745930000.0,
+      "acoesTesouraria": 1925172000.0,
+      "acoesExTesouraria": 496820758000.0
     },
     "SMFT3": {
       "lucroLiquidoAnos": {
@@ -3939,9 +3939,9 @@
         "2024": 440576000.0,
         "2025": 640534000.0
       },
-      "acoesTotal": 597250053.0,
-      "acoesTesouraria": 2788.0,
-      "acoesExTesouraria": 597247265.0
+      "acoesTotal": 597250053000.0,
+      "acoesTesouraria": 2788000.0,
+      "acoesExTesouraria": 597247265000.0
     },
     "SMTO3": {
       "lucroLiquidoAnos": {
@@ -3951,9 +3951,9 @@
         "2024": 1476279000.0,
         "2025": 556731000.0
       },
-      "acoesTotal": 332435391.0,
-      "acoesTesouraria": 3857600.0,
-      "acoesExTesouraria": 328577791.0
+      "acoesTotal": 332435391000.0,
+      "acoesTesouraria": 3857600000.0,
+      "acoesExTesouraria": 328577791000.0
     },
     "SNSY5": {
       "lucroLiquidoAnos": {
@@ -3963,9 +3963,9 @@
         "2024": -21253000.0,
         "2025": -284204000.0
       },
-      "acoesTotal": 7716400.0,
+      "acoesTotal": 7716400000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 7716400.0
+      "acoesExTesouraria": 7716400000.0
     },
     "SOJA3": {
       "lucroLiquidoAnos": {
@@ -3975,9 +3975,9 @@
         "2024": 160508000.0,
         "2025": 101130000.0
       },
-      "acoesTotal": 141902688.0,
-      "acoesTesouraria": 840790.0,
-      "acoesExTesouraria": 141061898.0
+      "acoesTotal": 141902688000.0,
+      "acoesTesouraria": 840790000.0,
+      "acoesExTesouraria": 141061898000.0
     },
     "SOND5": {
       "lucroLiquidoAnos": {
@@ -3987,9 +3987,9 @@
         "2024": 14903000.0,
         "2025": 35732000.0
       },
-      "acoesTotal": 2458.0,
-      "acoesTesouraria": 27.0,
-      "acoesExTesouraria": 2431.0
+      "acoesTotal": 2458000.0,
+      "acoesTesouraria": 27000.0,
+      "acoesExTesouraria": 2431000.0
     },
     "SOND6": {
       "lucroLiquidoAnos": {
@@ -3999,9 +3999,9 @@
         "2024": 14903000.0,
         "2025": 35732000.0
       },
-      "acoesTotal": 2458.0,
-      "acoesTesouraria": 27.0,
-      "acoesExTesouraria": 2431.0
+      "acoesTotal": 2458000.0,
+      "acoesTesouraria": 27000.0,
+      "acoesExTesouraria": 2431000.0
     },
     "SUZB3": {
       "lucroLiquidoAnos": {
@@ -4011,9 +4011,9 @@
         "2024": -7044706000.0,
         "2025": 13437687000.0
       },
-      "acoesTotal": 1264117615.0,
-      "acoesTesouraria": 28208827.0,
-      "acoesExTesouraria": 1235908788.0
+      "acoesTotal": 1264117615000.0,
+      "acoesTesouraria": 28208827000.0,
+      "acoesExTesouraria": 1235908788000.0
     },
     "SYNE3": {
       "lucroLiquidoAnos": {
@@ -4023,9 +4023,9 @@
         "2024": 659946000.0,
         "2025": 74867000.0
       },
-      "acoesTotal": 152644.0,
+      "acoesTotal": 152644000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 152644.0
+      "acoesExTesouraria": 152644000.0
     },
     "TAEE11": {
       "lucroLiquidoAnos": {
@@ -4035,9 +4035,9 @@
         "2024": 1693915000.0,
         "2025": 1579863000.0
       },
-      "acoesTotal": 1033497.0,
+      "acoesTotal": 1033497000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 1033497.0
+      "acoesExTesouraria": 1033497000.0
     },
     "TAEE3": {
       "lucroLiquidoAnos": {
@@ -4047,9 +4047,9 @@
         "2024": 1693915000.0,
         "2025": 1579863000.0
       },
-      "acoesTotal": 1033497.0,
+      "acoesTotal": 1033497000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 1033497.0
+      "acoesExTesouraria": 1033497000.0
     },
     "TAEE4": {
       "lucroLiquidoAnos": {
@@ -4059,9 +4059,9 @@
         "2024": 1693915000.0,
         "2025": 1579863000.0
       },
-      "acoesTotal": 1033497.0,
+      "acoesTotal": 1033497000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 1033497.0
+      "acoesExTesouraria": 1033497000.0
     },
     "TASA3": {
       "lucroLiquidoAnos": {
@@ -4071,9 +4071,9 @@
         "2024": 76592000.0,
         "2025": 17673000.0
       },
-      "acoesTotal": 139297877.0,
-      "acoesTesouraria": 98273.0,
-      "acoesExTesouraria": 139199604.0
+      "acoesTotal": 139297877000.0,
+      "acoesTesouraria": 98273000.0,
+      "acoesExTesouraria": 139199604000.0
     },
     "TASA4": {
       "lucroLiquidoAnos": {
@@ -4083,9 +4083,9 @@
         "2024": 76592000.0,
         "2025": 17673000.0
       },
-      "acoesTotal": 139297877.0,
-      "acoesTesouraria": 98273.0,
-      "acoesExTesouraria": 139199604.0
+      "acoesTotal": 139297877000.0,
+      "acoesTesouraria": 98273000.0,
+      "acoesExTesouraria": 139199604000.0
     },
     "TCSA3": {
       "lucroLiquidoAnos": {
@@ -4095,9 +4095,9 @@
         "2024": -151053000.0,
         "2025": -100131000.0
       },
-      "acoesTotal": 73619.0,
+      "acoesTotal": 73619000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 73619.0
+      "acoesExTesouraria": 73619000.0
     },
     "TECN3": {
       "lucroLiquidoAnos": {
@@ -4107,9 +4107,9 @@
         "2024": 64833000.0,
         "2025": 71475000.0
       },
-      "acoesTotal": 60906215.0,
-      "acoesTesouraria": 18588.0,
-      "acoesExTesouraria": 60887627.0
+      "acoesTotal": 60906215000.0,
+      "acoesTesouraria": 18588000.0,
+      "acoesExTesouraria": 60887627000.0
     },
     "TELB3": {
       "lucroLiquidoAnos": {
@@ -4119,9 +4119,9 @@
         "2024": -66572000.0,
         "2025": 140504000.0
       },
-      "acoesTotal": 101983403.0,
-      "acoesTesouraria": 193.0,
-      "acoesExTesouraria": 101983210.0
+      "acoesTotal": 101983403000.0,
+      "acoesTesouraria": 193000.0,
+      "acoesExTesouraria": 101983210000.0
     },
     "TELB4": {
       "lucroLiquidoAnos": {
@@ -4131,9 +4131,9 @@
         "2024": -66572000.0,
         "2025": 140504000.0
       },
-      "acoesTotal": 101983403.0,
-      "acoesTesouraria": 193.0,
-      "acoesExTesouraria": 101983210.0
+      "acoesTotal": 101983403000.0,
+      "acoesTesouraria": 193000.0,
+      "acoesExTesouraria": 101983210000.0
     },
     "TEND3": {
       "lucroLiquidoAnos": {
@@ -4143,9 +4143,9 @@
         "2024": 100711000.0,
         "2025": 484431000.0
       },
-      "acoesTotal": 122578.0,
-      "acoesTesouraria": 1396.0,
-      "acoesExTesouraria": 121182.0
+      "acoesTotal": 122578000.0,
+      "acoesTesouraria": 1396000.0,
+      "acoesExTesouraria": 121182000.0
     },
     "TFCO4": {
       "lucroLiquidoAnos": {
@@ -4155,9 +4155,9 @@
         "2024": 117753000.0,
         "2025": 142318000.0
       },
-      "acoesTotal": 942744239.0,
-      "acoesTesouraria": 1730117.0,
-      "acoesExTesouraria": 941014122.0
+      "acoesTotal": 942744239000.0,
+      "acoesTesouraria": 1730117000.0,
+      "acoesExTesouraria": 941014122000.0
     },
     "TGMA3": {
       "lucroLiquidoAnos": {
@@ -4167,9 +4167,9 @@
         "2024": 270612000.0,
         "2025": 242963000.0
       },
-      "acoesTotal": 66068058.0,
+      "acoesTotal": 66068058000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 66068058.0
+      "acoesExTesouraria": 66068058000.0
     },
     "TIMS3": {
       "lucroLiquidoAnos": {
@@ -4179,9 +4179,9 @@
         "2024": 0.0,
         "2025": 0.0
       },
-      "acoesTotal": 2392125889.0,
-      "acoesTesouraria": 3457567.0,
-      "acoesExTesouraria": 2388668322.0
+      "acoesTotal": 2392125889000.0,
+      "acoesTesouraria": 3457567000.0,
+      "acoesExTesouraria": 2388668322000.0
     },
     "TOKY3": {
       "lucroLiquidoAnos": {
@@ -4191,9 +4191,9 @@
         "2024": -164081000.0,
         "2025": -146886000.0
       },
-      "acoesTotal": 216786.0,
+      "acoesTotal": 216786000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 216786.0
+      "acoesExTesouraria": 216786000.0
     },
     "TOTS3": {
       "lucroLiquidoAnos": {
@@ -4203,9 +4203,9 @@
         "2024": 735443000.0,
         "2025": 920742000.0
       },
-      "acoesTotal": 599401581.0,
-      "acoesTesouraria": 11758500.0,
-      "acoesExTesouraria": 587643081.0
+      "acoesTotal": 599401581000.0,
+      "acoesTesouraria": 11758500000.0,
+      "acoesExTesouraria": 587643081000.0
     },
     "TPIS3": {
       "lucroLiquidoAnos": {
@@ -4215,9 +4215,9 @@
         "2024": 18312000.0,
         "2025": -402656000.0
       },
-      "acoesTotal": 44000.0,
-      "acoesTesouraria": 623.0,
-      "acoesExTesouraria": 43377.0
+      "acoesTotal": 44000000.0,
+      "acoesTesouraria": 623000.0,
+      "acoesExTesouraria": 43377000.0
     },
     "TRIS3": {
       "lucroLiquidoAnos": {
@@ -4227,9 +4227,9 @@
         "2024": 174844000.0,
         "2025": 213095000.0
       },
-      "acoesTotal": 242618.0,
-      "acoesTesouraria": 9100.0,
-      "acoesExTesouraria": 233518.0
+      "acoesTotal": 242618000.0,
+      "acoesTesouraria": 9100000.0,
+      "acoesExTesouraria": 233518000.0
     },
     "TTEN3": {
       "lucroLiquidoAnos": {
@@ -4239,9 +4239,9 @@
         "2024": 756365000.0,
         "2025": 808699000.0
       },
-      "acoesTotal": 499497647.0,
-      "acoesTesouraria": 17200.0,
-      "acoesExTesouraria": 499480447.0
+      "acoesTotal": 499497647000.0,
+      "acoesTesouraria": 17200000.0,
+      "acoesExTesouraria": 499480447000.0
     },
     "TUPY3": {
       "lucroLiquidoAnos": {
@@ -4251,9 +4251,9 @@
         "2024": 82440000.0,
         "2025": -654552000.0
       },
-      "acoesTotal": 132450.0,
-      "acoesTesouraria": 1373.0,
-      "acoesExTesouraria": 131077.0
+      "acoesTotal": 132450000.0,
+      "acoesTesouraria": 1373000.0,
+      "acoesExTesouraria": 131077000.0
     },
     "TXRX3": {
       "lucroLiquidoAnos": {
@@ -4263,9 +4263,9 @@
         "2024": -39446000.0,
         "2025": -57092000.0
       },
-      "acoesTotal": 4259.0,
+      "acoesTotal": 4259000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 4259.0
+      "acoesExTesouraria": 4259000.0
     },
     "TXRX4": {
       "lucroLiquidoAnos": {
@@ -4275,9 +4275,9 @@
         "2024": -39446000.0,
         "2025": -57092000.0
       },
-      "acoesTotal": 4259.0,
+      "acoesTotal": 4259000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 4259.0
+      "acoesExTesouraria": 4259000.0
     },
     "UCAS3": {
       "lucroLiquidoAnos": {
@@ -4287,9 +4287,9 @@
         "2024": 12449000.0,
         "2025": -11549000.0
       },
-      "acoesTotal": 66086364.0,
+      "acoesTotal": 66086364000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 66086364.0
+      "acoesExTesouraria": 66086364000.0
     },
     "UGPA3": {
       "lucroLiquidoAnos": {
@@ -4299,9 +4299,9 @@
         "2024": 2525900000.0,
         "2025": 2541908000.0
       },
-      "acoesTotal": 1115849873.0,
-      "acoesTesouraria": 28542005.0,
-      "acoesExTesouraria": 1087307868.0
+      "acoesTotal": 1115849873000.0,
+      "acoesTesouraria": 28542005000.0,
+      "acoesExTesouraria": 1087307868000.0
     },
     "UNIP3": {
       "lucroLiquidoAnos": {
@@ -4311,9 +4311,9 @@
         "2024": 557118000.0,
         "2025": 481744000.0
       },
-      "acoesTotal": 113173265.0,
-      "acoesTesouraria": 1551112.0,
-      "acoesExTesouraria": 111622153.0
+      "acoesTotal": 113173265000.0,
+      "acoesTesouraria": 1551112000.0,
+      "acoesExTesouraria": 111622153000.0
     },
     "UNIP5": {
       "lucroLiquidoAnos": {
@@ -4323,9 +4323,9 @@
         "2024": 557118000.0,
         "2025": 481744000.0
       },
-      "acoesTotal": 113173265.0,
-      "acoesTesouraria": 1551112.0,
-      "acoesExTesouraria": 111622153.0
+      "acoesTotal": 113173265000.0,
+      "acoesTesouraria": 1551112000.0,
+      "acoesExTesouraria": 111622153000.0
     },
     "UNIP6": {
       "lucroLiquidoAnos": {
@@ -4335,9 +4335,9 @@
         "2024": 557118000.0,
         "2025": 481744000.0
       },
-      "acoesTotal": 113173265.0,
-      "acoesTesouraria": 1551112.0,
-      "acoesExTesouraria": 111622153.0
+      "acoesTotal": 113173265000.0,
+      "acoesTesouraria": 1551112000.0,
+      "acoesExTesouraria": 111622153000.0
     },
     "USIM3": {
       "lucroLiquidoAnos": {
@@ -4347,9 +4347,9 @@
         "2024": 3362000.0,
         "2025": -2910034000.0
       },
-      "acoesTotal": 1253079108.0,
-      "acoesTesouraria": 22136448.0,
-      "acoesExTesouraria": 1230942660.0
+      "acoesTotal": 1253079108000.0,
+      "acoesTesouraria": 22136448000.0,
+      "acoesExTesouraria": 1230942660000.0
     },
     "USIM5": {
       "lucroLiquidoAnos": {
@@ -4359,9 +4359,9 @@
         "2024": 3362000.0,
         "2025": -2910034000.0
       },
-      "acoesTotal": 1253079108.0,
-      "acoesTesouraria": 22136448.0,
-      "acoesExTesouraria": 1230942660.0
+      "acoesTotal": 1253079108000.0,
+      "acoesTesouraria": 22136448000.0,
+      "acoesExTesouraria": 1230942660000.0
     },
     "USIM6": {
       "lucroLiquidoAnos": {
@@ -4371,9 +4371,9 @@
         "2024": 3362000.0,
         "2025": -2910034000.0
       },
-      "acoesTotal": 1253079108.0,
-      "acoesTesouraria": 22136448.0,
-      "acoesExTesouraria": 1230942660.0
+      "acoesTotal": 1253079108000.0,
+      "acoesTesouraria": 22136448000.0,
+      "acoesExTesouraria": 1230942660000.0
     },
     "VALE3": {
       "lucroLiquidoAnos": {
@@ -4383,9 +4383,9 @@
         "2024": 30431000000.0,
         "2025": 11811000000.0
       },
-      "acoesTotal": 4539007.0,
-      "acoesTesouraria": 270228.0,
-      "acoesExTesouraria": 4268779.0
+      "acoesTotal": 4539007000.0,
+      "acoesTesouraria": 270228000.0,
+      "acoesExTesouraria": 4268779000.0
     },
     "VAMO3": {
       "lucroLiquidoAnos": {
@@ -4395,9 +4395,9 @@
         "2024": 380974000.0,
         "2025": 328702000.0
       },
-      "acoesTotal": 1081032537.0,
-      "acoesTesouraria": 14946340.0,
-      "acoesExTesouraria": 1066086197.0
+      "acoesTotal": 1081032537000.0,
+      "acoesTesouraria": 14946340000.0,
+      "acoesExTesouraria": 1066086197000.0
     },
     "VBBR3": {
       "lucroLiquidoAnos": {
@@ -4407,9 +4407,9 @@
         "2024": 6367000000.0,
         "2025": 1979000000.0
       },
-      "acoesTotal": 1198000.0,
-      "acoesTesouraria": 6026.0,
-      "acoesExTesouraria": 1191974.0
+      "acoesTotal": 1198000000.0,
+      "acoesTesouraria": 6026000.0,
+      "acoesExTesouraria": 1191974000.0
     },
     "VITT3": {
       "lucroLiquidoAnos": {
@@ -4419,9 +4419,9 @@
         "2024": 75304000.0,
         "2025": 66151000.0
       },
-      "acoesTotal": 147314018.0,
-      "acoesTesouraria": 555436.0,
-      "acoesExTesouraria": 146758582.0
+      "acoesTotal": 147314018000.0,
+      "acoesTesouraria": 555436000.0,
+      "acoesExTesouraria": 146758582000.0
     },
     "VIVA3": {
       "lucroLiquidoAnos": {
@@ -4443,9 +4443,9 @@
         "2024": -40454000.0,
         "2025": -17549000.0
       },
-      "acoesTotal": 48764066.0,
+      "acoesTotal": 48764066000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 48764066.0
+      "acoesExTesouraria": 48764066000.0
     },
     "VIVT3": {
       "lucroLiquidoAnos": {
@@ -4455,9 +4455,9 @@
         "2024": 5557332000.0,
         "2025": 6177543000.0
       },
-      "acoesTotal": 3226546622.0,
-      "acoesTesouraria": 30940270.0,
-      "acoesExTesouraria": 3195606352.0
+      "acoesTotal": 3226546622000.0,
+      "acoesTesouraria": 30940270000.0,
+      "acoesExTesouraria": 3195606352000.0
     },
     "VLID3": {
       "lucroLiquidoAnos": {
@@ -4467,9 +4467,9 @@
         "2024": 379649000.0,
         "2025": 268707000.0
       },
-      "acoesTotal": 81836375.0,
-      "acoesTesouraria": 3376430.0,
-      "acoesExTesouraria": 78459945.0
+      "acoesTotal": 81836375000.0,
+      "acoesTesouraria": 3376430000.0,
+      "acoesExTesouraria": 78459945000.0
     },
     "VSTE3": {
       "lucroLiquidoAnos": {
@@ -4479,9 +4479,9 @@
         "2024": 665000.0,
         "2025": 24409000.0
       },
-      "acoesTotal": 114334.0,
+      "acoesTotal": 114334000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 114334.0
+      "acoesExTesouraria": 114334000.0
     },
     "VTRU3": {
       "lucroLiquidoAnos": {
@@ -4491,9 +4491,9 @@
         "2024": 288752000.0,
         "2025": 369891000.0
       },
-      "acoesTotal": 134172428.0,
-      "acoesTesouraria": 519900.0,
-      "acoesExTesouraria": 133652528.0
+      "acoesTotal": 134172428000.0,
+      "acoesTesouraria": 519900000.0,
+      "acoesExTesouraria": 133652528000.0
     },
     "VULC3": {
       "lucroLiquidoAnos": {
@@ -4503,9 +4503,9 @@
         "2024": 569867000.0,
         "2025": 1165314000.0
       },
-      "acoesTotal": 316502.0,
-      "acoesTesouraria": 3869.0,
-      "acoesExTesouraria": 312633.0
+      "acoesTotal": 316502000.0,
+      "acoesTesouraria": 3869000.0,
+      "acoesExTesouraria": 312633000.0
     },
     "VVEO3": {
       "lucroLiquidoAnos": {
@@ -4515,9 +4515,9 @@
         "2024": -1415491000.0,
         "2025": 18239000.0
       },
-      "acoesTotal": 322820608.0,
-      "acoesTesouraria": 7012300.0,
-      "acoesExTesouraria": 315808308.0
+      "acoesTotal": 322820608000.0,
+      "acoesTesouraria": 7012300000.0,
+      "acoesExTesouraria": 315808308000.0
     },
     "WEGE3": {
       "lucroLiquidoAnos": {
@@ -4527,9 +4527,9 @@
         "2024": 6318763000.0,
         "2025": 6775958000.0
       },
-      "acoesTotal": 4197317998.0,
-      "acoesTesouraria": 1622025.0,
-      "acoesExTesouraria": 4195695973.0
+      "acoesTotal": 4197317998000.0,
+      "acoesTesouraria": 1622025000.0,
+      "acoesExTesouraria": 4195695973000.0
     },
     "WEST3": {
       "lucroLiquidoAnos": {
@@ -4539,9 +4539,9 @@
         "2024": -25560000.0,
         "2025": -9913000.0
       },
-      "acoesTotal": 11109348.0,
+      "acoesTotal": 11109348000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 11109348.0
+      "acoesExTesouraria": 11109348000.0
     },
     "WHRL3": {
       "lucroLiquidoAnos": {
@@ -4551,9 +4551,9 @@
         "2024": 910783000.0,
         "2025": 450784000.0
       },
-      "acoesTotal": 1502786.0,
+      "acoesTotal": 1502786000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 1502786.0
+      "acoesExTesouraria": 1502786000.0
     },
     "WHRL4": {
       "lucroLiquidoAnos": {
@@ -4563,9 +4563,9 @@
         "2024": 910783000.0,
         "2025": 450784000.0
       },
-      "acoesTotal": 1502786.0,
+      "acoesTotal": 1502786000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 1502786.0
+      "acoesExTesouraria": 1502786000.0
     },
     "WIZC3": {
       "lucroLiquidoAnos": {
@@ -4575,9 +4575,9 @@
         "2024": 296766000.0,
         "2025": 367710000.0
       },
-      "acoesTotal": 159907282.0,
+      "acoesTotal": 159907282000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 159907282.0
+      "acoesExTesouraria": 159907282000.0
     },
     "WLMM3": {
       "lucroLiquidoAnos": {
@@ -4587,9 +4587,9 @@
         "2024": 129380000.0,
         "2025": 86892000.0
       },
-      "acoesTotal": 36414670.0,
+      "acoesTotal": 36414670000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 36414670.0
+      "acoesExTesouraria": 36414670000.0
     },
     "WLMM4": {
       "lucroLiquidoAnos": {
@@ -4599,9 +4599,9 @@
         "2024": 129380000.0,
         "2025": 86892000.0
       },
-      "acoesTotal": 36414670.0,
+      "acoesTotal": 36414670000.0,
       "acoesTesouraria": 0.0,
-      "acoesExTesouraria": 36414670.0
+      "acoesExTesouraria": 36414670000.0
     },
     "YDUQ3": {
       "lucroLiquidoAnos": {
@@ -4611,9 +4611,9 @@
         "2024": 341208000.0,
         "2025": 180177000.0
       },
-      "acoesTotal": 274089.0,
-      "acoesTesouraria": 10535.0,
-      "acoesExTesouraria": 263554.0
+      "acoesTotal": 274089000.0,
+      "acoesTesouraria": 10535000.0,
+      "acoesExTesouraria": 263554000.0
     }
   }
 }
