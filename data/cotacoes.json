@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-07T16:47:40+00:00",
+  "atualizado_em": "2026-09-08T15:34:47+00:00",
   "acoes": {
     "DOHL3": {
       "preco": 6.46,
@@ -613,18 +613,6 @@
       "liq_2m": 2227.76,
       "nome": "FICA EMPREENDIMENTOS IMOBILIÁRIOS S.A"
     },
-    "RNEW3": {
-      "preco": 0.86,
-      "pl": -2.22,
-      "pvp": 0.28,
-      "dy": 0.0,
-      "lpa": -0.38738738738738737,
-      "vpa": 3.071428571428571,
-      "g": 0.3946,
-      "roe": -0.1255,
-      "liq_2m": 45273.4,
-      "nome": "RENOVA ENERGIA S.A."
-    },
     "RNEW4": {
       "preco": 0.86,
       "pl": -2.22,
@@ -635,6 +623,18 @@
       "g": 0.3946,
       "roe": -0.1255,
       "liq_2m": 44097.0,
+      "nome": "RENOVA ENERGIA S.A."
+    },
+    "RNEW3": {
+      "preco": 0.86,
+      "pl": -2.22,
+      "pvp": 0.28,
+      "dy": 0.0,
+      "lpa": -0.38738738738738737,
+      "vpa": 3.071428571428571,
+      "g": 0.3946,
+      "roe": -0.1255,
+      "liq_2m": 45273.4,
       "nome": "RENOVA ENERGIA S.A."
     },
     "CRPG5": {
@@ -1331,7 +1331,7 @@
       "g": 0.06570000000000001,
       "roe": 0.2314,
       "liq_2m": 233.18,
-      "nome": "GENERAL SHOPPING E OUTLETS DO BRASIL S.A."
+      "nome": null
     },
     "OSXB3": {
       "preco": 1.15,
@@ -1345,18 +1345,6 @@
       "liq_2m": 1300.96,
       "nome": "OSX BRASIL S.A."
     },
-    "BAUH4": {
-      "preco": 93.39,
-      "pl": 0.0,
-      "pvp": 3.18,
-      "dy": 0.0116,
-      "lpa": null,
-      "vpa": 29.367924528301884,
-      "g": 0.1332,
-      "roe": 0.0,
-      "liq_2m": 207.53,
-      "nome": "EXCELSIOR ALIMENTOS S.A."
-    },
     "ARND3": {
       "preco": 0.51,
       "pl": 0.0,
@@ -1368,6 +1356,18 @@
       "roe": 0.0,
       "liq_2m": 913.58,
       "nome": "ARND3"
+    },
+    "BAUH4": {
+      "preco": 93.39,
+      "pl": 0.0,
+      "pvp": 3.18,
+      "dy": 0.0116,
+      "lpa": null,
+      "vpa": 29.367924528301884,
+      "g": 0.1332,
+      "roe": 0.0,
+      "liq_2m": 207.53,
+      "nome": "EXCELSIOR ALIMENTOS S.A."
     },
     "AGXY3": {
       "preco": 1.33,
@@ -1535,7 +1535,7 @@
       "g": -0.0701,
       "roe": 0.2882,
       "liq_2m": 13976.4,
-      "nome": "BICICLETAS MONARK S.A."
+      "nome": null
     },
     "HETA4": {
       "preco": 4.8,
@@ -1631,7 +1631,7 @@
       "g": 0.22640000000000002,
       "roe": 0.1664,
       "liq_2m": 679.71,
-      "nome": null
+      "nome": "SAO PAULO TURISMO S.A."
     },
     "EVEN3": {
       "preco": 4.23,
@@ -3575,7 +3575,7 @@
       "g": -0.0484,
       "roe": 0.024,
       "liq_2m": 1943.87,
-      "nome": null
+      "nome": "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP"
     },
     "IGTI11": {
       "preco": 26.43,
@@ -4840,7 +4840,7 @@
       "g": null,
       "segmento": "Escritórios",
       "liq_2m": 14154.0,
-      "nome": null
+      "nome": "ALMI11"
     },
     "ALZC11": {
       "preco": 7.49,
@@ -4972,7 +4972,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 1546.0,
-      "nome": "ATSA11"
+      "nome": null
     },
     "AURB11": {
       "preco": 83.0,
@@ -5159,7 +5159,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 5.0,
-      "nome": null
+      "nome": "BLOG11"
     },
     "BMLC11": {
       "preco": 98.38,
@@ -5225,7 +5225,7 @@
       "g": null,
       "segmento": "Residencial",
       "liq_2m": 1597.0,
-      "nome": null
+      "nome": "BRIP11"
     },
     "BROF11": {
       "preco": 60.6,
@@ -5313,7 +5313,7 @@
       "g": null,
       "segmento": "Outros",
       "liq_2m": 56.0,
-      "nome": "BTSI11"
+      "nome": null
     },
     "BTWR11": {
       "preco": 90.0,
@@ -5335,7 +5335,7 @@
       "g": null,
       "segmento": "Outros",
       "liq_2m": 6362.0,
-      "nome": null
+      "nome": "BTYU11"
     },
     "BVAR11": {
       "preco": 1144.33,
@@ -5533,7 +5533,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 16578.0,
-      "nome": "CRFF11"
+      "nome": null
     },
     "CTXT11": {
       "preco": 5.4,
@@ -5632,7 +5632,7 @@
       "g": null,
       "segmento": "Logística",
       "liq_2m": 279.0,
-      "nome": "CYLD11"
+      "nome": null
     },
     "DAMA11": {
       "preco": 5.09,
@@ -5654,7 +5654,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 361.0,
-      "nome": "DAMT11"
+      "nome": null
     },
     "DAYM11": {
       "preco": 3.96,
@@ -5764,7 +5764,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 353341.0,
-      "nome": "EIRA11"
+      "nome": null
     },
     "EMET11": {
       "preco": 9.98,
@@ -5775,7 +5775,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 339022.0,
-      "nome": null
+      "nome": "EMET11"
     },
     "EQIR11": {
       "preco": 8.14,
@@ -5797,7 +5797,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 14685.0,
-      "nome": null
+      "nome": "ERPA11"
     },
     "EURO11": {
       "preco": 295.0,
@@ -5808,7 +5808,7 @@
       "g": null,
       "segmento": "Logística",
       "liq_2m": 47388.0,
-      "nome": "EURO11"
+      "nome": null
     },
     "EXES11": {
       "preco": 9.58,
@@ -5973,7 +5973,7 @@
       "g": null,
       "segmento": "Escritórios",
       "liq_2m": 476.0,
-      "nome": "FMOF11"
+      "nome": null
     },
     "FPAB11": {
       "preco": 204.98,
@@ -6424,7 +6424,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 1268610.0,
-      "nome": "HPDP11"
+      "nome": null
     },
     "HRDF11": {
       "preco": 3.98,
@@ -6996,7 +6996,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 7706.0,
-      "nome": null
+      "nome": "LMAI11"
     },
     "LPLP11": {
       "preco": 290.0,
@@ -7139,7 +7139,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 15990.0,
-      "nome": "MGHT11"
+      "nome": null
     },
     "MIDW11": {
       "preco": 11.0,
@@ -7304,7 +7304,7 @@
       "g": null,
       "segmento": "Outros",
       "liq_2m": 10680.0,
-      "nome": null
+      "nome": "ONDA11"
     },
     "ONDV11": {
       "preco": 9.77,
@@ -7722,7 +7722,7 @@
       "g": null,
       "segmento": "Residencial",
       "liq_2m": 6423.0,
-      "nome": "RBRS11"
+      "nome": null
     },
     "RBRX11": {
       "preco": 7.24,
@@ -7986,7 +7986,7 @@
       "g": null,
       "segmento": "Residencial",
       "liq_2m": 253.0,
-      "nome": null
+      "nome": "RSPD11"
     },
     "RURA11": {
       "preco": 7.95,
@@ -8382,7 +8382,7 @@
       "g": null,
       "segmento": "Escritórios",
       "liq_2m": 11574.0,
-      "nome": null
+      "nome": "TRNT11"
     },
     "TRXB11": {
       "preco": 180.61,
@@ -8767,7 +8767,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 8286.0,
-      "nome": "WTSP11"
+      "nome": null
     },
     "XLPR11": {
       "preco": 66.85,
