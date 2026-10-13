@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-12T20:32:47+00:00",
+  "atualizado_em": "2026-10-13T18:37:10+00:00",
   "acoes": {
     "DOHL3": {
       "preco": 6.46,
@@ -1655,7 +1655,7 @@
       "g": -0.2688,
       "roe": 0.1038,
       "liq_2m": 655.16,
-      "nome": null
+      "nome": "CIA HABITASUL DE PARTICIPACOES"
     },
     "JHSF3": {
       "preco": 14.59,
@@ -4786,7 +4786,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 3670450.0,
-      "nome": null
+      "nome": "ADSH11"
     },
     "AFHF11": {
       "preco": 10.35,
@@ -4885,7 +4885,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 394.0,
-      "nome": null
+      "nome": "ANCR11"
     },
     "APTO11": {
       "preco": 7.27,
@@ -4907,7 +4907,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 98382.0,
-      "nome": "APXM11"
+      "nome": null
     },
     "AROA11": {
       "preco": 1.13,
@@ -4984,7 +4984,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 182.0,
-      "nome": null
+      "nome": "ATSA11"
     },
     "AURB11": {
       "preco": 88.88,
@@ -5116,7 +5116,7 @@
       "g": null,
       "segmento": "Residencial",
       "liq_2m": 4256.0,
-      "nome": "BICE11"
+      "nome": null
     },
     "BIME11": {
       "preco": 4.97,
@@ -5160,7 +5160,7 @@
       "g": null,
       "segmento": "Escritórios",
       "liq_2m": 28427.0,
-      "nome": null
+      "nome": "BLMO11"
     },
     "BLOG11": {
       "preco": 7.83,
@@ -5182,7 +5182,7 @@
       "g": null,
       "segmento": "Outros",
       "liq_2m": 11149.0,
-      "nome": null
+      "nome": "BMLC11"
     },
     "BNFS11": {
       "preco": 36.02,
@@ -5534,7 +5534,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 12100.0,
-      "nome": "CRFF11"
+      "nome": null
     },
     "CTXT11": {
       "preco": 4.66,
@@ -5655,7 +5655,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 517.0,
-      "nome": "DAMT11"
+      "nome": null
     },
     "DAYM11": {
       "preco": 3.98,
@@ -5699,7 +5699,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 909.0,
-      "nome": null
+      "nome": "DPRO11"
     },
     "DVFF11": {
       "preco": 5.61,
@@ -5776,7 +5776,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 362440.0,
-      "nome": null
+      "nome": "EIRA11"
     },
     "EMET11": {
       "preco": 9.24,
@@ -5787,7 +5787,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 227669.0,
-      "nome": null
+      "nome": "EMET11"
     },
     "EQIR11": {
       "preco": 8.5,
@@ -5853,7 +5853,7 @@
       "g": null,
       "segmento": "Residencial",
       "liq_2m": 9162.0,
-      "nome": null
+      "nome": "FAMB11"
     },
     "FATN11": {
       "preco": 87.64,
@@ -6062,7 +6062,7 @@
       "g": null,
       "segmento": "Outros",
       "liq_2m": 36.0,
-      "nome": null
+      "nome": "FZDB11"
     },
     "GAME11": {
       "preco": 8.71,
@@ -6403,7 +6403,7 @@
       "g": null,
       "segmento": "Escritórios",
       "liq_2m": 17.0,
-      "nome": null
+      "nome": "HJCT11"
     },
     "HLOG11": {
       "preco": 9.35,
@@ -6535,7 +6535,7 @@
       "g": null,
       "segmento": "Hospital",
       "liq_2m": 1644.0,
-      "nome": "HUCG11"
+      "nome": null
     },
     "HUSI11": {
       "preco": 1199.99,
@@ -7316,7 +7316,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 2921.0,
-      "nome": null
+      "nome": "OCRE11"
     },
     "OIAG11": {
       "preco": 8.08,
@@ -7382,7 +7382,7 @@
       "g": null,
       "segmento": "Outros",
       "liq_2m": 37063.0,
-      "nome": null
+      "nome": "PATA11"
     },
     "PATC11": {
       "preco": 33.76,
@@ -7558,7 +7558,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 7338130.0,
-      "nome": "PQDP11"
+      "nome": null
     },
     "PRSN11": {
       "preco": 4.81,
@@ -7569,7 +7569,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 1.0,
-      "nome": null
+      "nome": "PRSN11"
     },
     "PRSV11": {
       "preco": 25.04,
@@ -7580,7 +7580,7 @@
       "g": null,
       "segmento": "Escritórios",
       "liq_2m": 915.0,
-      "nome": "PRSV11"
+      "nome": null
     },
     "PSEC11": {
       "preco": 57.1,
@@ -7635,7 +7635,7 @@
       "g": null,
       "segmento": "Residencial",
       "liq_2m": 169.0,
-      "nome": null
+      "nome": "RBDS11"
     },
     "RBFM11": {
       "preco": 10.49,
@@ -7712,7 +7712,7 @@
       "g": null,
       "segmento": "Outros",
       "liq_2m": 7025.0,
-      "nome": "RBOP11"
+      "nome": null
     },
     "RBRD11": {
       "preco": 38.71,
@@ -8053,7 +8053,7 @@
       "g": null,
       "segmento": "Residencial",
       "liq_2m": 3286.0,
-      "nome": "RSPD11"
+      "nome": null
     },
     "RURA11": {
       "preco": 8.14,
@@ -8130,7 +8130,7 @@
       "g": null,
       "segmento": "Outros",
       "liq_2m": 1465100.0,
-      "nome": "RZLC11"
+      "nome": null
     },
     "RZTR11": {
       "preco": 87.06,
@@ -8328,7 +8328,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 2708.0,
-      "nome": null
+      "nome": "SPMO11"
     },
     "SPTW11": {
       "preco": 34.7,
@@ -8834,7 +8834,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 11876.0,
-      "nome": null
+      "nome": "WTSP11"
     },
     "XLPR11": {
       "preco": 71.66,
@@ -8845,7 +8845,7 @@
       "g": null,
       "segmento": "Outros",
       "liq_2m": 114941.0,
-      "nome": null
+      "nome": "XLPR11"
     },
     "XPCA11": {
       "preco": 7.59,
