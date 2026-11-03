@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-02T20:59:05+00:00",
+  "atualizado_em": "2026-11-03T18:45:47+00:00",
   "acoes": {
     "DOHL3": {
       "preco": 6.46,
@@ -1079,7 +1079,7 @@
       "g": 0.009399999999999999,
       "roe": 2.4122,
       "liq_2m": 7009740.0,
-      "nome": "RAIZEN S.A."
+      "nome": null
     },
     "TXRX4": {
       "preco": 1.75,
@@ -1679,7 +1679,7 @@
       "g": 0.10439999999999999,
       "roe": -0.0023,
       "liq_2m": 370.07,
-      "nome": null
+      "nome": "HERCULES S.A. FABRICA DE TALHERES"
     },
     "CYRE3": {
       "preco": 17.09,
@@ -3263,7 +3263,7 @@
       "g": 0.1148,
       "roe": 0.1414,
       "liq_2m": 80.23,
-      "nome": null
+      "nome": "MRS LOGISTICA S.A."
     },
     "RPAD5": {
       "preco": 8.0,
@@ -3419,7 +3419,7 @@
       "g": 0.1148,
       "roe": 0.1414,
       "liq_2m": 176.74,
-      "nome": null
+      "nome": "MRS LOGISTICA S.A."
     },
     "ALPA3": {
       "preco": 10.22,
@@ -4864,7 +4864,7 @@
       "g": null,
       "segmento": "Escritórios",
       "liq_2m": 26840.0,
-      "nome": "FII TORRE ALMIRANTE"
+      "nome": null
     },
     "ALZC11": {
       "preco": 6.85,
@@ -4919,7 +4919,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 73515.0,
-      "nome": null
+      "nome": "APXM11"
     },
     "AROA11": {
       "preco": 1.16,
@@ -5799,7 +5799,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 371410.0,
-      "nome": "AROEIRA FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA"
+      "nome": null
     },
     "EMET11": {
       "preco": 8.5,
@@ -5832,7 +5832,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 20608.0,
-      "nome": null
+      "nome": "EUROPA 105  FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA"
     },
     "EURO11": {
       "preco": 289.99,
@@ -6558,7 +6558,7 @@
       "g": null,
       "segmento": "Hospital",
       "liq_2m": 1101.0,
-      "nome": null
+      "nome": "FII UNIMED C"
     },
     "HUSC11": {
       "preco": 100.0,
@@ -6635,7 +6635,7 @@
       "g": null,
       "segmento": "Outros",
       "liq_2m": 23940.0,
-      "nome": null
+      "nome": "ITAÚ CRÉDITO IMOBILIÁRIO CDI FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA"
     },
     "ICNE11": {
       "preco": 497.35,
@@ -7020,7 +7020,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 465763.0,
-      "nome": "LEGATUS FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA"
+      "nome": null
     },
     "LIFE11": {
       "preco": 7.03,
@@ -7163,7 +7163,7 @@
       "g": null,
       "segmento": "Logística",
       "liq_2m": 4328990.0,
-      "nome": "MAUÁ CAPITAL LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA"
+      "nome": null
     },
     "MCRE11": {
       "preco": 7.23,
@@ -7581,7 +7581,7 @@
       "g": null,
       "segmento": "Logística",
       "liq_2m": 1032130.0,
-      "nome": "PARQUE ANHANGUERA FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA"
+      "nome": null
     },
     "PQDP11": {
       "preco": 2424.0,
@@ -7614,7 +7614,7 @@
       "g": null,
       "segmento": "Escritórios",
       "liq_2m": 1333.0,
-      "nome": null
+      "nome": "PRESIDENTE VARGAS FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA"
     },
     "PSEC11": {
       "preco": 45.99,
@@ -7669,7 +7669,7 @@
       "g": null,
       "segmento": "Residencial",
       "liq_2m": 143.0,
-      "nome": "RB CAPITAL DESENV. RESIDENCIAL II FUNDO DE INVESTIMENTO IMOBILIARIO - RESPONSABILIDADE LIMITADA"
+      "nome": null
     },
     "RBFM11": {
       "preco": 9.3,
@@ -7812,7 +7812,7 @@
       "g": null,
       "segmento": "Residencial",
       "liq_2m": 22135.0,
-      "nome": null
+      "nome": "RIO BRAVO RENDA RESIDENCIAL FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA"
     },
     "RBRX11": {
       "preco": 6.68,
@@ -8241,7 +8241,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 136292.0,
-      "nome": null
+      "nome": "SHOPPING PÁTIO HIGIENÓPOLIS FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA"
     },
     "SHPP11": {
       "preco": 13.64,
@@ -8494,7 +8494,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 10926500.0,
-      "nome": null
+      "nome": "TRX REAL ESTATE II FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA"
     },
     "TRXF11": {
       "preco": 66.45,
@@ -8747,7 +8747,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 4437.0,
-      "nome": "TIVIO SECURITIES FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA"
+      "nome": null
     },
     "VRTA11": {
       "preco": 68.66,
@@ -8846,7 +8846,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 35442.0,
-      "nome": null
+      "nome": "V2 RENDA IMOBILIÁRIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA"
     },
     "VXXV11": {
       "preco": 825.0,
@@ -8890,7 +8890,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 21302.0,
-      "nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO OURINVEST RE I - RESPONSABILIDADE LIMITADA"
+      "nome": null
     },
     "XLPR11": {
       "preco": 69.95,
@@ -8978,7 +8978,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 389474.0,
-      "nome": "ZAGROS MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA"
+      "nome": null
     },
     "ZAVC11": {
       "preco": 9.0,
