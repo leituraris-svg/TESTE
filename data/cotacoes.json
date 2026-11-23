@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-20T19:22:23+00:00",
+  "atualizado_em": "2026-11-23T23:00:28+00:00",
   "acoes": {
     "MGLU3": {
       "preco": 8.2,
@@ -517,18 +517,6 @@
       "liq_2m": 1689770.0,
       "nome": "CM HOSPITALAR S.A."
     },
-    "RNEW3": {
-      "preco": 0.79,
-      "pl": -2.22,
-      "pvp": 0.26,
-      "dy": 0.0,
-      "lpa": -0.35585585585585583,
-      "vpa": 3.0384615384615383,
-      "g": 0.321,
-      "roe": -0.1185,
-      "liq_2m": 66611.9,
-      "nome": "RENOVA ENERGIA S.A."
-    },
     "RNEW4": {
       "preco": 0.79,
       "pl": -2.22,
@@ -539,6 +527,18 @@
       "g": 0.321,
       "roe": -0.1185,
       "liq_2m": 61828.1,
+      "nome": "RENOVA ENERGIA S.A."
+    },
+    "RNEW3": {
+      "preco": 0.79,
+      "pl": -2.22,
+      "pvp": 0.26,
+      "dy": 0.0,
+      "lpa": -0.35585585585585583,
+      "vpa": 3.0384615384615383,
+      "g": 0.321,
+      "roe": -0.1185,
+      "liq_2m": 66611.9,
       "nome": "RENOVA ENERGIA S.A."
     },
     "BIED3": {
@@ -3371,7 +3371,7 @@
       "g": -0.0358,
       "roe": 0.1052,
       "liq_2m": 3704.24,
-      "nome": "PANATLANTICA S.A."
+      "nome": null
     },
     "TFCO4": {
       "preco": 9.43,
@@ -3683,7 +3683,7 @@
       "g": 0.0,
       "roe": 0.0548,
       "liq_2m": 249.76,
-      "nome": null
+      "nome": "ALFA HOLDINGS S.A."
     },
     "RPAD5": {
       "preco": 7.52,
@@ -4043,7 +4043,7 @@
       "g": 0.359,
       "roe": 0.0528,
       "liq_2m": 271.43,
-      "nome": null
+      "nome": "CIA PARTICIPACOES ALIANCA DA BAHIA"
     },
     "LWSA3": {
       "preco": 3.15,
@@ -4127,7 +4127,7 @@
       "g": 0.14300000000000002,
       "roe": 0.1454,
       "liq_2m": 95.43,
-      "nome": "CIA CATARINENSE DE AGUAS E SANEAM.-CASAN"
+      "nome": null
     },
     "FLRY3": {
       "preco": 21.51,
@@ -4585,18 +4585,6 @@
       "liq_2m": 142.52,
       "nome": null
     },
-    "WHRL3": {
-      "preco": 2.99,
-      "pl": 35.9,
-      "pvp": 2.31,
-      "dy": 0.0373,
-      "lpa": 0.08328690807799444,
-      "vpa": 1.2943722943722944,
-      "g": 0.0388,
-      "roe": 0.0643,
-      "liq_2m": 18710.0,
-      "nome": "WHIRLPOOL S.A."
-    },
     "WHRL4": {
       "preco": 2.99,
       "pl": 35.9,
@@ -4607,6 +4595,18 @@
       "g": 0.0388,
       "roe": 0.0643,
       "liq_2m": 58366.0,
+      "nome": "WHIRLPOOL S.A."
+    },
+    "WHRL3": {
+      "preco": 2.99,
+      "pl": 35.9,
+      "pvp": 2.31,
+      "dy": 0.0373,
+      "lpa": 0.08328690807799444,
+      "vpa": 1.2943722943722944,
+      "g": 0.0388,
+      "roe": 0.0643,
+      "liq_2m": 18710.0,
       "nome": "WHIRLPOOL S.A."
     },
     "UNIP5": {
@@ -4822,7 +4822,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 3613760.0,
-      "nome": null
+      "nome": "AD SHOPPING FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA"
     },
     "AFHF11": {
       "preco": 9.98,
@@ -4888,7 +4888,7 @@
       "g": null,
       "segmento": "Escritórios",
       "liq_2m": 35083.0,
-      "nome": null
+      "nome": "FII TORRE ALMIRANTE"
     },
     "ALZC11": {
       "preco": 6.53,
@@ -5163,7 +5163,7 @@
       "g": null,
       "segmento": "Escritórios",
       "liq_2m": 278387.0,
-      "nome": "CATUAÍ VBI TRIPLE A FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA"
+      "nome": null
     },
     "BLMG11": {
       "preco": 26.01,
@@ -5680,7 +5680,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 624.0,
-      "nome": "DIAMANTE FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA"
+      "nome": null
     },
     "DAYM11": {
       "preco": 3.91,
@@ -5801,7 +5801,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 8216.0,
-      "nome": null
+      "nome": "AROEIRA FUNDO DE INVESTIMENTO IMOBILIÁRIO - RESPONSABILIDADE LIMITADA"
     },
     "EMET11": {
       "preco": 9.98,
@@ -5878,7 +5878,7 @@
       "g": null,
       "segmento": "Residencial",
       "liq_2m": 9108.0,
-      "nome": null
+      "nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII EDIFÍCIO ALMIRANTE BARROSO RESPONSABILIDADE LIMITADA"
     },
     "FATN11": {
       "preco": 75.91,
@@ -5955,7 +5955,7 @@
       "g": null,
       "segmento": "Escritórios",
       "liq_2m": 5739.0,
-      "nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO SC 401 - RESPONSABILIDADE LIMITADA"
+      "nome": null
     },
     "FIXX11": {
       "preco": 108.38,
@@ -6021,7 +6021,7 @@
       "g": null,
       "segmento": "Escritórios",
       "liq_2m": 5230.0,
-      "nome": null
+      "nome": "PROJETO ÁGUA BRANCA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA"
     },
     "FPNG11": {
       "preco": 339.99,
@@ -6164,7 +6164,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 1788.0,
-      "nome": "GALAPAGOS HEDGE FUND FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA"
+      "nome": null
     },
     "GLPF11": {
       "preco": 110.75,
@@ -6263,7 +6263,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 7853010.0,
-      "nome": null
+      "nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO HBC RENDA URBANA"
     },
     "HCRI11": {
       "preco": 271.99,
@@ -6450,7 +6450,7 @@
       "g": null,
       "segmento": "Residencial",
       "liq_2m": 4921.0,
-      "nome": null
+      "nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO HOUSI RESPONSABILIDADE LIMITADA"
     },
     "HPDP11": {
       "preco": 89.01,
@@ -6461,7 +6461,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 11055.0,
-      "nome": null
+      "nome": "HEDGE SHOPPING PARQUE DOM PEDRO FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA"
     },
     "HRDF11": {
       "preco": 3.51,
@@ -6472,7 +6472,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 1574.0,
-      "nome": "HEDGE REALTY DEVELOPMENT FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA"
+      "nome": null
     },
     "HREC11": {
       "preco": 8.31,
@@ -6549,7 +6549,7 @@
       "g": null,
       "segmento": "Hospital",
       "liq_2m": 766.0,
-      "nome": null
+      "nome": "FII UNIMED C"
     },
     "HUSC11": {
       "preco": 95.0,
@@ -6560,7 +6560,7 @@
       "g": null,
       "segmento": "Outros",
       "liq_2m": 8309.0,
-      "nome": null
+      "nome": "FUNDO DE INVESTIMENTO IMOBILIARIO HOSPITAL UNIMED SUL CAPIXABA"
     },
     "IAAG11": {
       "preco": 6.61,
@@ -7033,7 +7033,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 2062.0,
-      "nome": "LEBLON REALTY DESENVOLVIMENTO I FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA"
+      "nome": null
     },
     "LSAG11": {
       "preco": 63.1,
@@ -7374,7 +7374,7 @@
       "g": null,
       "segmento": "Outros",
       "liq_2m": 5612.0,
-      "nome": null
+      "nome": "PATAGÔNIA CAPITAL MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOBILIÁRIO"
     },
     "PATC11": {
       "preco": 34.18,
@@ -7781,7 +7781,7 @@
       "g": null,
       "segmento": "Residencial",
       "liq_2m": 21809.0,
-      "nome": null
+      "nome": "RIO BRAVO RENDA RESIDENCIAL FUNDO DE INVESTIMENTO IMOBILIÁRIO DE RESPONSABILIDADE LIMITADA"
     },
     "RBRX11": {
       "preco": 6.08,
@@ -8430,7 +8430,7 @@
       "g": null,
       "segmento": "Escritórios",
       "liq_2m": 45564.0,
-      "nome": null
+      "nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII TORRE NORTE"
     },
     "TRXB11": {
       "preco": 197.99,
@@ -8804,7 +8804,7 @@
       "g": null,
       "segmento": "Multicategoria",
       "liq_2m": 120957.0,
-      "nome": null
+      "nome": "V2 RENDA IMOBILIÁRIA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESPONSABILIDADE LIMITADA"
     },
     "VXXV11": {
       "preco": 825.0,
@@ -8837,7 +8837,7 @@
       "g": null,
       "segmento": "Shoppings",
       "liq_2m": 4332.0,
-      "nome": null
+      "nome": "SHOPPING WEST PLAZA FUNDO DE INVESTIMENTO IMOBILIARIO DE RESPONSABILIDADE LIMITADA"
     },
     "WTSP11": {
       "preco": 69.88,
